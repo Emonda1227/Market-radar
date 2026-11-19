@@ -143,17 +143,28 @@ def press():
             print(f"  ! presse {url}: {e}", file=sys.stderr)
     return [x for lst in by_src.values() for x in lst]
 
-def news(limit=8):
-    out = []
+RSS_NAMES = {"feeds.finance.yahoo.com": "Yahoo Finance", "www.fxstreet.com": "FXStreet"}
+
+def news(per_source=5):
+    """Derniers titres de chaque flux RSS, mélangés (une source après l'autre)."""
+    lists = []
     for url in RSS:
+        host = url.split("/")[2]
+        lst = []
         try:
             root = ET.fromstring(requests.get(url, headers=UA, timeout=15).content)
             for it in root.iter("item"):
                 t = (it.findtext("title") or "").strip()
-                if t: out.append({"t": t, "link": it.findtext("link"), "src": url.split("/")[2]})
+                if t and len(lst) < per_source and all(x["t"] != t for x in lst):
+                    lst.append({"t": t, "link": it.findtext("link"), "src": RSS_NAMES.get(host, host),
+                                "date": (it.findtext("pubDate") or "")[:16], "r": "n", "why": ""})
         except Exception as e:
             print(f"  ! rss {url}: {e}", file=sys.stderr)
-    return out[:limit]
+        lists.append(lst)
+    out = []
+    for i in range(per_source):
+        out += [lst[i] for lst in lists if i < len(lst)]
+    return out
 
 # ---------- formatage FR ----------
 def fr(v, n=2):
@@ -259,6 +270,7 @@ def explain(s):
         '"headline" (1-2 phrases), "bref" (3 à 5 objets {"r":"g|o|r","t":titre court,"why":1 phrase}), '
         '"risk" (1-2 phrases), "notes" (objet id_groupe -> 2-3 phrases expliquant le tableau), '
         '"vol_note", "gold_note", "crypto_note", "fx_note" (2 phrases chacun), '
+        '"news_items" (liste dans le même ordre que news : {"r":"g|o|r","why":1 phrase simple en français résumant la news et son importance}), '
         '"press_items" (liste dans le même ordre que press.items : {"r":"g|o|r","why":1 phrase simple sur pourquoi c\'est important pour un risk manager}), '
         '"stars_notes" (objet id_groupe_stars -> 2 phrases), '
         '"stars_outlook" (objet id_action -> {"tone":"Positif|Neutre|Prudent","text":1-2 phrases sur la tendance à court terme d\'après les chiffres et l\'actualité, sans recommandation}), '
@@ -289,6 +301,10 @@ def explain(s):
             o = j.get("stars_outlook", {}).get(r["id"])
             if isinstance(o, dict) and o.get("text"):
                 r["outlook"] = {"tone": o.get("tone", "Neutre"), "text": o["text"]}
+    if isinstance(j.get("news_items"), list):
+        for it, x in zip(s.get("news", []), j["news_items"]):
+            if isinstance(x, dict):
+                it["r"] = x.get("r", it.get("r", "n")); it["why"] = x.get("why", it.get("why", ""))
     if s.get("press") and isinstance(j.get("press_items"), list):
         for it, x in zip(s["press"]["items"], j["press_items"]):
             if isinstance(x, dict):
