@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="fr" data-skin="bleu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Radar Marchés</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: "night glass" phone app — one column of glass cards, tab bar floating at the bottom; summary first, detail on tap */
+:root{
+  --bg:#030915; --text:#EAF1FF; --muted:#8D9DC2; --dim:#5D6C90;
+  --glow-a:rgba(46,100,210,.38); --glow-b:rgba(30,70,160,.16); --glow-c:rgba(30,80,180,.22);
+  --glass:linear-gradient(180deg,rgba(30,56,108,.40),rgba(12,26,56,.42)); --glass-flat:rgba(18,36,74,.45);
+  --stroke:rgba(110,160,255,.15); --stroke-hi:rgba(125,180,255,.45);
+  --accent:#3E8EFF; --accent-2:#79BEFF; --glow:rgba(62,142,255,.42); --on-accent:#fff;
+  --seg-grad:linear-gradient(180deg,#2C70D8,#17489A);
+  --bar:rgba(8,18,40,.82); --shadow:rgba(0,0,0,.25);
+  --up:#3DDC97; --down:#FF5D5D; --warn:#FFB547; --none:#5D6C90;
+  --f:"Inter","SF Pro Display","Segoe UI",system-ui,-apple-system,sans-serif;
+  color-scheme:dark;
+}
+:root[data-skin="noir"]{--bg:#000;--text:#F2F2F2;--muted:#9A9A9A;--dim:#616161;--glow-a:rgba(255,255,255,.08);--glow-b:rgba(255,255,255,.03);--glow-c:rgba(255,255,255,.05);
+  --glass:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025));--glass-flat:rgba(255,255,255,.045);--stroke:rgba(255,255,255,.12);--stroke-hi:rgba(255,255,255,.38);
+  --accent:#D9D9D9;--accent-2:#fff;--glow:rgba(255,255,255,.22);--seg-grad:linear-gradient(180deg,#3A3A3A,#1C1C1C);--bar:rgba(10,10,10,.85);--shadow:rgba(0,0,0,.4)}
+:root[data-skin="gris"]{--bg:#1E2126;--text:#EEF1F5;--muted:#A3AAB6;--dim:#6C7380;--glow-a:rgba(200,210,225,.14);--glow-b:rgba(200,210,225,.05);--glow-c:rgba(200,210,225,.08);
+  --glass:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.04));--glass-flat:rgba(255,255,255,.06);--stroke:rgba(220,228,240,.14);--stroke-hi:rgba(220,228,240,.40);
+  --accent:#AEB8C8;--accent-2:#DCE3EE;--glow:rgba(200,212,230,.25);--seg-grad:linear-gradient(180deg,#5A6372,#3A414C);--bar:rgba(30,33,38,.88);--shadow:rgba(0,0,0,.3)}
+:root[data-skin="blanc"]{--bg:#EEF2F8;--text:#0F1A33;--muted:#5B6884;--dim:#94A0B8;--glow-a:rgba(90,140,235,.20);--glow-b:rgba(90,140,235,.06);--glow-c:rgba(90,140,235,.12);
+  --glass:linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,255,255,.75));--glass-flat:rgba(255,255,255,.78);--stroke:rgba(40,70,130,.12);--stroke-hi:rgba(47,111,224,.45);
+  --accent:#2F6FE0;--accent-2:#2F6FE0;--glow:rgba(47,111,224,.28);--seg-grad:linear-gradient(180deg,#3B7CEB,#2357C4);--bar:rgba(255,255,255,.9);--shadow:rgba(30,60,120,.08);
+  --up:#12A36B;--down:#E0413F;--warn:#D98A12;--none:#94A0B8;color-scheme:light}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{margin:0;color:var(--text);font-family:var(--f);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased;
+  background:radial-gradient(120% 55% at 70% -8%,var(--glow-a),transparent 62%),radial-gradient(70% 40% at 0% 40%,var(--glow-b),transparent 70%),radial-gradient(90% 50% at 100% 105%,var(--glow-c),transparent 65%),var(--bg);
+  background-color:var(--bg);background-attachment:fixed;padding-top:env(safe-area-inset-top,0px)}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px;border-radius:10px}
+a{color:var(--accent-2)}
+.screen{max-width:520px;margin:0 auto;padding:20px 16px calc(130px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:14px}
+.num{font-variant-numeric:tabular-nums}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.h1{font-size:27px;font-weight:400;letter-spacing:-.01em;margin:0}
+.lead{color:var(--muted);font-size:13px;margin:3px 0 0}
+.skins{display:flex;gap:6px;padding:6px;border-radius:999px;background:var(--glass-flat);border:1px solid var(--stroke)}
+.skins button{width:18px;height:18px;border-radius:50%;border:1px solid var(--stroke-hi)}
+.skins button[aria-pressed="true"]{box-shadow:0 0 0 2px var(--accent-2)}
+.card{background:var(--glass);border:1px solid var(--stroke);border-radius:16px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 10px 30px var(--shadow);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.pad{padding:14px 16px}
+.h2{font-size:17px;font-weight:500;margin:6px 2px 0;display:flex;align-items:center;gap:8px}
+.h2 small{font-size:12px;color:var(--muted);font-weight:400;margin-left:auto;text-align:right}
+.legend{font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+.hero{position:relative;overflow:hidden;padding:16px}
+.hero .lbl{font-size:13px;color:var(--muted)}
+.hero .big{display:flex;align-items:center;gap:10px;font-size:30px;font-weight:300;margin-top:6px}
+.hero p{margin:10px 0 0;font-size:14.5px}
+.counts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.count{padding:10px 8px;text-align:center}
+.count{cursor:pointer;width:100%;transition:box-shadow .2s,border-color .2s}
+.count:hover{border-color:var(--stroke-hi)}
+.count[aria-pressed="true"]{border-color:var(--stroke-hi);box-shadow:0 0 0 1px var(--stroke-hi),0 0 18px var(--glow)}
+.count b{display:block;font-size:22px;font-weight:400}
+.filterbar{display:flex;align-items:center;gap:10px;font-size:14px}
+.filterbar .clear{margin-left:auto;padding:6px 12px;border-radius:999px;border:1px solid var(--stroke-hi);font-size:13px;white-space:nowrap}
+.count span{font-size:12px;color:var(--muted)}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.tile{padding:12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.tile .n{font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile .v{font-size:19px;font-weight:400}
+.tile svg{width:100%;height:34px;margin-top:4px}
+.tile .nohist{font-size:11px;color:var(--dim);margin-top:6px}
+.dot{width:10px;height:10px;border-radius:50%;flex:none;display:inline-block}
+.dot.g{background:var(--up);box-shadow:0 0 8px var(--up)}
+.dot.o{background:var(--warn);box-shadow:0 0 8px var(--warn)}
+.dot.r{background:var(--down);box-shadow:0 0 8px var(--down)}
+.dot.n{background:transparent;border:1.5px solid var(--none)}
+.big .dot{width:16px;height:16px}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--muted)}
+/* rows */
+.list{padding:6px}
+.row{width:100%;display:grid;grid-template-columns:14px 1fr auto 14px;gap:10px;align-items:center;padding:11px 10px;text-align:left;border-radius:12px}
+.row+.row,.row+.detail+.row{border-top:1px solid var(--stroke)}
+.row:hover{background:var(--glass-flat)}
+.row .nm{min-width:0;font-weight:500;font-size:14.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .nm small{display:block;font-weight:400;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .v{text-align:right;font-size:15.5px;white-space:nowrap}
+.row .v small{display:block;font-size:11.5px;color:var(--muted)}
+.chev{color:var(--muted);transition:transform .2s}
+.row[aria-expanded="true"] .chev{transform:rotate(90deg)}
+.detail{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;padding:4px 12px 12px 34px;font-size:13px}
+.detail dt{color:var(--muted)} .detail dd{margin:0}
+.note{display:flex;gap:8px;padding:12px 14px;font-size:14px;border-radius:14px;background:var(--glass-flat);border:1px solid var(--stroke)}
+.note b{font-weight:600}
+.items{display:flex;flex-direction:column}
+.item{display:grid;grid-template-columns:14px 1fr;gap:10px;padding:11px 12px}
+.item+.item{border-top:1px solid var(--stroke)}
+.item .dot{margin-top:5px}
+.item b{font-weight:500;display:block}
+.item span{color:var(--muted);font-size:13.5px}
+.agenda{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;padding:12px 14px;font-size:14px}
+.agenda .t{color:var(--accent-2);font-variant-numeric:tabular-nums}
+.lex dt{font-weight:500;margin-top:8px} .lex dd{margin:2px 0 0;color:var(--muted);font-size:13.5px}
+.src{font-size:12.5px;padding:12px 16px;margin:0;display:flex;flex-direction:column;gap:6px;list-style:none}
+.banner{font-size:12.5px;color:var(--muted);padding:10px 14px}
+/* tab bar */
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:0 12px calc(12px + env(safe-area-inset-bottom,0px));pointer-events:none}
+.tabbar-in{pointer-events:auto;max-width:480px;margin:0 auto;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));padding:5px;border-radius:999px;
+  background:linear-gradient(180deg,rgba(255,255,255,.12),transparent 45%),var(--bar);-webkit-backdrop-filter:blur(22px) saturate(170%);backdrop-filter:blur(22px) saturate(170%);
+  border:1px solid var(--stroke);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 18px 40px rgba(0,0,0,.45)}
+.tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:48px;font-size:9px;font-weight:500;color:var(--muted);border-radius:999px;transition:background .25s,color .25s}
+.tab svg{width:20px;height:20px}
+.tab[aria-selected="true"]{color:var(--text);background:var(--seg-grad);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 0 16px var(--glow)}
+:root[data-skin="blanc"] .tab[aria-selected="true"]{color:#fff}
+.grid{display:flex;flex-direction:column;gap:14px}
+.blk{display:flex;flex-direction:column;gap:10px;min-width:0}
+.tools{display:flex;gap:8px;align-items:center}
+.sizes{display:flex;gap:2px;padding:4px;border-radius:999px;background:var(--glass-flat);border:1px solid var(--stroke)}
+.sizes button{display:flex;align-items:center;justify-content:center;width:30px;height:24px;border-radius:999px;color:var(--muted)}
+.sizes button[aria-pressed="true"]{color:var(--on-accent);background:var(--seg-grad);box-shadow:0 0 10px var(--glow)}
+:root[data-skin="blanc"] .sizes button[aria-pressed="true"]{color:#fff}
+.sizes svg{width:15px;height:15px}
+/* iPad grand écran : deux colonnes de sections, repères sur trois colonnes */
+:root[data-layout="tablet"] .screen{max-width:1180px;padding-left:28px;padding-right:28px}
+:root[data-layout="tablet"] .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+:root[data-layout="tablet"] .full{grid-column:1/-1}
+:root[data-layout="tablet"] .tiles{grid-template-columns:repeat(3,minmax(0,1fr))}
+:root[data-layout="tablet"] .hero .big{font-size:36px}
+:root[data-layout="tablet"] .tabbar-in{max-width:900px}
+:root[data-layout="tablet"] .h1{font-size:32px}
+/* horaires */
+.dot.c{background:var(--none);opacity:.55}
+.hrs{padding:6px}
+.hr{display:grid;grid-template-columns:14px 1fr auto;gap:10px;align-items:center;padding:10px}
+.hr+.hr{border-top:1px solid var(--stroke)}
+.hr .nm{min-width:0;font-weight:500;font-size:14.5px}
+.hr .nm small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.hr .tm{text-align:right;font-size:15px;white-space:nowrap}
+.hr .tm small{display:block;font-size:11.5px;color:var(--muted)}
+.st-o{color:var(--up)} .st-p{color:var(--warn)} .st-c{color:var(--muted)}
+.tl{padding:12px 14px;display:flex;flex-direction:column;gap:5px;font-size:12px}
+.tl .ln{display:grid;grid-template-columns:92px 1fr;gap:8px;align-items:center}
+.tl .lb{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
+.tl .tr{position:relative;height:12px;border-radius:6px;background:var(--glass-flat)}
+.tl .sg{position:absolute;top:0;bottom:0;border-radius:6px;background:var(--accent);opacity:.75}
+.tl .sg.on{background:var(--up);opacity:1;box-shadow:0 0 8px var(--up)}
+.tl .now{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--warn);border-radius:1px}
+.tl .ax{display:grid;grid-template-columns:92px 1fr;gap:8px}
+.tl .ax div{display:flex;justify-content:space-between;color:var(--dim);font-variant-numeric:tabular-nums}
+.clock{font-size:30px;font-weight:300}
+.act{display:block;margin-top:4px;font-size:13px;color:var(--accent-2)}
+.act::before{content:"→ ";}
+.hz{display:inline-block;margin-left:6px;padding:1px 8px;border-radius:999px;border:1px solid var(--stroke-hi);font-size:11px;color:var(--muted);font-weight:400;vertical-align:1px}
+.stk{display:grid;grid-template-columns:14px 1fr auto;gap:10px;align-items:center;padding:10px 12px}
+.stk+.stk{border-top:1px solid var(--stroke)}
+.stk .nm{min-width:0;font-weight:500;font-size:14.5px}
+.stk .nm small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.stk .tk{font-size:11px;color:var(--dim);font-weight:400;margin-left:4px}
+.stk .px{text-align:right;white-space:nowrap;font-size:15px}
+.stk .px small{display:block;font-size:11.5px;color:var(--muted)}
+.press .item b a{color:inherit;text-decoration:none}
+.press .item b a:hover{text-decoration:underline}
+.srcb{display:inline-block;margin-right:6px;padding:1px 7px;border-radius:999px;font-size:10.5px;font-weight:600;letter-spacing:.02em;vertical-align:1px;border:1px solid var(--stroke-hi);color:var(--muted)}
+.srcb.ft{color:#f2b98f;border-color:rgba(242,185,143,.45)}
+.srcb.lt{color:#9cc3ff;border-color:rgba(156,195,255,.45)}
+.pdate{display:block;margin-top:3px;font-size:11.5px;color:var(--dim)}
+.stk .ext{grid-column:2/-1;min-width:0}
+.stk .ext:empty{display:none}
+.stk .ext .sub{display:block;font-size:11.5px;color:var(--dim)}
+.stk .ev{display:flex;gap:2px 14px;flex-wrap:wrap;margin-top:4px;font-size:12.5px;color:var(--muted)}
+.stk .ev b{font-weight:600}
+.stk .ol{display:block;margin-top:5px;font-size:12.5px;line-height:1.45;color:var(--text)}
+.tone{display:inline-block;margin-right:6px;padding:0 7px;border-radius:999px;font-size:10.5px;font-weight:600;border:1px solid}
+.tone.pos{color:var(--up);border-color:var(--up)}
+.tone.neu{color:var(--muted);border-color:var(--stroke-hi)}
+.tone.pru{color:var(--warn);border-color:var(--warn)}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="screen" id="app">
+  <header class="top">
+    <div>
+      <h1 class="h1">Radar Marchés</h1>
+      <p class="lead num" id="stamp"></p>
+    </div>
+    <div class="tools">
+    <div class="sizes" role="group" aria-label="Format d'affichage">
+      <button data-layout="phone" aria-label="Format iPhone" title="iPhone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></button>
+      <button data-layout="tablet" aria-label="Format iPad grand écran" title="iPad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M11 17h2"/></svg></button>
+    </div>
+    <div class="skins" role="group" aria-label="Thème">
+      <button data-skin="bleu" style="background:#1E5FC6" aria-label="Thème bleu"></button>
+      <button data-skin="noir" style="background:#000" aria-label="Thème noir"></button>
+      <button data-skin="gris" style="background:#5A6372" aria-label="Thème gris"></button>
+      <button data-skin="blanc" style="background:#fff" aria-label="Thème blanc"></button>
+    </div>
+    </div>
+  </header>
+  <div class="legend"><span><i class="dot g"></i> normal</span><span><i class="dot o"></i> à surveiller</span><span><i class="dot r"></i> attention</span><span><i class="dot n"></i> pas de donnée</span></div>
+  <section id="view"></section>
+</main>
+
+<nav class="tabbar" aria-label="Sections">
+  <div class="tabbar-in" role="tablist">
+    <button class="tab" role="tab" data-tab="synthese"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 11l8-6 8 6v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg>Synthèse</button>
+    <button class="tab" role="tab" data-tab="indices"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 17l5-5 4 3 8-8"/><path d="M15 7h5v5"/></svg>Indices</button>
+    <button class="tab" role="tab" data-tab="volatilite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h3l2-6 4 12 3-9 2 3h4"/></svg>Volat. & taux</button>
+    <button class="tab" role="tab" data-tab="actifs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M9.5 9.5h4a2 2 0 0 1 0 4h-4m0-4v5m2-6.5v1.5m0 5V16"/></svg>Or & FX</button>
+    <button class="tab" role="tab" data-tab="stars"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>Stars</button>
+    <button class="tab" role="tab" data-tab="risques"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M12 8v5"/><circle cx="12" cy="16" r=".6" fill="currentColor"/></svg>Risques</button>
+    <button class="tab" role="tab" data-tab="horaires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Horaires</button>
+  </div>
+</nav>
+
+<script>
+const FALLBACK = {"id": "2026-11-19-2005", "ts": "2026-11-19T20:05:00+01:00", "edition": "Soir", "overall": "o", "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.", "bref": [{"r": "o", "t": "Wall Street en nette baisse : Dow ≈ −1,7 %, S&P 500 ≈ −1,4 %, Nasdaq ≈ −1,4 %", "why": "La hausse du matin s'est effacée dès la première cotation d'Anthropic : les investisseurs ont pris leurs bénéfices. Le S&P 500 se dirige vers une 6e baisse d'affilée."}, {"r": "r", "t": "Anthropic : ouverture à 111,50 $ (+34 %), puis repli vers 94–98 $", "why": "Valorisation d'environ 2 000 milliards à l'ouverture. Écart de plus de 20 $ entre le plus haut et le plus bas du jour : forte volatilité."}, {"r": "o", "t": "Novembre : les 3 grands indices US en baisse de plus de 3 %", "why": "Une première pour un mois de novembre depuis 2008, selon Bespoke."}, {"r": "g", "t": "Europe quasi stable en fin de séance (STOXX 600 ≈ −0,2 %)", "why": "La hausse du matin portée par la tech s'est essoufflée ; Milan surperforme, la Suisse recule (Novartis)."}, {"r": "g", "t": "Walmart recule (≈ −1 à −2 %) malgré des résultats meilleurs que prévu", "why": "Le titre avait déjà fortement surperformé le marché ces deux derniers mois."}], "indices": [{"id": "europe", "title": "Europe", "asof": "Fin de séance du 19/11 (vers 17h30) · SMI à 12h40", "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.", "rows": [{"id": "es50", "r": "g", "flag": "🇪🇺", "name": "Euro Stoxx 50", "last": 6177, "d": 0.4, "w": null, "ytd": null, "open": "09:00", "close": "17:30", "scope": "50 grandes valeurs de la zone euro"}, {"id": "stoxx600", "r": "g", "flag": "🇪🇺", "name": "STOXX Europe 600", "last": null, "d": -0.2, "w": null, "ytd": null, "open": "09:00", "close": "17:30", "scope": "600 sociétés européennes, dont Suisse et R.-U."}, {"id": "msci_eu", "r": "n", "flag": "🇪🇺", "name": "MSCI Europe", "last": null, "d": null, "w": null, "ytd": null, "open": "09:00", "close": "17:30", "scope": "~400 grandes et moyennes sociétés européennes"}, {"id": "smi", "r": "g", "flag": "🇨🇭", "name": "SMI", "last": 14822.38, "d": -0.43, "w": null, "ytd": null, "open": "09:00", "close": "17:30", "scope": "20 plus grandes valeurs suisses"}, {"id": "dax", "r": "g", "flag": "🇩🇪", "name": "DAX", "last": 25749.5, "d": 0.05, "w": null, "ytd": null, "open": "09:00", "close": "17:30", "scope": "40 plus grandes valeurs allemandes"}, {"id": "cac", "r": "g", "flag": "🇫🇷", "name": "CAC 40", "last": 8155.8, "d": 0.11, "w": null, "ytd": null, "open": "09:00", "close": "17:30", "scope": "40 grandes valeurs françaises"}, {"id": "ftse", "r": "n", "flag": "🇬🇧", "name": "FTSE 100", "last": null, "d": null, "w": null, "ytd": null, "open": "09:00", "close": "17:30", "scope": "100 plus grandes valeurs de Londres"}, {"id": "mib", "r": "g", "flag": "🇮🇹", "name": "FTSE MIB", "last": 50467, "d": 0.58, "w": null, "ytd": null, "open": "09:00", "close": "17:30", "scope": "40 grandes valeurs italiennes"}, {"id": "ibex", "r": "n", "flag": "🇪🇸", "name": "IBEX 35", "last": null, "d": null, "w": null, "ytd": null, "open": "09:00", "close": "17:30", "scope": "35 grandes valeurs espagnoles"}]}, {"id": "usa", "title": "États-Unis", "asof": "En séance, vers 19h (Genève) · clôture à 22h", "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.", "rows": [{"id": "spx", "r": "o", "flag": "🇺🇸", "name": "S&P 500", "last": null, "d": -1.4, "w": null, "ytd": null, "open": "15:30", "close": "22:00", "scope": "500 grandes entreprises américaines"}, {"id": "dow", "r": "o", "flag": "🇺🇸", "name": "Dow Jones", "last": null, "d": -1.7, "w": null, "ytd": null, "open": "15:30", "close": "22:00", "scope": "30 géants américains historiques"}, {"id": "nasdaq", "r": "o", "flag": "🇺🇸", "name": "Nasdaq Composite", "last": null, "d": -1.4, "w": null, "ytd": null, "open": "15:30", "close": "22:00", "scope": "~3 000 valeurs, dominé par la tech"}, {"id": "msci_usa", "r": "n", "flag": "🇺🇸", "name": "MSCI USA", "last": null, "d": null, "w": null, "ytd": null, "open": "15:30", "close": "22:00", "scope": "~600 grandes et moyennes sociétés US"}, {"id": "r2k", "r": "n", "flag": "🇺🇸", "name": "Russell 2000", "last": null, "d": null, "w": null, "ytd": null, "open": "15:30", "close": "22:00", "scope": "2 000 petites entreprises américaines"}]}, {"id": "asie", "title": "Asie", "asof": "Clôture du 19/11", "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.", "rows": [{"id": "nikkei", "r": "g", "flag": "🇯🇵", "name": "Nikkei 225", "last": 59093.83, "d": 0.12, "w": null, "ytd": null, "open": "01:00", "close": "07:30", "scope": "225 grandes valeurs japonaises"}, {"id": "kospi", "r": "g", "flag": "🇰🇷", "name": "Kospi", "last": null, "d": -0.25, "w": null, "ytd": null, "open": "01:00", "close": "07:30", "scope": "Principales actions coréennes"}, {"id": "hsi", "r": "o", "flag": "🇭🇰", "name": "Hang Seng", "last": null, "d": -1.45, "w": null, "ytd": null, "open": "02:30", "close": "09:00", "scope": "Grandes valeurs de Hong Kong et Chine"}, {"id": "shanghai", "r": "n", "flag": "🇨🇳", "name": "Shanghai Composite", "last": null, "d": null, "w": null, "ytd": null, "open": "02:30", "close": "08:00", "scope": "Toutes les actions cotées à Shanghai"}, {"id": "sensex", "r": "n", "flag": "🇮🇳", "name": "Sensex", "last": null, "d": null, "w": null, "ytd": null, "open": "04:45", "close": "11:00", "scope": "30 grandes valeurs indiennes"}]}, {"id": "monde", "title": "Indices mondiaux", "asof": "Publication MSCI / FTSE en fin de journée", "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.", "rows": [{"id": "msci_world", "r": "n", "flag": "🌍", "name": "MSCI World", "last": null, "d": null, "w": null, "ytd": null, "open": null, "close": null, "scope": "~1 400 sociétés, 23 pays développés"}, {"id": "acwi", "r": "n", "flag": "🌐", "name": "MSCI ACWI", "last": null, "d": null, "w": null, "ytd": null, "open": null, "close": null, "scope": "~2 500 sociétés, développés + émergents"}, {"id": "ftse_aw", "r": "n", "flag": "🌐", "name": "FTSE All-World", "last": null, "d": null, "w": null, "ytd": null, "open": null, "close": null, "scope": "~4 000 sociétés, développés + émergents"}, {"id": "msci_em", "r": "n", "flag": "🌏", "name": "MSCI Emerging Markets", "last": null, "d": null, "w": null, "ytd": null, "open": null, "close": null, "scope": "~1 200 sociétés de pays émergents"}]}, {"id": "autres", "title": "Au-delà des actions", "asof": "Indices calculés", "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.", "rows": [{"id": "bbg_agg", "r": "n", "flag": "🌐", "name": "Bloomberg Global Aggregate", "last": null, "d": null, "w": null, "ytd": null, "open": null, "close": null, "scope": "Obligations mondiales de bonne qualité"}, {"id": "bbg_cmdty", "r": "n", "flag": "🌐", "name": "Bloomberg Commodity", "last": null, "d": null, "w": null, "ytd": null, "open": null, "close": null, "scope": "Panier énergie, métaux, agriculture"}]}], "futures": {"r": "o", "t": "Wall Street ouverte : hausse du matin effacée", "why": "Les futures annonçaient +1 % à +2 % ; la séance a basculé dans le rouge après la cotation d'Anthropic."}, "vol": {"rows": [{"id": "v2x", "r": "o", "flag": "🇪🇺", "name": "V2X (VSTOXX)", "last": 21.89, "d": 7.23, "open": "09:00", "close": "17:30", "scope": "Nervosité attendue sur l'Euro Stoxx 50 (30 jours) · valeur d'hier"}, {"id": "vix", "r": "o", "flag": "🇺🇸", "name": "VIX", "last": 24.39, "d": -4.2, "open": "15:30", "close": "22:00", "scope": "Nervosité attendue sur le S&P 500 (30 jours) · valeur du 18/11"}], "note": "Valeur du jour non trouvée. Le VIX était vers 24 hier ; avec la chute de Wall Street, il a très probablement monté ce soir."}, "rates": {"rows": [{"id": "ust10", "r": "g", "flag": "🇺🇸", "name": "Treasury US 10 ans", "value": "≈ 5,06 %", "d": "≈ −4,5 pb", "scope": "Taux d'emprunt de l'État américain"}, {"id": "bund10", "r": "n", "flag": "🇩🇪", "name": "Bund 10 ans", "value": "n.d.", "d": "n.d.", "scope": "Taux d'emprunt de l'Allemagne"}, {"id": "conf10", "r": "n", "flag": "🇨🇭", "name": "Confédération 10 ans", "value": "0,56 % (13/11)", "d": "n.d.", "scope": "Taux d'emprunt de la Suisse"}, {"id": "brent", "r": "n", "flag": "🛢️", "name": "Brent", "value": "n.d.", "d": "en baisse hier", "scope": "Prix du baril de pétrole de référence"}], "note": "Malgré une Fed ferme, le taux américain à 10 ans a un peu baissé hier (5,06 %), car le pétrole a reculé. Il reste près de ses plus hauts depuis 2007. Le dollar, lui, est au plus haut depuis 19 mois."}, "derives": [{"r": "o", "t": "La protection à 9 jours coûte plus cher que celle à 30 jours (VIX 9 jours 23,15 contre 22,91, lundi)", "why": "Les investisseurs se couvraient contre un choc de très court terme, autour des résultats de Nvidia."}, {"r": "o", "t": "VVIX +12,5 % à 114", "why": "La « volatilité de la volatilité » monte : se protéger contre une baisse coûte plus cher."}], "assets": {"gold": {"rows": [{"id": "gold", "r": "g", "flag": "🥇", "name": "Or", "value": "≈ 3 735 $ / once", "sub": "plus bas du jour ≈ 3 693 $ · plus bas depuis 14 mois", "d": "≈ +0,2 %", "last": 3735}], "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."}, "crypto": {"rows": [{"id": "btc", "r": "g", "flag": "₿", "name": "Bitcoin", "value": "≈ 63 000 $", "sub": "", "d": "≈ −2 % (24 h)", "last": 63000}, {"id": "xrp", "r": "n", "flag": "✕", "name": "XRP", "value": "n.d.", "sub": "dernière valeur connue ≈ 0,98 $ (18/11)", "d": "n.d.", "last": 0.98}], "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."}, "fx": {"rows": [{"id": "chfeur", "r": "g", "flag": "🇨🇭🇪🇺", "name": "CHF/EUR", "value": "1,0818", "sub": "1 franc = 1,0818 euro", "d": "+0,02 %", "last": 1.0818}, {"id": "chfusd", "r": "g", "flag": "🇨🇭🇺🇸", "name": "CHF/USD", "value": "1,1916", "sub": "1 franc = 1,1916 dollar · 1,217 début novembre", "d": "−0,04 %", "last": 1.1916}, {"id": "eurusd", "r": "g", "flag": "🇪🇺🇺🇸", "name": "EUR/USD", "value": "1,0989", "sub": "1 euro = 1,0989 dollar", "d": "−0,23 %", "last": 1.0989}], "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."}}, "counterparty": [{"r": "o", "t": "Deutsche Bank : suite de l'affaire des documents fuités", "why": "Après −6 % mardi, l'action reste sous surveillance. Risque de réputation et d'amendes ; à suivre si ton entreprise traite avec elle (dérivés, prêt de titres)."}, {"r": "o", "t": "Assureurs santé US en forte baisse (UnitedHealth)", "why": "Inquiétudes réglementaires. Pas un risque de contrepartie direct, mais une pression sur les fonds actions US."}, {"r": "o", "t": "Pannes d'applications de plusieurs banques US (lundi)", "why": "Incident opérationnel signalé ; pas d'impact sur le règlement des titres connu à ce stade."}], "macro": {"rows": [{"r": "o", "t": "🇺🇸 Compte rendu de la Fed : d'autres hausses de taux jugées probables", "why": "Presque tous les membres jugent de nouvelles hausses appropriées ; quelques-uns envisagent plus de 0,25 % en décembre. Christopher Waller (Fed) a évoqué une hausse de 0,5 %."}, {"r": "o", "t": "🇺🇸 Probabilité de hausse en décembre : environ 96 %", "why": "La question n'est plus « si » mais « de combien »."}, {"r": "g", "t": "🇪🇺 Inflation zone euro définitive : 4,0 % (comme l'estimation)", "why": "Aucune surprise pour la BCE."}], "agenda": [{"time": "22h00", "t": "🇺🇸 Clôture de Wall Street (1re clôture d'Anthropic)"}, {"time": "Vendredi", "t": "Suite de la semaine : surveiller si le S&P 500 enchaîne une 7e baisse"}], "note": "Le message de la Fed est clair : les taux vont encore monter. C'est le principal facteur de pression actuel sur l'or, le Bitcoin et les actions sensibles aux taux."}, "risk": "Orange. La journée montre la fragilité du marché : même un événement très attendu (Anthropic) n'a pas suffi à enrayer la baisse. À surveiller : la clôture américaine et la volatilité d'Anthropic, qui pèse désormais lourd dans la tech.", "lexique": [{"term": "VIX / V2X", "def": "Indices qui mesurent l'ampleur des mouvements que le marché attend sur 30 jours. Plus ils sont hauts, plus la nervosité est forte."}, {"term": "Point de base (pb)", "def": "Un centième de pour cent : 0,25 % = 25 pb."}, {"term": "Futures", "def": "Contrats qui s'échangent presque 24 h/24 et donnent la tendance avant l'ouverture des bourses."}, {"term": "CDS", "def": "Assurance contre le défaut d'un émetteur. Son prix monte quand le marché doute de sa solidité."}, {"term": "Depuis 1er janv.", "def": "Variation depuis le début de l'année (« YTD » en anglais)."}], "sources": [{"title": "Yahoo Finance : Wall Street en direct", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-090910916.html"}, {"title": "Newsbeep : séance US et bilan de novembre", "url": "https://www.newsbeep.com/us/922702/"}, {"title": "Benzinga : Walmart et S&P 500", "url": "https://www.benzinga.com/markets/equities/26/11/63446162/stock-market-today-anthropic-ipo-debut-sp-500-sixth-loss-november-19"}, {"title": "AP via Washington Times : Walmart", "url": "https://www.washingtontimes.com/news/2026/nov/19/early-rally-wall-street-evaporating-market-waits-anthropics-stock/"}, {"title": "Newsquawk : fin de séance européenne", "url": "https://www.newsquawk.com/headlines/newsquawk-european-market-wrap---19th-november-2026"}, {"title": "Trading Economics : indices européens", "url": "https://tradingeconomics.com/euro-area/stock-market"}, {"title": "AD HOC NEWS : SMI à midi", "url": "https://www.ad-hoc-news.de/boerse/news/marktberichte/smi-falls-0-43-prozent-by-midday-as-novartis-weighs/70535768"}, {"title": "CNN : Anthropic", "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo"}, {"title": "Trading Economics : or", "url": "https://tradingeconomics.com/commodity/gold"}, {"title": "ANC : or au plus bas depuis 14 mois", "url": "https://ancstockinvestments.com/blog/2026/11/19/gold-price-today-14-month-low-fed-minutes/"}, {"title": "Yahoo Finance : Hang Seng", "url": "https://finance.yahoo.com/quote/%5EHSI/"}], "cro": {"asof": "2026-11-19T20:05:00+01:00", "summary": "Vigilance renforcée. Le retournement de Wall Street le jour même de l'entrée en bourse d'Anthropic montre un marché nerveux, où les bonnes nouvelles ne suffisent plus à faire monter les cours. Fond inchangé : Fed ferme, dollar fort, tendance mondiale baissière. Aucun signal de défaut ni de blocage de liquidité.", "stress": [{"r": "o", "t": "Choc de taux : hausse de taux plus forte que prévu aux États-Unis", "why": "La Fed envisage plus de 0,25 % en décembre ; le taux US à 10 ans est vers 5,1 % et le taux à 2 ans a bondi de 17 pb en une séance le 10 novembre. Les fonds obligataires perdent de la valeur quand les taux montent.", "action": "Relancer le stress test taux sur les fonds obligataires et mixtes : choc +50 et +100 pb, pentification et aplatissement de la courbe. Vérifier la sensibilité (duration), les appels de marge sur futures et swaps de taux, et le collatéral disponible."}, {"r": "o", "t": "Liquidité et rachats des fonds obligataires", "why": "Sorties importantes des fonds obligataires hypothécaires américains (parmi les pires depuis 2021) et des fonds traditionnels au profit des ETF. Des taux qui montent peuvent déclencher des vagues de rachats.", "action": "Stress test de liquidité : scénarios de rachats (ex. 10 % et 20 % de l'actif sur 5 jours) contre la part d'actifs vendables vite, sans forte décote. Vérifier que les outils de gestion de liquidité (swing pricing, gates, seuils) sont prêts."}, {"r": "o", "t": "Dollar fort : couverture de change et collatéral", "why": "Le dollar est au plus haut depuis 19 mois. Les classes de parts couvertes en CHF ou EUR utilisent des contrats de change à terme : un dollar qui monte vite génère des pertes de couverture à régler en cash.", "action": "Simuler un choc dollar de +3 % et +5 % : besoins de cash pour les règlements des couvertures, appels de marge, et disponibilité du collatéral par fonds."}, {"r": "o", "t": "Or et matières premières en forte baisse", "why": "L'or a perdu environ 3 % hier et a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois ; il a perdu environ un tiers depuis son record de janvier. L'argent et le cuivre reculent aussi.", "action": "Identifier les fonds exposés (or physique ou ETC, minières, matières premières) et appliquer un choc supplémentaire de −10 %. Vérifier les limites de concentration et de perte."}, {"r": "o", "t": "Concentration sur la tech et l'IA (effet Anthropic)", "why": "Anthropic a ouvert à 111,50 $ (+34 %, valorisation ≈ 2 000 milliards) puis a reculé vers 94–98 $ ; le reste de la tech a basculé dans le rouge. Une valeur de cette taille entrera vite dans les grands indices, et sa volatilité se transmettra aux fonds actions.", "action": "Stress test actions : choc −15 % à −20 % sur les valeurs IA et semi-conducteurs, −10 % sur le marché large. Vérifier la concentration par émetteur, l'exposition des fonds à l'introduction d'Anthropic, et l'écart de suivi des ETF actifs."}, {"r": "o", "t": "Contrepartie : Deutsche Bank", "why": "Fuite de documents internes et action en forte baisse (−6 % le 17 novembre). Pas de signal de défaut, mais un risque de réputation et d'amendes.", "action": "Recenser les expositions (dérivés de gré à gré, prêt de titres, mises en pension, dépôts), vérifier les accords de collatéral et suivre le prix de son CDS (assurance contre son défaut)."}], "escalate": [{"r": "o", "t": "Message clé : régime de taux en hausse confirmé par la Fed", "why": "Presque tous les membres de la Fed jugent d'autres hausses appropriées ; une hausse en décembre est quasi certaine (≈ 96 %). Les actions et les obligations peuvent baisser en même temps : la diversification habituelle protège moins.", "action": "Proposer au CRO : revue des limites de risque de marché et des scénarios de stress pour refléter ce régime."}, {"r": "o", "t": "Entrée en bourse d'Anthropic : sentiment IA et volatilité", "why": "Ouverture à 111,50 $ (+34 %), puis repli de plus de 15 % depuis ce plus haut dans la journée. Wall Street a chuté juste après sa première cotation (prises de bénéfices).", "action": "Informer le CRO de l'exposition directe (souscriptions éventuelles) et indirecte (fonds tech et IA), et suivre les premiers jours de cotation."}, {"r": "o", "t": "Résultats des stress tests taux, liquidité et change", "why": "Le CRO doit savoir quels fonds sont les plus sensibles avant la réunion de la Fed de décembre.", "action": "Lui remonter une synthèse : top 5 des fonds par sensibilité, dépassements éventuels de limites, besoins de collatéral."}, {"r": "o", "t": "Surveillance de contrepartie : Deutsche Bank", "why": "Sujet de réputation qui peut évoluer vite. Une mise sous surveillance formelle est un signal attendu d'une 2e ligne Risk.", "action": "Proposer une mise sous surveillance (watchlist) avec un point de situation sur les expositions."}, {"r": "o", "t": "Tendance de marché dégradée", "why": "Les trois grands indices américains perdent plus de 3 % en novembre, une première depuis 2008 selon Bespoke. Le S&P 500 se dirige vers une 6e baisse d'affilée ; l'indice mondial MSCI ACWI est au plus bas depuis avril.", "action": "Information au CRO ; préparer un point si les baisses continuent ou si le VIX dépasse 30 (seuil rouge)."}, {"r": "g", "t": "Rappel réglementaire FINMA", "why": "La FINMA a publié en juin 2026 la Communication 03/2026 sur les risques des produits en gestion de portefeuille (liquidité, valorisation, concentration, conflits d'intérêts) et met l'accent sur la gestion du risque de liquidité dans l'asset management.", "action": "Vérifier que la documentation des stress tests et des contrôles de liquidité est à jour en cas de demande du superviseur."}], "emerging": [{"r": "o", "t": "Crédit privé : décalage de liquidité", "horizon": "6–18 mois", "why": "Les autorités européennes (ESMA, EBA, EIOPA) en font une vulnérabilité clé à l'automne 2026 : des fonds de crédit privé peu liquides avec des rachats possibles pourraient transmettre un stress aux banques, surtout via les expositions aux États-Unis."}, {"r": "o", "t": "Dépendance aux prestataires externes et cyber", "horizon": "permanent", "why": "Les autorités européennes citent les dépendances externes et les cybermenaces parmi les vulnérabilités clés. La FINMA classe le cyber parmi les risques principaux. Pour un asset manager, cela touche les fournisseurs de données, le cloud et les dépositaires (règles DORA dans l'UE)."}, {"r": "o", "t": "Fin de la diversification actions/obligations", "horizon": "12–24 mois", "why": "Avec une inflation tenace et des taux qui montent, actions et obligations peuvent baisser ensemble. Les portefeuilles mixtes et les modèles de risque basés sur les corrélations passées peuvent sous-estimer les pertes."}, {"r": "o", "t": "Valorisations et concentration liées à l'IA", "horizon": "6–12 mois", "why": "L'IA est devenue la première crainte des gérants mondiaux (enquête BofA de novembre). Les grandes entrées en bourse (Anthropic aujourd'hui) testent l'appétit des investisseurs."}, {"r": "g", "t": "Glissement des fonds traditionnels vers les ETF", "horizon": "structurel", "why": "Aux États-Unis, sur une même semaine, environ 27 milliards de dollars sont entrés dans les ETF tandis qu'environ 80 milliards sont sortis des fonds traditionnels (monétaires compris). C'est un risque business (frais, parts de marché) plus qu'un risque de marché, mais il compte pour un asset manager."}, {"r": "g", "t": "Conduite et adéquation des produits", "horizon": "permanent", "why": "La FINMA place un nombre croissant de gestionnaires sous surveillance intensive pour des défauts d'adéquation (produits non adaptés au profil du client) et cible les produits maison et les conflits d'intérêts."}], "notes": {"stress": "Ces six sujets ne signifient pas qu'il y a un problème. Ils signifient que les marchés ont assez bougé pour que les résultats des derniers stress tests soient peut-être dépassés. L'objectif est de vérifier, fonds par fonds, que les limites et la liquidité tiennent avec des chocs mis à jour.", "escalate": "Au CRO, on remonte ce qui peut changer une décision : un changement de régime (taux), un résultat de stress test, une contrepartie à surveiller, ou une attente du régulateur. Le reste reste dans le suivi courant.", "emerging": "Ce sont des tendances de fond, pas des urgences. Elles servent à préparer la cartographie des risques et les scénarios des prochains mois. L'horizon indique quand le risque pourrait se matérialiser."}, "disclaimer": "Vue générique d'un asset manager, construite à partir des marchés et des publications des régulateurs. Elle ne connaît pas les positions réelles de ton entreprise : chaque point est une piste à vérifier avec les données internes. Ce n'est pas un conseil en investissement.", "sources": [{"title": "Yahoo Finance : Wall Street et Anthropic", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-090910916.html"}, {"title": "Newsbeep : novembre, première depuis 2008", "url": "https://www.newsbeep.com/us/922702/"}, {"title": "Reuters via Yahoo : Anthropic et futures du Nasdaq", "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-jump-anthropics-record-090243474.html"}, {"title": "Bloomberg : MSCI ACWI et futures", "url": "https://www.bloomberg.com/news/articles/2026-11-18/stock-market-today-dow-s-p-live-updates"}, {"title": "ESAs : mise à jour des risques, automne 2026", "url": "https://esma.europa.eu/press-news/esma-news/esas-call-vigilance-over-external-dependencies-cyber-threats-and-private"}, {"title": "FINMA : conférence de presse annuelle 2026", "url": "https://www.finma.ch/en/documentation/finma-publications/addresses-and-specialist-articles/referate-folder/20260421-stefan-walter-jmk-2026/"}, {"title": "FINMA Communication 03/2026 (Grant Thornton)", "url": "https://www.grantthornton.ch/en/insights/finma-guidance-03-2026-individual-portfolio-management-risks/"}, {"title": "Enquête BofA auprès des gérants, novembre 2026", "url": "https://atranicapital.substack.com/p/november-2026-bank-of-america-global"}, {"title": "LSEG Lipper : flux des fonds US", "url": "https://lipperalpha.refinitiv.com/reports/2026/11/u-s-weekly-update-trick-or-hike-fed-holds-inflation-haunts-and-growth-suprises/"}, {"title": "Quartz : sorties des fonds obligataires hypothécaires", "url": "https://qz.com/us-mortgage-bond-fund-outflows-worst-since-2021-101226"}, {"title": "CNN : taux à 2 ans +17 pb le 10/11", "url": "https://www.cnn.com/2026/11/10/investing/bond-yields-inflation-fed"}]}, "stars": {"featured": {"r": "r", "title": "Anthropic (ANT)", "text": "Première cotation vers 17h50 (Genève) à 111,50 $, 34 % au-dessus du prix d'introduction (83 $), pour une valorisation d'environ 2 000 milliards de dollars. Plus haut du jour 114,99 $, plus bas 92,72 $ ; vers 21h20, l'action s'échangeait vers 96 $ (environ +16 %)."}, "groups": [{"id": "us_tech", "title": "Géants de la tech américaine", "asof": "Clôtures du 18/11 · variation du jour en séance le 19/11", "full": true, "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.", "rows": [{"id": "aapl", "r": "n", "flag": "🇺🇸", "name": "Apple", "ticker": "AAPL", "yahoo": "AAPL", "last": 352.45, "cur": "$", "d": null, "fromHigh": -1.1, "scope": "iPhone, Mac, services · résiste le mieux", "w": -0.89, "y": 32.2, "ytd": 30.1, "sub": "Clôture du 18/11 · capitalisation ≈ 5 100 milliards $", "outlook": {"tone": "Neutre", "text": "Valeur refuge de la tech, tout près de son record et meilleure performance des « 7 » en 2026. Revers de la médaille : elle est chère (environ 39 fois ses bénéfices), donc sensible à une rotation."}}, {"id": "msft", "r": "g", "flag": "🇺🇸", "name": "Microsoft", "ticker": "MSFT", "yahoo": "MSFT", "last": 508.29, "cur": "$", "d": -0.66, "fromHigh": -8.9, "scope": "Logiciels et cloud Azure · partenaire d'Anthropic", "w": -2.46, "y": 3.8, "ytd": 5.8, "sub": "Clôture du 18/11 · variation du jour en séance (≈ 17h)", "outlook": {"tone": "Neutre", "text": "Partenaire et client d'Anthropic, porté par le cloud Azure. Le titre a reculé d'environ 4 % en un mois avec la défiance envers les dépenses dans l'IA."}}, {"id": "nvda", "r": "g", "flag": "🇺🇸", "name": "Nvidia", "ticker": "NVDA", "yahoo": "NVDA", "last": 150.96, "cur": "$", "d": -1.64, "fromHigh": -36.9, "scope": "Puces pour l'IA · secoué par une affaire visant son patron", "w": -13.11, "y": -16.6, "ytd": -18.9, "sub": "Clôture du 18/11 · variation du jour en séance (≈ 17h)", "outlook": {"tone": "Prudent", "text": "Ventes trimestrielles en hausse de 103 %, mais l'action a perdu environ 30 % en un mois après le départ forcé de son patron. Volatilité forte à court terme ; valorisation désormais plus basse (≈ 19 fois les bénéfices)."}}, {"id": "googl", "r": "g", "flag": "🇺🇸", "name": "Alphabet (Google)", "ticker": "GOOGL", "yahoo": "GOOGL", "last": 282.44, "cur": "$", "d": -0.55, "fromHigh": -29.8, "scope": "Recherche, YouTube, cloud · investisseur dans Anthropic", "w": -3.75, "y": -0.4, "ytd": -9.6, "sub": "Clôture du 18/11 · variation du jour en séance (≈ 17h)", "outlook": {"tone": "Neutre", "text": "Investisseur dans Anthropic, l'action a bondi à l'ouverture puis s'est repliée. Valorisation la plus basse des « 7 » (≈ 15 fois les bénéfices), mais doutes sur la recherche Google face à l'IA."}}, {"id": "amzn", "r": "g", "flag": "🇺🇸", "name": "Amazon", "ticker": "AMZN", "yahoo": "AMZN", "last": 267.74, "cur": "$", "d": -2.65, "fromHigh": null, "scope": "Commerce en ligne, cloud AWS · investisseur dans Anthropic", "w": 0.59, "y": 20.3, "ytd": 16.0, "sub": "Clôture du 18/11 · variation du jour en séance (≈ 17h)", "outlook": {"tone": "Neutre", "text": "Autre grand investisseur dans Anthropic et premier fournisseur de cloud (AWS). Bonne année (+20 %), mais l'action a rendu ses gains du matin."}}, {"id": "meta", "r": "n", "flag": "🇺🇸", "name": "Meta", "ticker": "META", "yahoo": "META", "last": 616.38, "cur": "$", "d": null, "fromHigh": -21.7, "scope": "Facebook, Instagram, WhatsApp", "w": null, "y": 3.5, "ytd": -6.4, "sub": "Clôture du 18/11", "outlook": {"tone": "Prudent", "text": "Environ 22 % sous son record d'août : les investisseurs s'inquiètent du coût de ses investissements dans l'IA. Valorisation modérée (≈ 21 fois les bénéfices)."}}, {"id": "tsla", "r": "g", "flag": "🇺🇸", "name": "Tesla", "ticker": "TSLA", "yahoo": "TSLA", "last": 377.9, "cur": "$", "d": -1.52, "fromHigh": null, "scope": "Voitures électriques, robotique", "w": -1.82, "y": -4.4, "ytd": -14.7, "sub": "Cours en séance le 19/11 · 1 sem. à la clôture du 18/11", "outlook": {"tone": "Prudent", "text": "En baisse depuis janvier (≈ −15 %) et très chère (plus de 400 fois ses bénéfices) : l'action dépend surtout des promesses sur la robotique et la conduite autonome."}}, {"id": "avgo", "r": "n", "flag": "🇺🇸", "name": "Broadcom", "ticker": "AVGO", "yahoo": "AVGO", "last": 347.01, "cur": "$", "d": null, "fromHigh": null, "scope": "Puces et réseaux pour l'IA · partenaire d'Anthropic", "w": null, "y": null, "ytd": null, "sub": "Dernière clôture trouvée : 13/11 · plage sur 1 an : 290–495 $", "outlook": {"tone": "Positif", "text": "51 analystes la recommandent en moyenne à l'achat (« Strong Buy »), avec un objectif moyen d'environ 529 $ à 12 mois. Partenaire d'Anthropic pour les puces."}}]}, {"id": "ia_new", "title": "Nouvelles cotations IA", "asof": "En séance, vers 19h (Genève)", "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.", "rows": [{"id": "ant", "r": "r", "flag": "🇺🇸", "name": "Anthropic", "ticker": "ANT", "yahoo": "ANT", "last": 96.18, "cur": "$", "d": 15.88, "fromHigh": null, "scope": "Créateur de l'assistant IA Claude", "sub": "Cours en séance (≈ 21h20) · ouverture 111,50 $ · fourchette 92,72–114,99 $ · variation vs prix d'introduction (83 $)", "w": null, "y": null, "ytd": null, "outlook": {"tone": "Prudent", "text": "Premiers jours généralement très volatils après une introduction. Les banques qui ont organisé l'opération ne publient leurs premières analyses qu'après une période de silence (environ 25 jours, donc vers mi-décembre)."}}]}, {"id": "suisse", "title": "Géants suisses", "asof": "En séance, vers 11h30 (Genève)", "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.", "rows": [{"id": "nesn", "r": "g", "flag": "🇨🇭", "name": "Nestlé", "ticker": "NESN", "yahoo": "NESN.SW", "last": null, "cur": "CHF", "d": -1.4, "fromHigh": null, "scope": "Alimentation · Vevey", "w": null, "y": null}, {"id": "novn", "r": "g", "flag": "🇨🇭", "name": "Novartis", "ticker": "NOVN", "yahoo": "NOVN.SW", "last": null, "cur": "CHF", "d": -2.6, "fromHigh": null, "scope": "Pharma · Bâle · plus forte baisse du SMI", "w": null, "y": null}, {"id": "rog", "r": "g", "flag": "🇨🇭", "name": "Roche", "ticker": "ROG", "yahoo": "RO.SW", "last": null, "cur": "CHF", "d": -0.6, "fromHigh": null, "scope": "Pharma et diagnostic · Bâle", "w": null, "y": null}, {"id": "ubsg", "r": "n", "flag": "🇨🇭", "name": "UBS", "ticker": "UBSG", "yahoo": "UBSG.SW", "last": null, "cur": "CHF", "d": null, "fromHigh": null, "scope": "Banque et gestion de fortune · Zurich", "w": null, "y": null}, {"id": "abbn", "r": "g", "flag": "🇨🇭", "name": "ABB", "ticker": "ABBN", "yahoo": "ABBN.SW", "last": null, "cur": "CHF", "d": 2.59, "fromHigh": null, "scope": "Électrification et automatisation · valeur vers 9h45", "w": null, "y": null}]}, {"id": "europe", "title": "Géants européens", "asof": "Données du jour non trouvées", "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.", "rows": [{"id": "asml", "r": "n", "flag": "🇳🇱", "name": "ASML", "ticker": "ASML", "yahoo": "ASML.AS", "last": null, "cur": "€", "d": null, "fromHigh": null, "scope": "Machines pour fabriquer les puces · 1re capitalisation d'Europe", "w": null, "y": null}, {"id": "sap", "r": "n", "flag": "🇩🇪", "name": "SAP", "ticker": "SAP", "yahoo": "SAP.DE", "last": null, "cur": "€", "d": null, "fromHigh": null, "scope": "Logiciels de gestion d'entreprise", "w": null, "y": null}, {"id": "mc", "r": "n", "flag": "🇫🇷", "name": "LVMH", "ticker": "MC", "yahoo": "MC.PA", "last": null, "cur": "€", "d": null, "fromHigh": null, "scope": "Luxe (Louis Vuitton, Dior, Moët)", "w": null, "y": null}]}], "disclaimer": "Notes 🟢🟠🔴 sur la variation du jour (actions seules : < ±3 %, ±3–6 %, ≥ ±6 %). « Perspective » (Positif / Neutre / Prudent) résume la tendance à court terme d'après l'actualité et, quand ils existent, les avis d'analystes : ce n'est pas une recommandation d'achat ou de vente.", "sources": [{"title": "Chartrow : performances au 18/11 (1 mois, 1 an, depuis janvier)", "url": "https://chartrow.com/lists/magnificent-7"}, {"title": "Stock Analysis : historiques de cours", "url": "https://stockanalysis.com/stocks/nvda/history/"}, {"title": "Stock Analysis : Broadcom, consensus des analystes", "url": "https://stockanalysis.com/stocks/avgo/"}, {"title": "Yahoo Finance : variations du 19/11", "url": "https://finance.yahoo.com/markets/stocks/articles/one-magnificent-seven-stock-could-160310994.html"}, {"title": "24/7 Wall St. : distance aux records", "url": "https://247wallst.com/investing/2026/11/18/apple-is-the-only-magnificent-seven-stock-near-a-record/"}, {"title": "Motley Fool : Anthropic en séance", "url": "https://www.fool.com/investing/2026/11/19/why-anthropic-stock-is-up-today/"}, {"title": "Kiplinger : Anthropic, plus haut du jour", "url": "https://www.kiplinger.com/investing/live/anthropic-ipo-updates-and-commentary"}, {"title": "CNN : ouverture d'Anthropic", "url": "https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo"}, {"title": "Zonebourse : Bourse de Zurich", "url": "https://www.zonebourse.com/actualite-bourse/bourse-zurich-du-rouge-en-fin-de-matinee-pour-le-smi-ce785ed2d98cf421"}]}, "press": {"asof": "relevé du 19/11 au soir", "items": [{"src": "Le Temps", "r": "g", "t": "Les investisseurs se ruent sur les actions d'Anthropic, qui entre en bourse avec des chiffres record", "why": "Le quotidien genevois revient sur l'engouement autour de l'introduction en bourse la plus importante de l'histoire.", "url": "https://www.letemps.ch/", "date": "19 novembre 2026"}, {"src": "Le Temps", "r": "o", "t": "Les ex-gérants d'UBS et de Credit Suisse vont chez Raiffeisen et dans les banques cantonales", "why": "Environ 750 conseillers ont quitté UBS depuis juillet 2025 ; près de 3000 emplois devraient disparaître en Suisse. La concurrence pour les talents s'intensifie sur la place financière.", "url": "https://letemps.ch/economie/finance/les-ex-gerants-d-ubs-et-credit-suisse-vont-chez-raiffeisen-et-dans-les-banques-cantonales", "date": "19 novembre 2026"}, {"src": "Le Temps", "r": "o", "t": "L'IA dope la croissance mondiale, mais fragilise aussi les assureurs", "why": "Selon l'étude Sigma de Swiss Re, la croissance mondiale dépend de plus en plus de quelques secteurs, surtout l'IA : une concentration qui expose davantage aux chocs.", "url": "https://www.letemps.ch/economie/finance/l-ia-dope-la-croissance-mondiale-mais-fragilise-aussi-les-assureurs", "date": "17 novembre 2026"}, {"src": "Le Temps", "r": "o", "t": "La filiale italienne de Revolut placée sous administration judiciaire", "why": "Lacunes dans les contrôles antiblanchiment. Rappel que les défaillances de conformité peuvent avoir des conséquences lourdes et rapides.", "url": "https://letemps.ch/economie/finance/la-filiale-italienne-de-revolut-placee-sous-administration-judiciaire-pour-des-lacunes-dans-ses-controles-antiblanchiment", "date": "16 novembre 2026"}, {"src": "Le Temps", "r": "g", "t": "Feu vert de l'UE au rachat de Commerzbank par UniCredit", "why": "Création d'un géant bancaire européen ; Bruxelles n'y voit pas de problème de concurrence. À suivre pour les relations de contrepartie avec ces deux banques.", "url": "https://letemps.ch/economie/finance/l-ue-donne-son-feu-vert-a-unicredit-pour-racheter-commerzbank-et-creer-un-geant-bancaire-europeen", "date": "16 novembre 2026"}, {"src": "Le Temps", "r": "o", "t": "Pourquoi la tech inquiète, au-delà de l'affaire Nvidia et de la chute de Jensen Huang", "why": "Les six géants de la tech prévoient d'investir 7000 milliards de dollars d'ici 2030, souvent par la dette, alors que les revenus générés par l'IA suivent moins vite.", "url": "https://www.letemps.ch/economie/finance/pourquoi-la-tech-inquiete-au-dela-de-l-affaire-nvidia-et-de-la-chute-de-jensen-huang", "date": "15 novembre 2026"}, {"src": "Le Temps", "r": "g", "t": "La bourse suisse vers de nouveaux sommets grâce aux craintes sur la tech", "why": "Le SMI a franchi pour la première fois les 15 000 points début novembre, porté par la pharma et son profil défensif.", "url": "https://www.letemps.ch/economie/finance/les-craintes-sur-la-tech-propulsent-la-bourse-suisse-vers-de-nouveaux-sommets", "date": "5 novembre 2026"}, {"src": "Financial Times", "r": "n", "t": "Articles non disponibles dans ce relevé", "why": "Le site du Financial Times est payant et bloque l'accès à mes outils de recherche. La version GitHub du Radar affichera les titres de ses flux publics (avec lien vers l'article, lisible avec votre abonnement).", "url": "https://www.ft.com/markets", "date": ""}], "note": "Le Temps donne l'angle suisse et romand (place financière, banques, Genève). Le Financial Times couvre les marchés mondiaux en profondeur. Les titres sont repris avec un lien vers l'article ; la lecture complète peut nécessiter un abonnement."}};
+let S = FALLBACK, HIST = [FALLBACK];
+const TABS = ["synthese","indices","volatilite","actifs","stars","risques","horaires"];
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const dot = r => `<i class="dot ${["g","o","r"].includes(r) ? r : "n"}" aria-label="${({g:"normal",o:"à surveiller",r:"attention"})[r] || "pas de donnée"}"></i>`;
+const fmtN = (v, d = 2) => v == null ? "n.d." : v.toLocaleString("fr-CH", {minimumFractionDigits: d, maximumFractionDigits: d});
+const fmtP = v => v == null ? "n.d." : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toLocaleString("fr-CH", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " %";
+const cls = (v, inv) => v == null ? "flat" : (inv ? -v : v) > 0 ? "up" : (inv ? -v : v) < 0 ? "down" : "flat";
+const INV = new Set(["vix","v2x"]);
+const sev = {r: 3, o: 2, g: 1, n: 0};
+
+/* market state computed live, in Geneva time */
+function genevaNow() {
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-GB", {timeZone: "Europe/Zurich", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false}).formatToParts(new Date()).map(x => [x.type, x.value]));
+  return {wd: p.weekday, min: (+p.hour % 24) * 60 + +p.minute};
+}
+function state(open, close) {
+  if (!open || !close) return "calculé";
+  const {wd, min} = genevaNow();
+  if (wd === "Sat" || wd === "Sun") return "fermé";
+  const t = s => +s.slice(0, 2) * 60 + +s.slice(3);
+  return min >= t(open) && min < t(close) ? "ouvert" : "fermé";
+}
+const hours = (o, c) => o && c ? `${o.replace(":", "h")}–${c.replace(":", "h")}` : "calculé";
+
+/* history: one point per snapshot for a given row id */
+function series(id) {
+  const pts = [];
+  for (const s of HIST.slice().reverse()) {
+    const all = [...(s.indices || []).flatMap(g => g.rows), ...(s.vol?.rows || []), ...Object.values(s.assets || {}).flatMap(a => a.rows || [])];
+    const r = all.find(x => x.id === id);
+    if (r && typeof r.last === "number") pts.push(r.last);
+  }
+  return pts;
+}
+function spark(pts, inv) {
+  if (pts.length < 2) return `<div class="nohist">Courbe dès le prochain relevé</div>`;
+  const w = 140, h = 34, mn = Math.min(...pts), mx = Math.max(...pts), k = mx - mn || 1;
+  const xy = pts.map((v, i) => [i * w / (pts.length - 1), h - 3 - (v - mn) / k * (h - 6)]);
+  const line = xy.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join("");
+  const last = xy[xy.length - 1], up = (pts[pts.length - 1] >= pts[0]) !== !!inv;
+  const col = up ? "var(--up)" : "var(--down)";
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true"><path d="${line}L${w} ${h}L0 ${h}Z" fill="${col}" opacity=".12"/><path d="${line}" fill="none" stroke="${col}" stroke-width="1.6" vector-effect="non-scaling-stroke"/><circle cx="${last[0]}" cy="${last[1]}" r="2.6" fill="${col}"/></svg>`;
+}
+
+const note = t => t ? `<div class="note"><span aria-hidden="true">👉</span><div><b>Ce qu'il faut retenir :</b> ${esc(t)}</div></div>` : "";
+const items = arr => `<div class="card items">${(arr || []).map(i => `<div class="item">${dot(i.r)}<div><b>${esc(i.t)}</b><span>${esc(i.why)}</span></div></div>`).join("")}</div>`;
+const worst = rows => (rows || []).reduce((a, r) => sev[r.r] > sev[a] ? r.r : a, "n");
+
+function idxList(rows, opts = {}) {
+  return `<div class="card list">${rows.map((r, i) => {
+    const key = `${opts.k || "x"}-${i}`;
+    const val = r.d !== undefined && typeof r.d === "number" ? `<span class="${cls(r.d, INV.has(r.id))}">${fmtP(r.d)}</span>` : `<span>${esc(r.d ?? "n.d.")}</span>`;
+    const sub = typeof r.last === "number" && opts.level ? `<small class="num">${fmtN(r.last)}</small>` : (r.value ? `<small>${esc(r.value)}</small>` : "");
+    const det = [
+      typeof r.last === "number" && !opts.level ? ["Niveau", fmtN(r.last)] : null,
+      r.w !== undefined ? ["Semaine", fmtP(r.w)] : null,
+      r.ytd !== undefined ? ["Depuis 1er janv.", fmtP(r.ytd)] : null,
+      r.open !== undefined ? ["Horaires (Genève)", `${hours(r.open, r.close)} · ${state(r.open, r.close)}`] : null,
+      r.sub ? ["Détail", r.sub] : null,
+      ["Scope", r.scope || r.bench || ""]
+    ].filter(Boolean);
+    return `<button class="row" aria-expanded="false" aria-controls="${key}">${dot(r.r)}<span class="nm">${esc(r.flag || "")} ${esc(r.name || r.ticker)}<small>${esc(r.scope || r.bench || "")}</small></span><span class="v num">${val}${sub}</span><svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+      <dl class="detail num" id="${key}" hidden>${det.map(([a, b]) => `<dt>${esc(a)}</dt><dd>${esc(b)}</dd>`).join("")}</dl>`;
+  }).join("")}</div>`;
+}
+
+function stamp() {
+  const d = new Date(S.ts);
+  const when = isNaN(d) ? S.ts : d.toLocaleString("fr-CH", {timeZone: "Europe/Zurich", weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit"});
+  document.getElementById("stamp").textContent = `${S.edition || "Relevé"} · ${when} (Genève)`;
+}
+
+let FILTER = null;
+const rowItem = r => ({r: r.r, t: `${r.flag || ""} ${r.name || r.ticker} : ${typeof r.d === "number" ? fmtP(r.d) : (r.d ?? "n.d.")}${r.value ? " · " + r.value : (typeof r.last === "number" ? " · " + fmtN(r.last) : "")}`, why: r.scope || r.bench || ""});
+function collect() {
+  const t = {gold: "Or", crypto: "Cryptomonnaies", fx: "Devises"};
+  return [
+    {title: "En bref", list: S.bref},
+    ...S.indices.map(g => ({title: "Indices · " + g.title, list: g.rows.map(rowItem), note: g.note})),
+    {title: "Futures", list: S.futures ? [S.futures] : []},
+    {title: "Volatilité", list: S.vol.rows.map(rowItem), note: S.vol.note},
+    {title: "Taux et pétrole", list: S.rates.rows.map(rowItem), note: S.rates.note},
+    {title: "Dérivés", list: S.derives || []},
+    ...Object.entries(S.assets).map(([k, a]) => ({title: t[k] || k, list: a.rows.map(rowItem), note: a.note})),
+    {title: "Contrepartie", list: S.counterparty},
+    {title: "Inflation & banques centrales", list: S.macro.rows, note: S.macro.note},
+    ...(S.press ? [{title: "Presse · Le Temps & FT", list: S.press.items || []}] : []),
+    ...(S.stars ? S.stars.groups.map(g => ({title: "Stars · " + g.title, list: g.rows.map(r => ({r: r.r, t: `${r.name} ${r.d == null ? "n.d." : (r.d > 0 ? "+" : "") + String(r.d).replace(".", ",") + " %"}`, why: r.scope || ""}))})) : []),
+    ...(S.cro ? [{title: "CRO · Stress test immédiat", list: S.cro.stress || []}, {title: "CRO · À remonter", list: S.cro.escalate || []}, {title: "CRO · Risques émergents", list: S.cro.emerging || []}] : [])
+  ];
+}
+function filtered(groups) {
+  const lab = {r: "attention", o: "à surveiller", g: "normal"}[FILTER];
+  const hits = groups.map(g => ({...g, list: g.list.filter(x => x.r === FILTER)})).filter(g => g.list.length);
+  const head = `<div class="card pad filterbar">${dot(FILTER)}<span>Affichage filtré : <b>${lab}</b> uniquement (${hits.reduce((n, g) => n + g.list.length, 0)})</span><button class="clear" data-filter="${FILTER}">Tout afficher</button></div>`;
+  return blk(head, "full") + (hits.length ? hits.map(g => blk(`<h2 class="h2">${dot(FILTER)} ${esc(g.title)}</h2>${items(g.list)}${note(g.note)}`)).join("") : blk(`<div class="card pad">Aucune information dans cette catégorie.</div>`, "full"));
+}
+const blk = (h, c = "") => `<section class="blk ${c}">${h}</section>`;
+function pressBlock() {
+  const p = S.press;
+  if (!p || !(p.items || []).length) return "";
+  const cls_ = s => /financial times|ft/i.test(s) ? "ft" : /le temps/i.test(s) ? "lt" : "";
+  return blk(`<h2 class="h2">${dot(worst(p.items))} À la une : Le Temps & Financial Times <small>${esc(p.asof || "")}</small></h2><div class="card items press">${p.items.map(i => `<div class="item">${dot(i.r)}<div><b><span class="srcb ${cls_(i.src)}">${esc(i.src)}</span>${i.url ? `<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.t)}</a>` : esc(i.t)}</b><span>${esc(i.why)}</span>${i.date ? `<span class="pdate">${esc(i.date)}</span>` : ""}</div></div>`).join("")}</div>${note(p.note)}`, "full");
+}
+
+const VIEWS = {
+  synthese() {
+    const groups = collect();
+    const c = {r: 0, o: 0, g: 0}; groups.flatMap(g => g.list).forEach(x => { if (c[x.r] !== undefined) c[x.r]++; });
+    const label = {r: "Attention", o: "À surveiller", g: "Calme"}[S.overall] || "—";
+    const pick = [["smi", "🇨🇭 SMI"], ["spx", "🇺🇸 S&P 500"], ["vix", "🇺🇸 VIX"], ["chfeur", "🇨🇭 CHF/EUR"], ["gold", "🥇 Or"], ["btc", "₿ Bitcoin"]];
+    const flat = [...S.indices.flatMap(g => g.rows), ...S.vol.rows, ...Object.values(S.assets).flatMap(a => a.rows)];
+    return blk(`<div class="card hero"><div class="lbl">Niveau d'alerte du jour</div><div class="big">${dot(S.overall)} ${label}</div><p>${esc(S.headline)}</p></div>`, "full hero-wrap")
+      + blk(`<div class="counts">${[["r", "down", "attention", ""], ["o", "", "à surveiller", "color:var(--warn)"], ["g", "up", "normal", ""]].map(([k, cl, lb, st]) => `<button class="card count" data-filter="${k}" aria-pressed="${FILTER === k}"><b class="${cl}" style="${st}">${c[k]}</b><span>${lb}</span></button>`).join("")}</div>`, "full counts-wrap")
+      + (FILTER ? filtered(groups) : ("" + blk(`<h2 class="h2">En bref</h2>${items(S.bref)}`) + pressBlock()
+      + blk(`<h2 class="h2">Repères <small>évolution sur les derniers relevés</small></h2>
+      <div class="tiles">${pick.map(([id, n]) => { const r = flat.find(x => x.id === id) || {}; const v = typeof r.d === "number" ? `<span class="${cls(r.d, INV.has(id))}">${fmtP(r.d)}</span>` : esc(r.d ?? "n.d."); return `<div class="card tile"><span class="n">${dot(r.r)} ${esc(n)}</span><span class="v num">${typeof r.last === "number" && !r.value ? fmtN(r.last, r.last < 10 ? 4 : 2) : esc(r.value || "n.d.")}</span><span class="num" style="font-size:12.5px">${v}</span>${spark(series(id), INV.has(id))}</div>`; }).join("")}</div>`)
+      + blk(`<h2 class="h2">${dot(worst(S.counterparty))} Contrepartie</h2>${items(S.counterparty)}`)
+      + blk(`<h2 class="h2">${dot(worst(S.macro.rows))} Inflation & banques centrales</h2>${items(S.macro.rows)}
+      <div class="card agenda">${S.macro.agenda.map(a => `<span class="t">${esc(a.time)}</span><span>${esc(a.t)}</span>`).join("")}</div>${note(S.macro.note)}`)
+      + (S.risk ? blk(`<h2 class="h2">Lecture risque</h2><div class="card pad">${esc(S.risk)}</div>`) : "")
+      + blk(`<h2 class="h2">Lexique</h2><dl class="card pad lex" style="margin:0">${S.lexique.map(l => `<dt>${esc(l.term)}</dt><dd>${esc(l.def)}</dd>`).join("")}</dl>`)
+      + blk(`<h2 class="h2">Sources</h2><ul class="card src">${S.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("")}</ul>`, "full")));
+  },
+  indices() {
+    return S.indices.map((g, gi) => blk(`<h2 class="h2">${dot(worst(g.rows))} ${esc(g.title)} <small>${esc(g.asof || "")}</small></h2>${idxList(g.rows, {k: "g" + gi})}${note(g.note)}`)).join("") + (S.futures ? blk(`<h2 class="h2">Futures</h2>${items([S.futures])}`) : "");
+  },
+  volatilite() {
+    return blk(`<h2 class="h2">${dot(worst(S.vol.rows))} Volatilité <small>indices de nervosité</small></h2>${idxList(S.vol.rows.map(r => ({...r, value: fmtN(r.last)})), {k: "v"})}${note(S.vol.note)}`)
+      + blk(`<h2 class="h2">${dot(worst(S.rates.rows))} Taux à 10 ans et pétrole</h2>${idxList(S.rates.rows, {k: "t"})}${note(S.rates.note)}`)
+      + blk(`<h2 class="h2">${dot(worst(S.derives))} Dérivés</h2>${items(S.derives)}`);
+  },
+  actifs() {
+    const t = {gold: "Or", crypto: "Cryptomonnaies", fx: "Devises"};
+    return Object.entries(S.assets).map(([k, a]) => blk(`<h2 class="h2">${dot(worst(a.rows))} ${t[k] || k}</h2>${idxList(a.rows, {k: "a" + k})}${note(a.note)}`)).join("");
+  },
+};
+
+const pct = v => v == null ? "n.d." : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(2).replace(".", ",") + " %";
+const pxf = (v, c) => v == null ? "n.d." : v.toLocaleString("fr-CH", {maximumFractionDigits: v < 100 ? 2 : v < 1000 ? 1 : 0}) + " " + (c || "");
+function stkRows(rows) {
+  const tone = {"Positif": "pos", "Neutre": "neu", "Prudent": "pru"};
+  return `<div class="card">${rows.map(r => `<div class="stk">${dot(r.r)}<span class="nm">${esc(r.flag || "")} ${esc(r.name)}<span class="tk">${esc(r.ticker || "")}</span><small>${esc(r.scope || "")}</small></span><span class="px num">${pxf(r.last, r.cur)}<small><span class="${r.d > 0 ? "up" : r.d < 0 ? "down" : ""}">${r.d == null ? "jour n.d." : pct(r.d)}</span>${r.fromHigh != null ? ` · ${pct(r.fromHigh)} vs record` : ""}</small></span>
+    <div class="ext">${r.sub ? `<small class="sub">${esc(r.sub)}</small>` : ""}${(r.w !== undefined || r.y !== undefined) ? `<span class="ev num"><span>1 sem. <b class="${cls(r.w)}">${pct(r.w)}</b></span><span>1 an <b class="${cls(r.y)}">${pct(r.y)}</b></span>${r.ytd != null ? `<span>depuis janv. <b class="${cls(r.ytd)}">${pct(r.ytd)}</b></span>` : ""}</span>` : ""}${r.outlook ? `<span class="ol"><span class="tone ${tone[r.outlook.tone] || "neu"}">${esc(r.outlook.tone)}</span>${esc(r.outlook.text)}</span>` : ""}</div></div>`).join("")}</div>`;
+}
+VIEWS.stars = function () {
+  const st = S.stars;
+  if (!st) return blk(`<div class="card pad">Valeurs stars pas encore disponibles dans ce relevé.</div>`, "full");
+  const f = st.featured;
+  return (f ? blk(`<div class="card hero"><div class="lbl">Star du jour</div><div class="big">${dot(f.r)} ${esc(f.title)}</div><p>${esc(f.text)}</p></div>`, "full") : "")
+    + st.groups.map(g => blk(`<h2 class="h2">${dot(worst(g.rows))} ${esc(g.title)} <small>${esc(g.asof || "")}</small></h2>${stkRows(g.rows)}${note(g.note)}`, g.full ? "full" : "")).join("")
+    + blk(`<div class="card banner">${esc(st.disclaimer || "")}</div>`, "full")
+    + (st.sources?.length ? blk(`<h2 class="h2">Sources</h2><ul class="card src">${st.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("")}</ul>`, "full") : "");
+};
+
+const croItems = arr => `<div class="card items">${(arr || []).map(i => `<div class="item">${dot(i.r)}<div><b>${esc(i.t)}${i.horizon ? `<span class="hz">${esc(i.horizon)}</span>` : ""}</b><span>${esc(i.why)}</span>${i.action ? `<span class="act">${esc(i.action)}</span>` : ""}</div></div>`).join("")}</div>`;
+VIEWS.risques = function () {
+  const c = S.cro;
+  if (!c) return blk(`<div class="card pad">Vue risques pas encore disponible dans ce relevé.</div>`, "full");
+  const lvl = worst([...(c.stress || []), ...(c.escalate || [])]);
+  return blk(`<div class="card hero"><div class="lbl">Vue Chief Risk Officer · asset manager</div><div class="big">${dot(lvl)} ${esc({r: "Action requise", o: "Vigilance renforcée", g: "Sous contrôle"}[lvl] || "—")}</div><p>${esc(c.summary || "")}</p></div>`, "full")
+    + blk(`<h2 class="h2">${dot(worst(c.stress))} 1. À analyser tout de suite <small>stress tests à lancer</small></h2>${croItems(c.stress)}${note(c.notes?.stress)}`)
+    + blk(`<h2 class="h2">${dot(worst(c.escalate))} 2. À remonter au CRO <small>information et décision</small></h2>${croItems(c.escalate)}${note(c.notes?.escalate)}`)
+    + blk(`<h2 class="h2">${dot(worst(c.emerging))} 3. Risques émergents <small>tendances de fond</small></h2>${croItems(c.emerging)}${note(c.notes?.emerging)}`, "full")
+    + blk(`<div class="card banner">${esc(c.disclaimer || "")}</div>`, "full")
+    + (c.sources?.length ? blk(`<h2 class="h2">Sources</h2><ul class="card src">${c.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("")}</ul>`, "full") : "");
+};
+
+/* ---------- Horaires des bourses : heures locales officielles converties en heure de Genève (changements d'heure gérés automatiquement) ---------- */
+const WK = [1, 2, 3, 4, 5];
+const EXCH = [
+  {reg: "Europe", note: "Presque toute l'Europe continentale suit les mêmes horaires que Genève (9h–17h30). Londres ouvre et ferme une heure plus tôt en heure de Genève. Les changements d'heure se font le même jour partout en Europe : les écarts restent donc fixes.", list: [
+    {f: "🇨🇭", n: "SIX Swiss Exchange", c: "Zurich", i: "SMI", tz: "Europe/Zurich", s: [["09:00", "17:30"]]},
+    {f: "🇩🇪", n: "Deutsche Börse (Xetra)", c: "Francfort", i: "DAX", tz: "Europe/Berlin", s: [["09:00", "17:30"]]},
+    {f: "🇫🇷", n: "Euronext Paris", c: "Paris", i: "CAC 40", tz: "Europe/Paris", s: [["09:00", "17:30"]]},
+    {f: "🇳🇱", n: "Euronext Amsterdam", c: "Amsterdam", i: "AEX", tz: "Europe/Amsterdam", s: [["09:00", "17:30"]]},
+    {f: "🇮🇹", n: "Borsa Italiana", c: "Milan", i: "FTSE MIB", tz: "Europe/Rome", s: [["09:00", "17:30"]]},
+    {f: "🇪🇸", n: "Bolsa de Madrid (BME)", c: "Madrid", i: "IBEX 35", tz: "Europe/Madrid", s: [["09:00", "17:30"]]},
+    {f: "🇦🇹", n: "Wiener Börse", c: "Vienne", i: "ATX", tz: "Europe/Vienna", s: [["09:00", "17:30"]]},
+    {f: "🇸🇪", n: "Nasdaq Stockholm", c: "Stockholm", i: "OMXS30", tz: "Europe/Stockholm", s: [["09:00", "17:30"]]},
+    {f: "🇩🇰", n: "Nasdaq Copenhague", c: "Copenhague", i: "OMXC25", tz: "Europe/Copenhagen", s: [["09:00", "17:00"]]},
+    {f: "🇳🇴", n: "Oslo Børs", c: "Oslo", i: "OBX", tz: "Europe/Oslo", s: [["09:00", "16:20"]]},
+    {f: "🇵🇱", n: "Bourse de Varsovie (GPW)", c: "Varsovie", i: "WIG20", tz: "Europe/Warsaw", s: [["09:00", "17:00"]]},
+    {f: "🇬🇧", n: "London Stock Exchange", c: "Londres", i: "FTSE 100", tz: "Europe/London", s: [["08:00", "16:30"]]},
+    {f: "🇹🇷", n: "Borsa Istanbul", c: "Istanbul", i: "BIST 100", tz: "Europe/Istanbul", s: [["10:00", "18:00"]]}
+  ]},
+  {reg: "Amériques", note: "Wall Street ouvre à 15h30 et ferme à 22h, heure de Genève. Attention aux changements d'heure : les États-Unis changent d'heure environ 2 à 3 semaines avant l'Europe au printemps (et une semaine après en automne). Pendant ces semaines, Wall Street ouvre à 14h30. Ce tableau en tient compte automatiquement.", list: [
+    {f: "🇺🇸", n: "NYSE et Nasdaq", c: "New York", i: "S&P 500, Dow, Nasdaq", tz: "America/New_York", s: [["09:30", "16:00"]]},
+    {f: "🇨🇦", n: "Toronto Stock Exchange", c: "Toronto", i: "S&P/TSX", tz: "America/Toronto", s: [["09:30", "16:00"]]},
+    {f: "🇲🇽", n: "Bolsa Mexicana (BMV)", c: "Mexico", i: "S&P/BMV IPC", tz: "America/Mexico_City", s: [["08:30", "15:00"]]},
+    {f: "🇧🇷", n: "B3", c: "São Paulo", i: "Ibovespa", tz: "America/Sao_Paulo", s: [["10:00", "17:00"]], approx: true}
+  ]},
+  {reg: "Asie-Pacifique", note: "Les bourses asiatiques travaillent pendant notre nuit et notre matinée. Tokyo, Hong Kong, la Chine et Singapour font une pause à midi (heure locale) : la colonne indique ces pauses. Sydney et Auckland ouvrent la veille au soir ou vers minuit, heure de Genève : ce sont les premières bourses de la journée.", list: [
+    {f: "🇳🇿", n: "NZX", c: "Wellington", i: "S&P/NZX 50", tz: "Pacific/Auckland", s: [["10:00", "16:45"]]},
+    {f: "🇦🇺", n: "ASX", c: "Sydney", i: "S&P/ASX 200", tz: "Australia/Sydney", s: [["10:00", "16:00"]]},
+    {f: "🇯🇵", n: "Tokyo Stock Exchange", c: "Tokyo", i: "Nikkei 225, TOPIX", tz: "Asia/Tokyo", s: [["09:00", "11:30"], ["12:30", "15:30"]]},
+    {f: "🇰🇷", n: "Korea Exchange", c: "Séoul", i: "Kospi", tz: "Asia/Seoul", s: [["09:00", "15:30"]]},
+    {f: "🇹🇼", n: "Taiwan Stock Exchange", c: "Taipei", i: "TAIEX", tz: "Asia/Taipei", s: [["09:00", "13:30"]]},
+    {f: "🇨🇳", n: "Shanghai et Shenzhen", c: "Chine", i: "Shanghai Composite, CSI 300", tz: "Asia/Shanghai", s: [["09:30", "11:30"], ["13:00", "15:00"]]},
+    {f: "🇭🇰", n: "Hong Kong Exchanges", c: "Hong Kong", i: "Hang Seng", tz: "Asia/Hong_Kong", s: [["09:30", "12:00"], ["13:00", "16:00"]]},
+    {f: "🇸🇬", n: "Singapore Exchange", c: "Singapour", i: "STI", tz: "Asia/Singapore", s: [["09:00", "12:00"], ["13:00", "17:00"]]},
+    {f: "🇮🇳", n: "NSE et BSE", c: "Mumbai", i: "Nifty 50, Sensex", tz: "Asia/Kolkata", s: [["09:15", "15:30"]]}
+  ]},
+  {reg: "Moyen-Orient et Afrique", note: "L'Arabie saoudite travaille du dimanche au jeudi : elle est fermée le vendredi mais ouverte le dimanche. Dubaï suit la semaine du lundi au vendredi. Johannesburg a presque les mêmes horaires que Genève.", list: [
+    {f: "🇸🇦", n: "Tadawul", c: "Riyad", i: "TASI", tz: "Asia/Riyadh", s: [["10:00", "15:00"]], days: [0, 1, 2, 3, 4]},
+    {f: "🇦🇪", n: "Dubai Financial Market", c: "Dubaï", i: "DFM General", tz: "Asia/Dubai", s: [["10:00", "15:00"]]},
+    {f: "🇿🇦", n: "Johannesburg Stock Exchange", c: "Johannesburg", i: "JSE Top 40", tz: "Africa/Johannesburg", s: [["09:00", "17:00"]]}
+  ]}
+];
+const GVA = "Europe/Zurich";
+function tzOff(tz, ms) {
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", {timeZone: tz, hourCycle: "h23", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit"}).formatToParts(new Date(ms)).map(x => [x.type, x.value]));
+  return Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour % 24, +p.minute, +p.second) - Math.floor(ms / 1000) * 1000;
+}
+function ymd(tz, ms) { const d = new Date(ms + tzOff(tz, ms)); return [d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()]; }
+function at(tz, y, m, d, hm) {
+  const [h, mi] = hm.split(":").map(Number), g = Date.UTC(y, m, d, h, mi);
+  return g - tzOff(tz, g - tzOff(tz, g));
+}
+function sessDay(ex, y, m, d) {
+  const wd = new Date(Date.UTC(y, m, d)).getUTCDay();
+  if (!(ex.days || WK).includes(wd)) return [];
+  return ex.s.map(([o, c]) => [at(ex.tz, y, m, d, o), at(ex.tz, y, m, d, c)]);
+}
+function sessAround(ex, ms, from = -1, to = 8) {
+  const [y, m, d] = ymd(ex.tz, ms), out = [];
+  for (let k = from; k <= to; k++) { const dd = new Date(Date.UTC(y, m, d + k)); out.push(...sessDay(ex, dd.getUTCFullYear(), dd.getUTCMonth(), dd.getUTCDate())); }
+  return out.sort((a, b) => a[0] - b[0]);
+}
+const gHM = ms => new Intl.DateTimeFormat("fr-CH", {timeZone: GVA, hour: "2-digit", minute: "2-digit"}).format(new Date(ms)).replace(":", "h");
+const gDayKey = ms => ymd(GVA, ms).join("-");
+function dayTag(ms, now) {
+  const a = ymd(GVA, ms), b = ymd(GVA, now), diff = Math.round((Date.UTC(...a) - Date.UTC(...b)) / 864e5);
+  if (diff === 0) return "";
+  if (diff === 1) return " (demain)";
+  if (diff === -1) return " (hier)";
+  return " (" + new Intl.DateTimeFormat("fr-CH", {timeZone: GVA, weekday: "short"}).format(new Date(ms)) + ")";
+}
+function dur(ms) { const m = Math.round(ms / 6e4), h = Math.floor(m / 60); return h ? `${h} h ${String(m % 60).padStart(2, "0")}` : `${m} min`; }
+function exStatus(ex, now) {
+  const ss = sessAround(ex, now);
+  const cur = ss.find(([a, b]) => now >= a && now < b);
+  if (cur) return {k: "o", lab: "Ouverte", sub: "ferme dans " + dur(cur[1] - now)};
+  const nxt = ss.find(([a]) => a > now), prv = [...ss].reverse().find(([, b]) => b <= now);
+  if (nxt && prv && ymd(ex.tz, nxt[0]).join() === ymd(ex.tz, prv[1]).join()) return {k: "p", lab: "Pause midi", sub: "reprend dans " + dur(nxt[0] - now)};
+  return {k: "c", lab: "Fermée", sub: nxt ? "ouvre dans " + dur(nxt[0] - now) : ""};
+}
+function exHours(ex, now) {
+  // séances du prochain jour de bourse local (ou du jour en cours)
+  const ss = sessAround(ex, now, 0, 8);
+  const first = ss.find(([, b]) => b > now) || ss[0];
+  const key = ymd(ex.tz, first[0]).join(), day = ss.filter(([a]) => ymd(ex.tz, a).join() === key);
+  const open = day[0][0], close = day[day.length - 1][1];
+  const pause = day.length > 1 ? day.slice(1).map((s, i) => `${gHM(day[i][1])}–${gHM(s[0])}`).join(", ") : "";
+  return {open, close, pause};
+}
+function timeline(now) {
+  const [y, m, d] = ymd(GVA, now), t0 = at(GVA, y, m, d, "00:00"), dn = new Date(Date.UTC(y, m, d + 1)), t1 = at(GVA, dn.getUTCFullYear(), dn.getUTCMonth(), dn.getUTCDate(), "00:00"), span = t1 - t0;
+  const pct = v => ((v - t0) / span * 100).toFixed(2);
+  const pick = [["Wellington", "Auckland"], ["Sydney"], ["Tokyo"], ["Chine"], ["Hong Kong"], ["Mumbai"], ["Riyad"], ["Zurich"], ["Londres"], ["New York"], ["São Paulo"]];
+  const ALL = EXCH.flatMap(g => g.list);
+  const rows = pick.map(([c, lb = c]) => {
+    const ex = ALL.find(e => e.c === c), f = ex.f;
+    const segs = sessAround(ex, t0 + span / 2, -2, 2).map(([a, b]) => [Math.max(a, t0), Math.min(b, t1)]).filter(([a, b]) => b > a);
+    return `<div class="ln"><span class="lb">${f} ${esc(lb)}</span><div class="tr">${segs.map(([a, b]) => `<i class="sg ${now >= a && now < b ? "on" : ""}" style="left:${pct(a)}%;width:${(pct(b) - pct(a)).toFixed(2)}%"></i>`).join("")}<i class="now" style="left:${pct(now)}%"></i></div></div>`;
+  }).join("");
+  return `<div class="card tl">${rows}<div class="ax"><span></span><div><span>0h</span><span>6h</span><span>12h</span><span>18h</span><span>24h</span></div></div></div>`;
+}
+VIEWS.horaires = function () {
+  const now = Date.now();
+  const clock = new Intl.DateTimeFormat("fr-CH", {timeZone: GVA, weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit"}).format(new Date(now));
+  const all = EXCH.flatMap(g => g.list), st = all.map(e => exStatus(e, now)), nOpen = st.filter(s => s.k === "o").length;
+  const nextOpen = all.map(e => ({e, s: sessAround(e, now).find(([a]) => a > now)})).filter(x => x.s).sort((a, b) => a.s[0] - b.s[0])[0];
+  const g = EXCH[1].list[0], ny = exHours(g, now);
+  // Marchés en continu
+  const [y, m, d] = ymd("America/Chicago", now), cmeA = at("America/Chicago", y, m, d, "16:00"), cmeB = at("America/Chicago", y, m, d, "17:00");
+  const [ny_, nm_, nd_] = ymd("America/New_York", now), fx = at("America/New_York", ny_, nm_, nd_, "17:00");
+  const cont = [
+    {f: "💱", n: "Devises (Forex)", sub: "CHF/EUR, CHF/USD, EUR/USD", tm: "24 h/24 en semaine", tmsub: `du dimanche ${gHM(fx)} au vendredi ${gHM(fx)}`},
+    {f: "📈", n: "Futures sur indices US (CME)", sub: "Tendance avant l'ouverture de Wall Street", tm: "≈ 23 h/24", tmsub: `pause quotidienne ${gHM(cmeA)}–${gHM(cmeB)}`},
+    {f: "₿", n: "Cryptomonnaies", sub: "Bitcoin, XRP", tm: "24 h/24, 7 j/7", tmsub: "jamais fermé"}
+  ];
+  const table = (list) => `<div class="card hrs">${list.map(e => { const s = exStatus(e, now), h = exHours(e, now);
+    return `<div class="hr"><i class="dot ${s.k === "o" ? "g" : s.k === "p" ? "o" : "c"}" aria-hidden="true"></i><span class="nm">${e.f} ${esc(e.n)}<small>${esc(e.c)} · ${esc(e.i)}${e.days ? " · dim. au jeu." : ""}${e.approx ? " · horaires approximatifs" : ""}</small><small class="st-${s.k}">${s.lab}${s.sub ? " · " + s.sub : ""}</small></span><span class="tm num">${gHM(h.open)}–${gHM(h.close)}<small>${h.pause ? "pause " + h.pause : "sans pause"}${dayTag(h.open, now)}</small></span></div>`; }).join("")}</div>`;
+  return blk(`<div class="card hero"><div class="lbl">Heure de Genève</div><div class="clock num">${esc(clock)}</div><p>${nOpen ? `<b>${nOpen}</b> bourse${nOpen > 1 ? "s" : ""} ouverte${nOpen > 1 ? "s" : ""} sur ${all.length}.` : "Aucune bourse ouverte pour l'instant."}${nextOpen ? ` Prochaine ouverture : ${nextOpen.e.f} ${esc(nextOpen.e.c)} à ${gHM(nextOpen.s[0])}${dayTag(nextOpen.s[0], now)}.` : ""}</p></div>`, "full")
+    + blk(`<h2 class="h2">La journée en un coup d'œil <small>heure de Genève</small></h2>${timeline(now)}${note(`Chaque barre montre quand une bourse est ouverte, en heure de Genève. Le trait orange est l'heure actuelle, et les barres vertes sont les bourses ouvertes en ce moment. La journée commence en Asie-Pacifique pendant notre nuit, continue en Europe de 9h à 17h30, puis se termine à Wall Street jusqu'à 22h. Aujourd'hui, Europe et États-Unis sont ouverts en même temps de ${gHM(ny.open)} à 17h30 : c'est souvent le moment où les marchés bougent le plus.`)}`, "full")
+    + EXCH.map(gr => blk(`<h2 class="h2">${esc(gr.reg)} <small>ouverture–fermeture, heure de Genève</small></h2>${table(gr.list)}${note(gr.note)}`)).join("")
+    + blk(`<h2 class="h2">Marchés en continu</h2><div class="card hrs">${cont.map(c => `<div class="hr"><i class="dot g" aria-hidden="true"></i><span class="nm">${c.f} ${esc(c.n)}<small>${esc(c.sub)}</small></span><span class="tm">${esc(c.tm)}<small class="num">${esc(c.tmsub)}</small></span></div>`).join("")}</div>${note("Les devises, les contrats à terme (futures) et les cryptomonnaies s'échangent presque sans arrêt. C'est pour cela que le franc ou le Bitcoin peuvent bouger la nuit ou le week-end, même quand toutes les bourses sont fermées.")}`)
+    + blk(`<div class="card banner">Horaires de la séance principale, sans les enchères d'ouverture ni la cotation après la clôture. Les jours fériés de chaque pays ne sont pas pris en compte : une bourse affichée « ouverte » un jour férié local est en réalité fermée.</div>`, "full");
+};
+
+function render() {
+  if (!S) { document.getElementById("view").innerHTML = `<div class="card pad">Aucune donnée pour l'instant.</div>`; return; }
+  stamp();
+  let tab = location.hash.slice(1);
+  if (!TABS.includes(tab)) tab = "synthese";
+  document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === tab));
+  const v = document.getElementById("view");
+  v.innerHTML = `<div class="grid">${VIEWS[tab]()}</div>`;
+}
+
+document.addEventListener("click", e => {
+  const row = e.target.closest(".row");
+  if (row) { const d = document.getElementById(row.getAttribute("aria-controls")); const open = row.getAttribute("aria-expanded") === "true"; row.setAttribute("aria-expanded", !open); d.hidden = open; return; }
+  const tab = e.target.closest(".tab");
+  if (tab) { location.hash = tab.dataset.tab; window.scrollTo({top: 0}); return; }
+  const fb = e.target.closest("[data-filter]");
+  if (fb) { FILTER = FILTER === fb.dataset.filter ? null : fb.dataset.filter; render(); document.querySelector(".counts")?.scrollIntoView({block: "start", behavior: "smooth"}); return; }
+  const sk = e.target.closest(".skins button");
+  if (sk) { setSkin(sk.dataset.skin); return; }
+  const lb = e.target.closest(".sizes button");
+  if (lb) { setLayout(lb.dataset.layout); try { localStorage.setItem("radar-layout", lb.dataset.layout); } catch (err) {} }
+});
+window.addEventListener("hashchange", render);
+function setLayout(l) {
+  document.documentElement.dataset.layout = l;
+  document.querySelectorAll(".sizes button").forEach(b => b.setAttribute("aria-pressed", b.dataset.layout === l));
+}
+{
+  let l = null; try { l = localStorage.getItem("radar-layout"); } catch (e) {}
+  setLayout(l || (window.innerWidth >= 900 ? "tablet" : "phone"));
+}
+function setSkin(s) {
+  document.documentElement.dataset.skin = s;
+  document.querySelectorAll(".skins button").forEach(b => b.setAttribute("aria-pressed", b.dataset.skin === s));
+  try { localStorage.setItem("radar-skin", s); } catch (e) {}
+}
+try { setSkin(localStorage.getItem("radar-skin") || "bleu"); } catch (e) { setSkin("bleu"); }
+render();
+setInterval(() => { if (location.hash.slice(1) === "horaires") render(); }, 30000);
+
+/* live data: data/latest.json + data/history.json, written by scripts/update.py (GitHub Actions) */
+async function loadData() {
+  try {
+    const bust = "?t=" + Date.now();
+    const [h, l] = await Promise.all([
+      fetch("data/history.json" + bust).then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch("data/latest.json" + bust).then(r => r.ok ? r.json() : null).catch(() => null)
+    ]);
+    const docs = (Array.isArray(h) ? h : []).filter(d => d && d.ts && d.indices).sort((a, b) => b.ts.localeCompare(a.ts));
+    if (l && l.ts && (!docs.length || l.ts > docs[0].ts)) docs.unshift(l);
+    if (!docs.length) return;
+    HIST = docs.slice(0, 60); S = HIST[0];
+    render();
+  } catch (e) { /* keep the embedded snapshot */ }
+}
+loadData();
+setInterval(loadData, 5 * 60 * 1000);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) loadData(); });
+</script>
+</body>
+</html>
