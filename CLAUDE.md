@@ -23,16 +23,15 @@ Basé à Genève, pas expert en investissement : il veut des textes en français
 - `indices[]` : groupes `{id, title, asof, note, rows[{id, r, flag, name, last, d, w, ytd, open, close, scope}]}`.
 - `vol`, `rates`, `assets.gold`, `assets.crypto`, `assets.fx` : `{rows, note}`.
 - `derives[]`, `counterparty[]`, `macro{rows, agenda, note}`, `risk`, `lexique[]`, `sources[]`.
-- `news[]` (`{t, link, src}`) : ajouté par update.py, **pas encore affiché dans l'UI**.
+- `news[]` (`{t, link, src, date, r, why}`) : écrit par `news()` dans update.py (5 titres par flux de `RSS`, alternés). Affiché dans Synthèse par `newsBlock()` (« Fil d'actualité marchés »). `r`/`why` remplis par Claude si la clé API est présente.
 - Les notes `r` valent `g`, `o`, `r` ou `n` (pas de donnée).
 
 ## Pistes à faire
-1. Afficher `news[]` dans l'onglet Synthèse (titre et lien, note 🟢🟠🔴 si Claude est actif).
-2. Ajouter V2X (pas sur Yahoo : chercher une source), Bund 10 ans (`^DE10Y` ?), Confédération 10 ans (SNB data portal) et les indices Bloomberg.
-3. Calculer `w` (5 jours) et `ytd` avec `range=ytd` sur Yahoo.
-4. Alertes urgentes : en cas de note rouge, envoyer une notification (ntfy.sh ou Pushover) depuis le workflow.
-5. Rendre `asof` plus précis par marché (clôture ou en séance).
-6. Yahoo est un point d'accès non officiel : prévoir une solution de repli (Twelve Data, Finnhub, Alpha Vantage avec clé dans les secrets GitHub).
+1. Ajouter V2X (pas sur Yahoo : chercher une source), Bund 10 ans (`^DE10Y` ?), Confédération 10 ans (SNB data portal) et les indices Bloomberg.
+2. Calculer `w` (5 jours) et `ytd` avec `range=ytd` sur Yahoo.
+3. Alertes urgentes : en cas de note rouge, envoyer une notification (ntfy.sh ou Pushover) depuis le workflow.
+4. Rendre `asof` plus précis par marché (clôture ou en séance).
+5. Yahoo est un point d'accès non officiel : prévoir une solution de repli (Twelve Data, Finnhub, Alpha Vantage avec clé dans les secrets GitHub).
 
 ## Confidentialité
 Le dépôt et le site sont publics : ne jamais y mettre le nom de l'utilisateur, de son employeur ou de produits liés à son employeur.

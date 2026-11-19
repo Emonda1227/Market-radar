@@ -165,6 +165,8 @@ a{color:var(--accent-2)}
 .srcb.ft{color:#f2b98f;border-color:rgba(242,185,143,.45)}
 .srcb.lt{color:#9cc3ff;border-color:rgba(156,195,255,.45)}
 .pdate{display:block;margin-top:3px;font-size:11.5px;color:var(--dim)}
+.srcb.yf{color:#c9a7ff;border-color:rgba(201,167,255,.45)}
+.srcb.fx{color:#8fe0c2;border-color:rgba(143,224,194,.45)}
 .stk .ext{grid-column:2/-1;min-width:0}
 .stk .ext:empty{display:none}
 .stk .ext .sub{display:block;font-size:11.5px;color:var(--dim)}
@@ -304,6 +306,7 @@ function collect() {
     {title: "Contrepartie", list: S.counterparty},
     {title: "Inflation & banques centrales", list: S.macro.rows, note: S.macro.note},
     ...(S.press ? [{title: "Presse · Le Temps & FT", list: S.press.items || []}] : []),
+    {title: "Fil d'actualité", list: (S.news || []).map(i => ({...i, why: i.why || ""}))},
     ...(S.stars ? S.stars.groups.map(g => ({title: "Stars · " + g.title, list: g.rows.map(r => ({r: r.r, t: `${r.name} ${r.d == null ? "n.d." : (r.d > 0 ? "+" : "") + String(r.d).replace(".", ",") + " %"}`, why: r.scope || ""}))})) : []),
     ...(S.cro ? [{title: "CRO · Stress test immédiat", list: S.cro.stress || []}, {title: "CRO · À remonter", list: S.cro.escalate || []}, {title: "CRO · Risques émergents", list: S.cro.emerging || []}] : [])
   ];
@@ -322,6 +325,16 @@ function pressBlock() {
   return blk(`<h2 class="h2">${dot(worst(p.items))} À la une : Le Temps & Financial Times <small>${esc(p.asof || "")}</small></h2><div class="card items press">${p.items.map(i => `<div class="item">${dot(i.r)}<div><b><span class="srcb ${cls_(i.src)}">${esc(i.src)}</span>${i.url ? `<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.t)}</a>` : esc(i.t)}</b><span>${esc(i.why)}</span>${i.date ? `<span class="pdate">${esc(i.date)}</span>` : ""}</div></div>`).join("")}</div>${note(p.note)}`, "full");
 }
 
+/* Fil d'actualité : S.news[] {t, link, src, date, r, why}, écrit par update.py (Yahoo Finance, FXStreet) */
+function newsBlock() {
+  const n = (S.news || []).filter(i => i && i.t);
+  if (!n.length) return "";
+  const srcName = s => /yahoo/i.test(s || "") ? "Yahoo Finance" : /fxstreet/i.test(s || "") ? "FXStreet" : (s || "");
+  const cls_ = s => /yahoo/i.test(s || "") ? "yf" : /fxstreet/i.test(s || "") ? "fx" : "";
+  const rated = n.some(i => i.r && i.r !== "n");
+  return blk(`<h2 class="h2">${rated ? dot(worst(n)) + " " : ""}Fil d'actualité marchés <small>${esc((S.press && S.press.asof) || "")}</small></h2><div class="card items press">${n.map(i => `<div class="item">${dot(i.r || "n")}<div><b><span class="srcb ${cls_(i.src)}">${esc(srcName(i.src))}</span>${i.link ? `<a href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.t)}</a>` : esc(i.t)}</b>${i.why ? `<span>${esc(i.why)}</span>` : ""}${i.date ? `<span class="pdate">${esc(i.date)}</span>` : ""}</div></div>`).join("")}</div>${note("Titres en anglais repris de Yahoo Finance et FXStreet, avec un lien vers l'article. Ils se renouvellent à chaque mise à jour (toutes les 30 min en semaine)." + (rated ? "" : " Les pastilles 🟢🟠🔴 et un résumé en français apparaîtront si la clé API Claude est ajoutée."))}`, "full");
+}
+
 const VIEWS = {
   synthese() {
     const groups = collect();
@@ -331,7 +344,7 @@ const VIEWS = {
     const flat = [...S.indices.flatMap(g => g.rows), ...S.vol.rows, ...Object.values(S.assets).flatMap(a => a.rows)];
     return blk(`<div class="card hero"><div class="lbl">Niveau d'alerte du jour</div><div class="big">${dot(S.overall)} ${label}</div><p>${esc(S.headline)}</p></div>`, "full hero-wrap")
       + blk(`<div class="counts">${[["r", "down", "attention", ""], ["o", "", "à surveiller", "color:var(--warn)"], ["g", "up", "normal", ""]].map(([k, cl, lb, st]) => `<button class="card count" data-filter="${k}" aria-pressed="${FILTER === k}"><b class="${cl}" style="${st}">${c[k]}</b><span>${lb}</span></button>`).join("")}</div>`, "full counts-wrap")
-      + (FILTER ? filtered(groups) : ("" + blk(`<h2 class="h2">En bref</h2>${items(S.bref)}`) + pressBlock()
+      + (FILTER ? filtered(groups) : ("" + blk(`<h2 class="h2">En bref</h2>${items(S.bref)}`) + pressBlock() + newsBlock()
       + blk(`<h2 class="h2">Repères <small>évolution sur les derniers relevés</small></h2>
       <div class="tiles">${pick.map(([id, n]) => { const r = flat.find(x => x.id === id) || {}; const v = typeof r.d === "number" ? `<span class="${cls(r.d, INV.has(id))}">${fmtP(r.d)}</span>` : esc(r.d ?? "n.d."); return `<div class="card tile"><span class="n">${dot(r.r)} ${esc(n)}</span><span class="v num">${typeof r.last === "number" && !r.value ? fmtN(r.last, r.last < 10 ? 4 : 2) : esc(r.value || "n.d.")}</span><span class="num" style="font-size:12.5px">${v}</span>${spark(series(id), INV.has(id))}</div>`; }).join("")}</div>`)
       + blk(`<h2 class="h2">${dot(worst(S.counterparty))} Contrepartie</h2>${items(S.counterparty)}`)
