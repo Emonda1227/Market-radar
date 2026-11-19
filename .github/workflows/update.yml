@@ -1,1 +1,34 @@
+name: Mise à jour Radar Marchés
 
+on:
+  schedule:
+    - cron: "7,37 5-21 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Récupérer les données
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/update.py
+      - name: Enregistrer
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Données $(TZ=Europe/Zurich date '+%d/%m %Hh%M')"
+          git push
