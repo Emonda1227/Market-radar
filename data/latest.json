@@ -1,6 +1,6 @@
 {
- "id": "2026-11-19-2344",
- "ts": "2026-11-19T23:44+01:00",
+ "id": "2026-11-19-2356",
+ "ts": "2026-11-19T23:56+01:00",
  "edition": "Soir",
  "overall": "r",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 23h44 (Genève)",
+   "asof": "Mise à jour auto 23h56 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 23h44 (Genève)",
+   "asof": "Mise à jour auto 23h56 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 23h44 (Genève)",
+   "asof": "Mise à jour auto 23h56 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 23h44 (Genève)",
+   "asof": "Mise à jour auto 23h56 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 23h44 (Genève)",
+   "asof": "Mise à jour auto 23h56 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -465,7 +465,7 @@
     "flag": "🛢️",
     "name": "Brent",
     "value": "90,0 $",
-    "d": "+0,99 %",
+    "d": "+0,68 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -488,12 +488,12 @@
    "rows": [
     {
      "id": "gold",
-     "r": "r",
+     "r": "o",
      "flag": "🥇",
      "name": "Or",
      "value": "≈ 3 628 $ / once",
      "sub": "contrat à terme",
-     "d": "−3,05 %",
+     "d": "−1,56 %",
      "last": 3628
     }
    ],
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 62 182 $",
+     "value": "≈ 62 154 $",
      "sub": "",
-     "d": "−0,42 % (24 h)",
-     "last": 62182
+     "d": "−0,18 % (24 h)",
+     "last": 62154
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,961 $",
+     "value": "≈ 0,960 $",
      "sub": "",
-     "d": "−0,18 % (24 h)",
-     "last": 0.961013
+     "d": "+0,01 % (24 h)",
+     "last": 0.95954
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -541,20 +541,20 @@
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1857",
-     "sub": "1 franc = 1,1857 dollar",
-     "d": "−0,06 %",
-     "last": 1.1857
+     "value": "1,1856",
+     "sub": "1 franc = 1,1856 dollar",
+     "d": "−0,07 %",
+     "last": 1.1856
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0972",
-     "sub": "1 euro = 1,0972 dollar",
-     "d": "−0,05 %",
-     "last": 1.0972
+     "value": "1,0971",
+     "sub": "1 euro = 1,0971 dollar",
+     "d": "−0,06 %",
+     "last": 1.0971
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 23h44 (Genève)",
+    "asof": "Mise à jour auto 23h56 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 23h44 (Genève)",
+    "asof": "Mise à jour auto 23h56 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 23h44 (Genève)",
+    "asof": "Mise à jour auto 23h56 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 23h44 (Genève)",
+    "asof": "Mise à jour auto 23h56 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,7 +1237,7 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 23h44 (Genève)",
+  "asof": "Mise à jour auto 23h56 (Genève)",
   "items": [
    {
     "src": "Le Temps",
@@ -1324,44 +1324,44 @@
  },
  "news": [
   {
+   "t": "Is Tech in a Bear Market? 20 Tech Stocks Fall Up to 76% From Highs",
+   "link": "https://beincrypto.com/tech-stocks-bear-market-record-highs/?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Thu, 19 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
+   "t": "Update: US Equity Indexes Sink as Widespread Sell-Off, Volatility Spike Mar Anthropic's Historic Debut on Nasdaq",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-sink-widespread-223941525.html?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Thu, 19 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
    "t": "Jefferies Has Wall Street’s Highest Target on Eli Lilly (LLY). Why?",
    "link": "https://finance.yahoo.com/markets/stocks/articles/jefferies-wall-street-highest-target-223346007.html?.tsrc=rss",
-   "src": "feeds.finance.yahoo.com"
+   "src": "Yahoo Finance",
+   "date": "Thu, 19 Nov 2026",
+   "r": "n",
+   "why": ""
   },
   {
    "t": "Two Deals and a Higher Target: UBS’s Call on McKesson (MCK)",
    "link": "https://finance.yahoo.com/healthcare/articles/two-deals-higher-target-ubs-223331229.html?.tsrc=rss",
-   "src": "feeds.finance.yahoo.com"
+   "src": "Yahoo Finance",
+   "date": "Thu, 19 Nov 2026",
+   "r": "n",
+   "why": ""
   },
   {
    "t": "What Morgan Stanley Saw Before Raising Its Visa (V) Target",
    "link": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-saw-raising-visa-223317532.html?.tsrc=rss",
-   "src": "feeds.finance.yahoo.com"
-  },
-  {
-   "t": "Rothschild & Co Redburn Downgraded TransUnion (TRU) but Raised Its Target",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/rothschild-co-redburn-downgraded-transunion-223303390.html?.tsrc=rss",
-   "src": "feeds.finance.yahoo.com"
-  },
-  {
-   "t": "Liberty Formula One (FWONK): One of the Stocks Analysts See Climbing Further",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/liberty-formula-one-fwonk-one-223252998.html?.tsrc=rss",
-   "src": "feeds.finance.yahoo.com"
-  },
-  {
-   "t": "Morgan Stanley’s Vintage Values 2027: 5 Stocks Analysts See Climbing Further",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-vintage-values-2027-223235273.html?.tsrc=rss",
-   "src": "feeds.finance.yahoo.com"
-  },
-  {
-   "t": "Dow Jones Futures Fall After Ugly Market Reversal To New Lows; Anthropic IPO Debuts, AMD Dives",
-   "link": "https://finance.yahoo.com/m/9e02231d-41cd-31ac-b37f-993325b8a4ca/dow-jones-futures-fall-after.html?.tsrc=rss",
-   "src": "feeds.finance.yahoo.com"
-  },
-  {
-   "t": "Stock Market Today, Nov. 19: Dow Plunges 1,100 Points as the S&P 500 Suffers Its 6th Straight Day of Losses",
-   "link": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-dow-plunges-1-100-points-as-the-s-and-p-500-suffers-its-6th-straight-day-of-losses/?.tsrc=rss",
-   "src": "feeds.finance.yahoo.com"
+   "src": "Yahoo Finance",
+   "date": "Thu, 19 Nov 2026",
+   "r": "n",
+   "why": ""
   }
  ]
 }
