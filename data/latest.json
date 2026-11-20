@@ -1,6 +1,6 @@
 {
- "id": "2026-11-20-0702",
- "ts": "2026-11-20T07:02+01:00",
+ "id": "2026-11-20-0816",
+ "ts": "2026-11-20T08:16+01:00",
  "edition": "Matin",
  "overall": "r",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 07h02 (Genève)",
+   "asof": "Mise à jour auto 08h16 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 07h02 (Genève)",
+   "asof": "Mise à jour auto 08h16 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 07h02 (Genève)",
+   "asof": "Mise à jour auto 08h16 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -241,8 +241,8 @@
      "r": "r",
      "flag": "🇯🇵",
      "name": "Nikkei 225",
-     "last": 56549.28,
-     "d": -4.87,
+     "last": 56436.65,
+     "d": -5.06,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -254,8 +254,8 @@
      "r": "r",
      "flag": "🇰🇷",
      "name": "Kospi",
-     "last": 4841.21,
-     "d": -5.77,
+     "last": 4869.96,
+     "d": -5.21,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -267,8 +267,8 @@
      "r": "r",
      "flag": "🇭🇰",
      "name": "Hang Seng",
-     "last": 22333.91,
-     "d": -4.12,
+     "last": 22346.74,
+     "d": -4.07,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -277,11 +277,11 @@
     },
     {
      "id": "shanghai",
-     "r": "r",
+     "r": "o",
      "flag": "🇨🇳",
      "name": "Shanghai Composite",
-     "last": 3506.3,
-     "d": -2.27,
+     "last": 3533.79,
+     "d": -1.51,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -293,8 +293,8 @@
      "r": "g",
      "flag": "🇮🇳",
      "name": "Sensex",
-     "last": 83108.71,
-     "d": 0.1,
+     "last": 83633.2,
+     "d": 0.74,
      "w": null,
      "ytd": null,
      "open": "04:45",
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 07h02 (Genève)",
+   "asof": "Mise à jour auto 08h16 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 07h02 (Genève)",
+   "asof": "Mise à jour auto 08h16 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -464,8 +464,8 @@
     "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "89,6 $",
-    "d": "+0,16 %",
+    "value": "90,0 $",
+    "d": "+0,58 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -491,10 +491,10 @@
      "r": "r",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 551 $ / once",
+     "value": "≈ 3 550 $ / once",
      "sub": "contrat à terme",
-     "d": "−3,65 %",
-     "last": 3551
+     "d": "−3,69 %",
+     "last": 3550
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 61 855 $",
+     "value": "≈ 61 931 $",
      "sub": "",
-     "d": "−2,47 % (24 h)",
-     "last": 61855
+     "d": "−2,60 % (24 h)",
+     "last": 61931
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,969 $",
+     "value": "≈ 0,967 $",
      "sub": "",
-     "d": "−0,66 % (24 h)",
-     "last": 0.969039
+     "d": "−1,49 % (24 h)",
+     "last": 0.966955
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,30 +531,30 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0809",
-     "sub": "1 franc = 1,0809 euro",
-     "d": "+0,10 %",
-     "last": 1.0809
+     "value": "1,0802",
+     "sub": "1 franc = 1,0802 euro",
+     "d": "+0,04 %",
+     "last": 1.0802
     },
     {
      "id": "chfusd",
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1873",
-     "sub": "1 franc = 1,1873 dollar",
-     "d": "+0,14 %",
-     "last": 1.1873
+     "value": "1,1872",
+     "sub": "1 franc = 1,1872 dollar",
+     "d": "+0,13 %",
+     "last": 1.1872
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0983",
-     "sub": "1 euro = 1,0983 dollar",
-     "d": "+0,09 %",
-     "last": 1.0983
+     "value": "1,0988",
+     "sub": "1 euro = 1,0988 dollar",
+     "d": "+0,14 %",
+     "last": 1.0988
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 07h02 (Genève)",
+    "asof": "Mise à jour auto 08h16 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -969,10 +969,10 @@
       "yahoo": "META",
       "last": 596.22,
       "cur": "$",
-      "d": -3.66,
+      "d": -3.27,
       "fromHigh": -23.32,
       "scope": "Facebook, Instagram, WhatsApp",
-      "w": -5.18,
+      "w": -4.39,
       "y": 1.2,
       "ytd": -8.33,
       "outlook": {
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 07h02 (Genève)",
+    "asof": "Mise à jour auto 08h16 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 07h02 (Genève)",
+    "asof": "Mise à jour auto 08h16 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 07h02 (Genève)",
+    "asof": "Mise à jour auto 08h16 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,8 +1237,24 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 07h02 (Genève)",
+  "asof": "Mise à jour auto 08h16 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "En vidéo – Manifestations: quand la musique classique devient politique",
+    "why": "De Paris à la Suisse romande, des orchestres symphoniques descendent dans la rue pour accompagner les manifestations. Avec l’Appel du Nouveau Monde, des musiciens romands se mobili",
+    "url": "https://www.letemps.ch/videos/actualite/en-video-manifestations-quand-la-musique-classique-devient-politique",
+    "date": "Fri, 20 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Après l’affaire Nvidia, comment se protéger contre les pièges en gants blancs",
+    "why": "CHRONIQUE. La course à l’IA attise les convoitises et multiplie les risques d’espionnage industriel, parfois à base de séduction comme dans le cas Nvidia. OpenAI, Anthropic et Goog",
+    "url": "https://www.letemps.ch/cyber/apres-l-affaire-nvidia-comment-se-proteger-contre-les-pieges-en-gants-blancs",
+    "date": "Fri, 20 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1261,22 +1277,6 @@
     "t": "Bilatérales: avant la session, les parlementaires se déchirent sur le mode du référendum",
     "why": "Plus personne ne croit à une votation possible du peuple en 2027. Après le vote du Conseil des Etats, les tenants de la double majorité tentent de pousser l’avantage au Conseil nat",
     "url": "https://www.letemps.ch/suisse/bilaterales-avant-la-session-les-parlementaires-se-dechirent-sur-le-mode-du-referendum",
-    "date": "Fri, 20 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "Alors que l’électrification de la Suisse est en marche, les métiers nécessaires séduisent peu",
-    "why": "La branche électrique connaît une demande croissante en Suisse, mais l’offre des places d’apprentissage pour les installateurs électriciens est excédentaire. Si tous les employeurs",
-    "url": "https://www.letemps.ch/carrieres-et-formation/alors-que-l-electrification-de-la-suisse-est-en-marche-les-metiers-necessaires-seduisent-peu",
-    "date": "Fri, 20 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "En direct, Moyen-Orient – Les Houthis du Yémen affirment qu’un avion saoudien a touché un bateau civil",
-    "why": "Les Houthis du Yémen ont accusé vendredi les forces saoudiennes d’avoir attaqué un bateau transportant des civils à proximité du détroit de Bab el-Mandeb, tuant 19 personnes à son ",
-    "url": "https://www.letemps.ch/monde/moyenorient/en-direct-moyen-orient-une-forte-explosion-entendue-a-riyad-deux-missiles-interceptes",
     "date": "Fri, 20 Nov 2026"
    },
    {
