@@ -1,6 +1,6 @@
 {
- "id": "2026-11-20-2222",
- "ts": "2026-11-20T22:22+01:00",
+ "id": "2026-11-20-2322",
+ "ts": "2026-11-20T23:22+01:00",
  "edition": "Soir",
  "overall": "r",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 22h22 (Genève)",
+   "asof": "Mise à jour auto 23h22 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 22h22 (Genève)",
+   "asof": "Mise à jour auto 23h22 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 22h22 (Genève)",
+   "asof": "Mise à jour auto 23h22 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 22h22 (Genève)",
+   "asof": "Mise à jour auto 23h22 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -353,8 +353,8 @@
      "r": "r",
      "flag": "🌏",
      "name": "MSCI Emerging Markets",
-     "last": 53.87,
-     "d": -5.07,
+     "last": 53.84,
+     "d": -5.13,
      "w": null,
      "ytd": null,
      "open": null,
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 22h22 (Genève)",
+   "asof": "Mise à jour auto 23h22 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -421,8 +421,8 @@
     "r": "r",
     "flag": "🇺🇸",
     "name": "VIX",
-    "last": 37.12,
-    "d": 30.52,
+    "last": 35.89,
+    "d": 26.2,
     "open": "15:30",
     "close": "22:00",
     "scope": "Nervosité attendue sur le S&P 500 (30 jours) · valeur du 18/11"
@@ -464,8 +464,8 @@
     "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "90,1 $",
-    "d": "+0,72 %",
+    "value": "89,9 $",
+    "d": "+0,48 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -491,10 +491,10 @@
      "r": "r",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 522 $ / once",
+     "value": "≈ 3 539 $ / once",
      "sub": "contrat à terme",
-     "d": "−4,44 %",
-     "last": 3522
+     "d": "−3,98 %",
+     "last": 3539
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -503,23 +503,23 @@
    "rows": [
     {
      "id": "btc",
-     "r": "o",
+     "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 58 288 $",
+     "value": "≈ 59 180 $",
      "sub": "",
-     "d": "−5,31 % (24 h)",
-     "last": 58288
+     "d": "−4,31 % (24 h)",
+     "last": 59180
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,891 $",
+     "value": "≈ 0,914 $",
      "sub": "",
-     "d": "−6,87 % (24 h)",
-     "last": 0.8908
+     "d": "−4,49 % (24 h)",
+     "last": 0.914354
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -528,33 +528,33 @@
    "rows": [
     {
      "id": "chfeur",
-     "r": "o",
+     "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0853",
-     "sub": "1 franc = 1,0853 euro",
-     "d": "+0,51 %",
-     "last": 1.0853
+     "value": "1,0849",
+     "sub": "1 franc = 1,0849 euro",
+     "d": "+0,47 %",
+     "last": 1.0849
     },
     {
      "id": "chfusd",
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1905",
-     "sub": "1 franc = 1,1905 dollar",
-     "d": "+0,41 %",
-     "last": 1.1905
+     "value": "1,1911",
+     "sub": "1 franc = 1,1911 dollar",
+     "d": "+0,46 %",
+     "last": 1.1911
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0966",
-     "sub": "1 euro = 1,0966 dollar",
-     "d": "−0,06 %",
-     "last": 1.0966
+     "value": "1,0975",
+     "sub": "1 euro = 1,0975 dollar",
+     "d": "+0,02 %",
+     "last": 1.0975
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 22h22 (Genève)",
+    "asof": "Mise à jour auto 23h22 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 22h22 (Genève)",
+    "asof": "Mise à jour auto 23h22 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 22h22 (Genève)",
+    "asof": "Mise à jour auto 23h22 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 22h22 (Genève)",
+    "asof": "Mise à jour auto 23h22 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,7 +1237,7 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 22h22 (Genève)",
+  "asof": "Mise à jour auto 23h22 (Genève)",
   "items": [
    {
     "src": "Le Temps",
@@ -1282,8 +1282,16 @@
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "‘A necessary evil’: how Anthropic pulled off its IPO",
-    "why": "Fears about the AI trade did not damp enthusiasm for shares. But can the low-key company preserve its idiosyncratic culture in the glare of public markets?",
+    "t": "US tech stocks plunge into bear market in worst week since Covid-19 crisis",
+    "why": "Shares in Anthropic and Nvidia tumble as fears over the AI spending boom grip Wall Street",
+    "url": "https://www.ft.com/content/9f3c6ed6-c08f-4710-9683-ee2f5eb25841?syn-25a6b1a6=1",
+    "date": "Fri, 20 Nov 2026"
+   },
+   {
+    "src": "Financial Times",
+    "r": "n",
+    "t": "Inside Anthropic’s historic IPO",
+    "why": "Can the low-key company preserve its idiosyncratic culture in the glare of public markets?",
     "url": "https://www.ft.com/content/149d497e-0567-4467-bcfb-269b8b8eb157?syn-25a6b1a6=1",
     "date": "Fri, 20 Nov 2026"
    },
@@ -1310,19 +1318,35 @@
     "why": "For investors, the magic of the technology might be wearing off, with US stocks on track for one of the worst years in two decades",
     "url": "https://www.ft.com/content/b1b2e948-ff5e-48c4-bc3e-f8e75c9e4af1?syn-25a6b1a6=1",
     "date": "Fri, 20 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "US tech stocks plummet as AI trade unravels",
-    "why": "Investors rush for havens as heavy selling sweeps Wall Street",
-    "url": "https://www.ft.com/content/23fa83d8-e078-4853-959e-bd1f19d14ff5?syn-25a6b1a6=1",
-    "date": "Fri, 20 Nov 2026"
    }
   ],
   "note": "Le Temps donne l'angle suisse et romand (place financière, banques, Genève). Le Financial Times couvre les marchés mondiaux en profondeur. Les titres sont repris avec un lien vers l'article ; la lecture complète peut nécessiter un abonnement."
  },
  "news": [
+  {
+   "t": "Update: S&P 500, Dow Sink Into Correction Territory as Investors Seek Treasury Cover Amid Plunging Big-Tech",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-sink-correction-214248905.html?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Fri, 20 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
+   "t": "From Nvidia To Amazon, Tech Giants Face Stunning Reversal As Nasdaq Erases 2026 Gains",
+   "link": "https://www.ibtimes.com/us-stocks-ai-selloff-nasdaq-market-decline-3810038?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Fri, 20 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
+   "t": "US Equity Indexes Slump as Clouds Hovering Over Chipmakers, Hawkish Fed Outweigh Anthropic's Nasdaq Debut This Week",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-slump-clouds-212255820.html?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Fri, 20 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
   {
    "t": "6 reasons stocks are falling, and what you should do about it",
    "link": "https://www.cbsnews.com/news/why-stocks-are-falling-ai-fears/?.tsrc=rss",
@@ -1332,32 +1356,8 @@
    "why": ""
   },
   {
-   "t": "Stocks enter correction territory, driven by a deepening tech rout",
-   "link": "https://www.cbsnews.com/news/stocks-enter-correction-territory-ai-fears/?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Fri, 20 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "This VIX Signal Is Bullish For The S&P 500",
-   "link": "https://finance.yahoo.com/m/86b151b8-07e2-3e2d-87d0-900ec79aa14f/this-vix-signal-is-bullish.html?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Fri, 20 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "Update: S&P 500, Dow Slide Into Correction Territory as Investors Seek Treasury Cover Amid Big-Tech Plunge",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-slide-correction-205308024.html?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Fri, 20 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "The Stock Market Is Flashing a Warning Seen Just 6 Times in 156 Years, and History Is Clear What Comes Next for Stocks",
-   "link": "https://www.fool.com/investing/2026/11/20/the-stock-market-is-flashing-a-warning-seen-just-6-times-in-156-years-and-history-is-clear-what-comes-next-for-stocks/?.tsrc=rss",
+   "t": "Fear of Missing Out Driving Young Investors: Chaudhuri",
+   "link": "https://finance.yahoo.com/video/fear-missing-driving-young-investors-210852999.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Fri, 20 Nov 2026",
    "r": "n",
