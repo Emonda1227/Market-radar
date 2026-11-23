@@ -1,6 +1,6 @@
 {
- "id": "2026-11-23-1139",
- "ts": "2026-11-23T11:39+01:00",
+ "id": "2026-11-23-1254",
+ "ts": "2026-11-23T12:54+01:00",
  "edition": "Midi",
  "overall": "r",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 11h39 (Genève)",
+   "asof": "Mise à jour auto 12h54 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -43,8 +43,8 @@
      "r": "g",
      "flag": "🇪🇺",
      "name": "Euro Stoxx 50",
-     "last": 5995.93,
-     "d": 0.91,
+     "last": 5996.66,
+     "d": 0.92,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -56,8 +56,8 @@
      "r": "g",
      "flag": "🇪🇺",
      "name": "STOXX Europe 600",
-     "last": 630.71,
-     "d": 0.81,
+     "last": 630.91,
+     "d": 0.84,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -82,8 +82,8 @@
      "r": "g",
      "flag": "🇨🇭",
      "name": "SMI",
-     "last": 14643.26,
-     "d": 0.49,
+     "last": 14648.82,
+     "d": 0.53,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -95,8 +95,8 @@
      "r": "g",
      "flag": "🇩🇪",
      "name": "DAX",
-     "last": 25004.68,
-     "d": 0.81,
+     "last": 25026.88,
+     "d": 0.9,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -108,8 +108,8 @@
      "r": "g",
      "flag": "🇫🇷",
      "name": "CAC 40",
-     "last": 7979.23,
-     "d": 0.65,
+     "last": 7987.41,
+     "d": 0.75,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -121,8 +121,8 @@
      "r": "g",
      "flag": "🇬🇧",
      "name": "FTSE 100",
-     "last": 10404.45,
-     "d": 0.56,
+     "last": 10402.43,
+     "d": 0.54,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -134,8 +134,8 @@
      "r": "g",
      "flag": "🇮🇹",
      "name": "FTSE MIB",
-     "last": 48335.07,
-     "d": -0.76,
+     "last": 48378.57,
+     "d": -0.67,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -147,8 +147,8 @@
      "r": "g",
      "flag": "🇪🇸",
      "name": "IBEX 35",
-     "last": 19019.7,
-     "d": 0.78,
+     "last": 19005.2,
+     "d": 0.7,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 11h39 (Genève)",
+   "asof": "Mise à jour auto 12h54 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 11h39 (Genève)",
+   "asof": "Mise à jour auto 12h54 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 11h39 (Genève)",
+   "asof": "Mise à jour auto 12h54 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 11h39 (Genève)",
+   "asof": "Mise à jour auto 12h54 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -421,8 +421,8 @@
     "r": "r",
     "flag": "🇺🇸",
     "name": "VIX",
-    "last": 30.11,
-    "d": 5.87,
+    "last": 30.02,
+    "d": 5.56,
     "open": "15:30",
     "close": "22:00",
     "scope": "Nervosité attendue sur le S&P 500 (30 jours) · valeur du 18/11"
@@ -464,8 +464,8 @@
     "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "89,2 $",
-    "d": "−0,78 %",
+    "value": "88,3 $",
+    "d": "−1,79 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -488,13 +488,13 @@
    "rows": [
     {
      "id": "gold",
-     "r": "o",
+     "r": "r",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 618 $ / once",
+     "value": "≈ 3 622 $ / once",
      "sub": "contrat à terme",
-     "d": "+2,92 %",
-     "last": 3618
+     "d": "+3,04 %",
+     "last": 3622
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 61 373 $",
+     "value": "≈ 61 398 $",
      "sub": "",
-     "d": "+1,12 % (24 h)",
-     "last": 61373
+     "d": "+0,65 % (24 h)",
+     "last": 61398
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,939 $",
+     "value": "≈ 0,941 $",
      "sub": "",
-     "d": "+0,68 % (24 h)",
-     "last": 0.938698
+     "d": "+1,23 % (24 h)",
+     "last": 0.940736
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,30 +531,30 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0863",
-     "sub": "1 franc = 1,0863 euro",
-     "d": "+0,13 %",
-     "last": 1.0863
+     "value": "1,0873",
+     "sub": "1 franc = 1,0873 euro",
+     "d": "+0,22 %",
+     "last": 1.0873
     },
     {
      "id": "chfusd",
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1924",
-     "sub": "1 franc = 1,1924 dollar",
-     "d": "+0,11 %",
-     "last": 1.1924
+     "value": "1,1922",
+     "sub": "1 franc = 1,1922 dollar",
+     "d": "+0,09 %",
+     "last": 1.1922
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0972",
-     "sub": "1 euro = 1,0972 dollar",
-     "d": "−0,03 %",
-     "last": 1.0972
+     "value": "1,0961",
+     "sub": "1 euro = 1,0961 dollar",
+     "d": "−0,13 %",
+     "last": 1.0961
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 11h39 (Genève)",
+    "asof": "Mise à jour auto 12h54 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 11h39 (Genève)",
+    "asof": "Mise à jour auto 12h54 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 11h39 (Genève)",
+    "asof": "Mise à jour auto 12h54 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1064,14 +1064,14 @@
       "name": "Nestlé",
       "ticker": "NESN",
       "yahoo": "NESN.SW",
-      "last": 85.21,
+      "last": 85.26,
       "cur": "CHF",
-      "d": -0.4,
-      "fromHigh": -3.3,
+      "d": -0.34,
+      "fromHigh": -3.25,
       "scope": "Alimentation · Vevey",
-      "w": -3.3,
-      "y": 5.8,
-      "ytd": 11.47
+      "w": -3.25,
+      "y": 5.86,
+      "ytd": 11.54
      },
      {
       "id": "novn",
@@ -1080,14 +1080,14 @@
       "name": "Novartis",
       "ticker": "NOVN",
       "yahoo": "NOVN.SW",
-      "last": 127.72,
+      "last": 127.7,
       "cur": "CHF",
-      "d": -0.03,
-      "fromHigh": -5.92,
+      "d": -0.05,
+      "fromHigh": -5.94,
       "scope": "Pharma · Bâle · plus forte baisse du SMI",
-      "w": -5.92,
-      "y": 24.0,
-      "ytd": 17.71
+      "w": -5.94,
+      "y": 23.98,
+      "ytd": 17.7
      },
      {
       "id": "rog",
@@ -1096,14 +1096,14 @@
       "name": "Roche",
       "ticker": "ROG",
       "yahoo": "RO.SW",
-      "last": 404.4,
+      "last": 405.2,
       "cur": "CHF",
-      "d": 0.45,
-      "fromHigh": -2.74,
+      "d": 0.65,
+      "fromHigh": -2.55,
       "scope": "Pharma et diagnostic · Bâle",
-      "w": -2.37,
-      "y": 25.9,
-      "ytd": 21.37
+      "w": -2.17,
+      "y": 26.15,
+      "ytd": 21.61
      },
      {
       "id": "ubsg",
@@ -1112,14 +1112,14 @@
       "name": "UBS",
       "ticker": "UBSG",
       "yahoo": "UBSG.SW",
-      "last": 37.19,
+      "last": 37.2,
       "cur": "CHF",
-      "d": 0.6,
-      "fromHigh": -17.36,
+      "d": 0.62,
+      "fromHigh": -17.33,
       "scope": "Banque et gestion de fortune · Zurich",
-      "w": -7.97,
-      "y": 25.01,
-      "ytd": -2.57
+      "w": -7.94,
+      "y": 25.04,
+      "ytd": -2.54
      },
      {
       "id": "abbn",
@@ -1128,21 +1128,21 @@
       "name": "ABB",
       "ticker": "ABBN",
       "yahoo": "ABBN.SW",
-      "last": 66.66,
+      "last": 66.62,
       "cur": "CHF",
-      "d": 2.02,
-      "fromHigh": -24.73,
+      "d": 1.96,
+      "fromHigh": -24.77,
       "scope": "Électrification et automatisation · valeur vers 9h45",
-      "w": -3.7,
-      "y": 19.55,
-      "ytd": 8.85
+      "w": -3.76,
+      "y": 19.48,
+      "ytd": 8.79
      }
     ]
    },
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 11h39 (Genève)",
+    "asof": "Mise à jour auto 12h54 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1152,14 +1152,14 @@
       "name": "ASML",
       "ticker": "ASML",
       "yahoo": "ASML.AS",
-      "last": 1228.4,
+      "last": 1227.2,
       "cur": "€",
-      "d": 5.17,
-      "fromHigh": -28.64,
+      "d": 5.07,
+      "fromHigh": -28.71,
       "scope": "Machines pour fabriquer les puces · 1re capitalisation d'Europe",
-      "w": -5.98,
-      "y": 43.04,
-      "ytd": 24.55
+      "w": -6.08,
+      "y": 42.9,
+      "ytd": 24.42
      },
      {
       "id": "sap",
@@ -1168,14 +1168,14 @@
       "name": "SAP",
       "ticker": "SAP",
       "yahoo": "SAP.DE",
-      "last": 183.16,
+      "last": 183.92,
       "cur": "€",
-      "d": -0.28,
-      "fromHigh": -15.11,
+      "d": 0.13,
+      "fromHigh": -14.75,
       "scope": "Logiciels de gestion d'entreprise",
-      "w": -14.17,
-      "y": -11.73,
-      "ytd": -9.3
+      "w": -13.81,
+      "y": -11.36,
+      "ytd": -8.93
      },
      {
       "id": "mc",
@@ -1184,14 +1184,14 @@
       "name": "LVMH",
       "ticker": "MC",
       "yahoo": "MC.PA",
-      "last": 382.0,
+      "last": 383.85,
       "cur": "€",
-      "d": 0.01,
-      "fromHigh": -41.42,
+      "d": 0.5,
+      "fromHigh": -41.14,
       "scope": "Luxe (Louis Vuitton, Dior, Moët)",
-      "w": -5.45,
-      "y": -38.56,
-      "ytd": -40.48
+      "w": -4.99,
+      "y": -38.26,
+      "ytd": -40.19
      }
     ]
    }
@@ -1237,8 +1237,32 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 11h39 (Genève)",
+  "asof": "Mise à jour auto 12h54 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Acteur phare des transitions technologiques en cours, ABB poursuit ses emplettes en rachetant l’allemand Ziehl-Abegg",
+    "why": "Le groupe zurichois entend renforcer son offre dans les systèmes de refroidissement utilisés notamment dans les centres de données par l’intermédiaire de l’acquisition d’une entrep",
+    "url": "https://www.letemps.ch/economie/entreprises/acteur-phare-des-transitions-technologiques-en-cours-abb-poursuit-ses-emplettes-en-rachetant-l-allemand-ziehl-abegg",
+    "date": "Mon, 23 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "La transparence du financement de la vie politique peine à se faire une place dans les cantons",
+    "why": "Depuis l’automne 2022, partis et comités de campagne doivent déclarer leurs principaux financements au niveau fédéral. Une application fédérale de la loi qui n’a pas eu d’effet sur",
+    "url": "https://www.letemps.ch/suisse/la-transparence-du-financement-de-la-vie-politique-peine-a-se-faire-une-place-dans-les-cantons",
+    "date": "Mon, 23 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "En graphiques – Est-ce que l’argent fait le bonheur en politique? Une comparaison des budgets de campagne des dernières votations fédérales",
+    "why": "Les résultats des dernières votations fédérales montrent que les coalitions larges et l’avis du Conseil fédéral pèsent davantage que les budgets de campagne. L’argent ne joue un rô",
+    "url": "https://www.letemps.ch/suisse/en-graphiques-est-ce-que-l-argent-fait-le-bonheur-en-politique-une-comparaison-des-budgets-de-campagne-des-dernieres-votations-federales",
+    "date": "Mon, 23 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1256,27 +1280,11 @@
     "date": "Mon, 23 Nov 2026"
    },
    {
-    "src": "Le Temps",
+    "src": "Financial Times",
     "r": "n",
-    "t": "Le Montreux Comedy bat un record d’audience et reconduit sa double implantation à Montreux et Lausanne en 2027",
-    "why": "Le retour de la manifestation sur la Riviera n&#39;a pas signé l&#39;abandon de Lausanne, où elle s&#39;était repliée durant les travaux. Durant 12 jours, le festival a réuni 24 50",
-    "url": "https://www.letemps.ch/culture/scenes/le-montreux-comedy-bat-un-record-d-audience-et-reconduit-sa-double-implantation-a-montreux-et-lausanne-en-2027",
-    "date": "Mon, 23 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "En décollant pour son «Exoplanète», «La Revue de Lausanne» offre une édition stellaire",
-    "why": "Et si la meilleure solution face au chaos planétaire était tout simplement de quitter la Terre? De retour au Pavillon Naftule pour une neuvième édition, l’équipe de «La Revue de La",
-    "url": "https://www.letemps.ch/culture/scenes/en-decollant-pour-son-exoplanete-la-revue-de-lausanne-offre-une-edition-stellaire",
-    "date": "Mon, 23 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "Le Projet de soins anticipé comble un retard culturel en Suisse romande",
-    "why": "En Suisse romande, 88% de la population ne dispose pas de directives anticipées, et plus d’un tiers ignore même leur existence. Pour briser ce tabou, l’Organisation suisse des pati",
-    "url": "https://www.letemps.ch/suisse/le-projet-de-soins-anticipe-comble-un-retard-culturel-en-suisse-romande",
+    "t": "FirstFT: Wall Street set to rebound after AI stock sell-off",
+    "why": "Also in today’s newsletter: Democrats win House seat in North Carolina and how China is winning the car war",
+    "url": "https://www.ft.com/content/67014244-a737-4be5-ac81-97b77a6912ff?syn-25a6b1a6=1",
     "date": "Mon, 23 Nov 2026"
    },
    {
@@ -1310,54 +1318,46 @@
     "why": "Recent money market stress is likely to prompt the Fed to expand its balance sheet before action next year to shrink it",
     "url": "https://www.ft.com/content/be4b5919-1d5a-4706-a942-800ccf157601",
     "date": "Mon, 23 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "What happens when bubbles burst",
-    "why": "AI enthusiasm has turned into major investor concern that a market might be heading for a fall",
-    "url": "https://www.ft.com/content/aa71d6bc-bbca-4e95-81b1-20895ac0cb59?syn-25a6b1a6=1",
-    "date": "Mon, 23 Nov 2026"
    }
   ],
   "note": "Le Temps donne l'angle suisse et romand (place financière, banques, Genève). Le Financial Times couvre les marchés mondiaux en profondeur. Les titres sont repris avec un lien vers l'article ; la lecture complète peut nécessiter un abonnement."
  },
  "news": [
   {
-   "t": "Stocks are tumbling. Has the AI bubble finally burst?",
-   "link": "https://www.usatoday.com/story/money/personal-finance/2026/11/23/ai-bubble-stock-market-selloff/92915438007/?.tsrc=rss",
+   "t": "The Fed isn't riding to the rescue — Wall Street still sees a December rate hike after tech's worst week since 2020: Chart of the Day",
+   "link": "https://finance.yahoo.com/markets/article/the-fed-isnt-riding-to-the-rescue--wall-street-still-sees-a-december-rate-hike-after-techs-worst-week-since-2020-chart-of-the-day-110000273.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Mon, 23 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "This is where RBC sees the S&P 500 heading over the next 12 months",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/where-rbc-sees-p-500-095313357.html?.tsrc=rss",
+   "t": "Traders Hunt Tech-Sector Values on European Bourses Midday",
+   "link": "https://finance.yahoo.com/markets/world-indices/articles/traders-hunt-tech-sector-values-114108048.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Mon, 23 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "Stock Market Sell-Off: Here's My Honest Take On What Every Long-Term Investor Should Do Right Now",
-   "link": "https://www.fool.com/investing/2026/11/23/stock-market-sell-off-heres-my-honest-take-on-what-every-long-term-investor-should-do-right-now/?.tsrc=rss",
+   "t": "Warren Buffett Said “A Pin Lies in Wait for Every Bubble.” What He Did After the Last One Burst Is a Warning to Anyone Buying AI Stocks Now",
+   "link": "https://247wallst.com/investing/2026/11/23/warren-buffett-said-a-pin-lies-in-wait-for-every-bubble-what-he-did-after-the-last-one-burst-is-a-warning-to-anyone-buying-ai-stocks-now/?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Mon, 23 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "The S&P 500 Just Had Its Worst Week in 18 Months. Is This a Buying Opportunity?",
-   "link": "https://www.fool.com/investing/2026/11/23/the-s-and-p-500-just-had-its-worst-week-in-18-months-is-this-a-buying-opportunity/?.tsrc=rss",
+   "t": "The S&P 500 Fell 7 Days in a Row for the First Time Since 2020. Here's What Happened After Every Losing Streak of 6 Days or More Since 1950.",
+   "link": "https://www.fool.com/investing/2026/11/23/the-s-and-p-500-fell-7-days-in-a-row-for-the-first-time-since-2020-here-s-what-happened-after-every-losing-streak-of-6-days-or-more-since-1950/?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Mon, 23 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "European shares catch modest bid after brutal sell-off",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/european-shares-catch-modest-bid-083725967.html?.tsrc=rss",
+   "t": "What Triggered The Drop In Marvell Stock?",
+   "link": "https://www.trefis.com/stock/mrvl/articles/627782/what-triggered-the-drop-in-marvell-stock/2026-11-23?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Mon, 23 Nov 2026",
    "r": "n",
