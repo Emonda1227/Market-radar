@@ -1,6 +1,6 @@
 {
- "id": "2026-11-24-2228",
- "ts": "2026-11-24T22:28+01:00",
+ "id": "2026-11-24-2329",
+ "ts": "2026-11-24T23:29+01:00",
  "edition": "Soir",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 22h28 (Genève)",
+   "asof": "Mise à jour auto 23h29 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 22h28 (Genève)",
+   "asof": "Mise à jour auto 23h29 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 22h28 (Genève)",
+   "asof": "Mise à jour auto 23h29 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 22h28 (Genève)",
+   "asof": "Mise à jour auto 23h29 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 22h28 (Genève)",
+   "asof": "Mise à jour auto 23h29 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -421,8 +421,8 @@
     "r": "o",
     "flag": "🇺🇸",
     "name": "VIX",
-    "last": 26.43,
-    "d": -0.71,
+    "last": 26.36,
+    "d": -0.98,
     "open": "15:30",
     "close": "22:00",
     "scope": "Nervosité attendue sur le S&P 500 (30 jours) · valeur du 18/11"
@@ -461,11 +461,11 @@
    },
    {
     "id": "brent",
-    "r": "g",
+    "r": "o",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "88,3 $",
-    "d": "+1,88 %",
+    "value": "88,5 $",
+    "d": "+2,10 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -491,10 +491,10 @@
      "r": "o",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 550 $ / once",
+     "value": "≈ 3 555 $ / once",
      "sub": "contrat à terme",
-     "d": "−2,78 %",
-     "last": 3550
+     "d": "−2,64 %",
+     "last": 3555
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,10 +506,10 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 59 867 $",
+     "value": "≈ 59 923 $",
      "sub": "",
-     "d": "−2,42 % (24 h)",
-     "last": 59867
+     "d": "−2,09 % (24 h)",
+     "last": 59923
     },
     {
      "id": "xrp",
@@ -519,7 +519,7 @@
      "value": "≈ 0,922 $",
      "sub": "",
      "d": "−1,84 % (24 h)",
-     "last": 0.921952
+     "last": 0.92244
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,20 +531,20 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0910",
-     "sub": "1 franc = 1,0910 euro",
-     "d": "+0,20 %",
-     "last": 1.091
+     "value": "1,0908",
+     "sub": "1 franc = 1,0908 euro",
+     "d": "+0,18 %",
+     "last": 1.0908
     },
     {
      "id": "chfusd",
      "r": "o",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1968",
-     "sub": "1 franc = 1,1968 dollar",
-     "d": "+0,66 %",
-     "last": 1.1968
+     "value": "1,1976",
+     "sub": "1 franc = 1,1976 dollar",
+     "d": "+0,73 %",
+     "last": 1.1976
     },
     {
      "id": "eurusd",
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 22h28 (Genève)",
+    "asof": "Mise à jour auto 23h29 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 22h28 (Genève)",
+    "asof": "Mise à jour auto 23h29 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 22h28 (Genève)",
+    "asof": "Mise à jour auto 23h29 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 22h28 (Genève)",
+    "asof": "Mise à jour auto 23h29 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,8 +1237,16 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 22h28 (Genève)",
+  "asof": "Mise à jour auto 23h29 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Après huit ans de procédure, Huawei est reconnu coupable de vol de secrets industriels par un tribunal fédéral à New York",
+    "why": "Le groupe chinois a également recouru à la fraude bancaire, a tranché le jury du tribunal. Le chef d’accusation d’association de malfaiteurs en vue de détournement de propriété int",
+    "url": "https://www.letemps.ch/economie/apres-huit-ans-de-procedure-huawei-est-reconnu-coupable-de-vol-de-secrets-industriels-par-un-tribunal-federal-a-new-york",
+    "date": "Tue, 24 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1269,14 +1277,6 @@
     "t": "En ouverture du festival genevois Palestine Filmer C’est Exister, «Conversation With the Sea» raconte l’histoire d’un Arabe de Jérusalem-Est pris dans un engrenage kafkaïen",
     "why": "Muayad Alayan raconte dans «Conversation With the Sea» l’histoire d’un Arabe condamné par Israël à payer les cotisations sociales de son fils, pourtant décédé. Le film fait l’ouver",
     "url": "https://www.letemps.ch/culture/ecrans/en-ouverture-du-festival-genevois-palestine-filmer-c-est-exister-conversation-with-the-sea-raconte-l-histoire-d-un-arabe-de-jerusalem-est-pris-dans-un-engrenage-kafkaien",
-    "date": "Tue, 24 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "La Cour européenne des droits de l'homme autorise les Etats à refouler des migrants si leurs déplacements sont «instrumentalisés»",
-    "why": "La Cour européenne des droits de l&#39;homme a jugé mardi que des migrants pouvaient être refoulés aux frontières lorsqu&#39;ils arrivent d&#39;un État «instrumentalisant» la migra",
-    "url": "https://www.letemps.ch/monde/la-cour-europeenne-des-droits-de-l-homme-autorise-les-etats-a-refouler-des-migrants-si-leurs-deplacements-sont-instrumentalises",
     "date": "Tue, 24 Nov 2026"
    },
    {
@@ -1324,6 +1324,30 @@
  },
  "news": [
   {
+   "t": "Morning Movers: Dick’s Sporting and Dollar Tree gain following quarterly reports",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/morning-movers-dick-sporting-dollar-220046732.html?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Tue, 24 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
+   "t": "5 Dirt-Cheap Stocks Positioned to Soar in 2027",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/5-dirt-cheap-stocks-positioned-215028978.html?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Tue, 24 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
+   "t": "India’s Largest Private Lender Is Lagging – HDFC (HDB) Made into Our 2027 Bargain List",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/india-largest-private-lender-lagging-213822712.html?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Tue, 24 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
    "t": "How major US stock indexes fared Tuesday 11/24/2026",
    "link": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-211948828.html?.tsrc=rss",
    "src": "Yahoo Finance",
@@ -1334,30 +1358,6 @@
   {
    "t": "She Retires at 65 With a $900,000 All-Stock 401(k) as the S&P 500 Swings From Its Worst Week to Its Best Day Since April 2025. The 8.6% Drop Erases $77,400, and the Rebound Still Leaves Her $38,409 Short",
    "link": "https://247wallst.com/personal-finance/2026/11/24/she-retires-at-65-with-a-900000-all-stock-401k-right-after-the-sp-500s-worst-week-since-april-2025-the-8-6-drop-erases-77400-and-mondays-best-day-since-april-2025-still-leaves-her-38409/?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Tue, 24 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "nVent Electric (NVT) Stock Is Down 8.4% Today: AI Chip Selloff Drags Power Peers",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/nvent-electric-nvt-stock-down-210145373.html?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Tue, 24 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "Rambus (RMBS) Stock Is Down 11.4% Today: Chip Sector AI Selloff",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/rambus-rmbs-stock-down-11-210135197.html?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Tue, 24 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "Advanced Energy (AEIS) Stock Is Down 9.6% Today Without Company News",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/advanced-energy-aeis-stock-down-210130944.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Tue, 24 Nov 2026",
    "r": "n",
