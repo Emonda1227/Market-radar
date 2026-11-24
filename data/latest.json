@@ -1,6 +1,6 @@
 {
- "id": "2026-11-24-0659",
- "ts": "2026-11-24T06:59+01:00",
+ "id": "2026-11-24-0814",
+ "ts": "2026-11-24T08:14+01:00",
  "edition": "Matin",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 06h59 (Genève)",
+   "asof": "Mise à jour auto 08h14 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 06h59 (Genève)",
+   "asof": "Mise à jour auto 08h14 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 06h59 (Genève)",
+   "asof": "Mise à jour auto 08h14 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -241,8 +241,8 @@
      "r": "o",
      "flag": "🇯🇵",
      "name": "Nikkei 225",
-     "last": 58830.82,
-     "d": 4.24,
+     "last": 58644.63,
+     "d": 3.91,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -254,8 +254,8 @@
      "r": "o",
      "flag": "🇰🇷",
      "name": "Kospi",
-     "last": 5055.14,
-     "d": 7.36,
+     "last": 5006.03,
+     "d": 6.32,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -267,8 +267,8 @@
      "r": "g",
      "flag": "🇭🇰",
      "name": "Hang Seng",
-     "last": 22300.52,
-     "d": -0.49,
+     "last": 22243.74,
+     "d": -0.75,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -280,8 +280,8 @@
      "r": "g",
      "flag": "🇨🇳",
      "name": "Shanghai Composite",
-     "last": 3555.69,
-     "d": 0.62,
+     "last": 3546.45,
+     "d": 0.36,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 06h59 (Genève)",
+   "asof": "Mise à jour auto 08h14 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 06h59 (Genève)",
+   "asof": "Mise à jour auto 08h14 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -464,8 +464,8 @@
     "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "86,2 $",
-    "d": "−0,51 %",
+    "value": "86,5 $",
+    "d": "−0,25 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -491,10 +491,10 @@
      "r": "g",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 629 $ / once",
+     "value": "≈ 3 621 $ / once",
      "sub": "contrat à terme",
-     "d": "−0,61 %",
-     "last": 3629
+     "d": "−0,83 %",
+     "last": 3621
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 60 514 $",
+     "value": "≈ 60 380 $",
      "sub": "",
-     "d": "−1,79 % (24 h)",
-     "last": 60514
+     "d": "−1,78 % (24 h)",
+     "last": 60380
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,956 $",
+     "value": "≈ 0,946 $",
      "sub": "",
-     "d": "+1,74 % (24 h)",
-     "last": 0.956218
+     "d": "+0,52 % (24 h)",
+     "last": 0.945996
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,30 +531,30 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0888",
-     "sub": "1 franc = 1,0888 euro",
-     "d": "0,00 %",
-     "last": 1.0888
+     "value": "1,0883",
+     "sub": "1 franc = 1,0883 euro",
+     "d": "−0,05 %",
+     "last": 1.0883
     },
     {
      "id": "chfusd",
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1883",
-     "sub": "1 franc = 1,1883 dollar",
-     "d": "−0,05 %",
-     "last": 1.1883
+     "value": "1,1874",
+     "sub": "1 franc = 1,1874 dollar",
+     "d": "−0,13 %",
+     "last": 1.1874
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0911",
-     "sub": "1 euro = 1,0911 dollar",
-     "d": "+0,05 %",
-     "last": 1.0911
+     "value": "1,0908",
+     "sub": "1 euro = 1,0908 dollar",
+     "d": "+0,02 %",
+     "last": 1.0908
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 06h59 (Genève)",
+    "asof": "Mise à jour auto 08h14 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 06h59 (Genève)",
+    "asof": "Mise à jour auto 08h14 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 06h59 (Genève)",
+    "asof": "Mise à jour auto 08h14 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 06h59 (Genève)",
+    "asof": "Mise à jour auto 08h14 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,8 +1237,24 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 06h59 (Genève)",
+  "asof": "Mise à jour auto 08h14 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Coup de boule et front républicain: quand Annemasse a senti le vent du boulet",
+    "why": "Où notre reporter Matteo Maillard fait la rencontre de l&#39;inénarrable Jean-Mi, «beau, humble, et encarté au RN»",
+    "url": "https://www.letemps.ch/heidi/coup-de-boule-et-front-republicain-quand-annemasse-a-senti-le-vent-du-boulet",
+    "date": "Tue, 24 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Référendums et initiatives populaires… Les candidats à la présidentielle française restent muets face à un pacte pour la démocratie directe inspiré de la Suisse",
+    "why": "Référendum à l’initiative des citoyens, révision constitutionnelle lancée par les électeurs: ces idées soutenues par trois quarts des Français se heurtent au silence des favoris. L",
+    "url": "https://www.letemps.ch/monde/france/referendums-et-initiatives-populaires-les-candidats-a-la-presidentielle-francaise-restent-muets-face-a-un-pacte-pour-la-democratie-directe-inspire-de-la-suisse",
+    "date": "Tue, 24 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1264,19 +1280,27 @@
     "date": "Tue, 24 Nov 2026"
    },
    {
-    "src": "Le Temps",
+    "src": "Financial Times",
     "r": "n",
-    "t": "Des chocs pétroliers à la crise des subprimes, en passant par la chute du mur de Berlin… Joies et tourments des baby-boomers et millennials",
-    "why": "Depuis le début de la décennie, une succession de crises provoque un climat très anxiogène. Quelles ont été les grandes ruptures de ces 70 dernières années? Plongée dans les archiv",
-    "url": "https://www.letemps.ch/economie/des-chocs-petroliers-a-la-crise-des-subprimes-en-passant-par-la-chute-du-mur-de-berlin-joies-et-tourments-des-baby-boomers-et-millennials",
+    "t": "Tech stocks surge on Jensen Huang’s return",
+    "why": "Asian markets follow Wall Street higher after Nvidia chief’s reinstatement",
+    "url": "https://www.ft.com/content/c0cb932a-076e-4471-8009-91749fde5f47?syn-25a6b1a6=1",
     "date": "Tue, 24 Nov 2026"
    },
    {
-    "src": "Le Temps",
+    "src": "Financial Times",
     "r": "n",
-    "t": "Logiciel Epic: pourquoi ce mariage forcé avec l’Oncle Sam?",
-    "why": "OPINION. Epic coûte cher, nous met sous coupe américaine et nous enchaîne pour longtemps, écrit Virginie Cavalli, candidate vert’libérale au Conseil d’Etat vaudois et experte en pr",
-    "url": "https://www.letemps.ch/opinions/logiciel-epic-pourquoi-ce-mariage-force-avec-l-oncle-sam",
+    "t": "The Jensen put",
+    "why": "Plus, Capex or die trying",
+    "url": "https://www.ft.com/content/74408261-9cb4-41ae-8d4f-3a1a9ce72930?syn-25a6b1a6=1",
+    "date": "Tue, 24 Nov 2026"
+   },
+   {
+    "src": "Financial Times",
+    "r": "n",
+    "t": "German industrial giants launch trading house for rare earths",
+    "why": "Also in this newsletter: Europe’s underused playing card on AI",
+    "url": "https://www.ft.com/content/bfcb8ee8-97cc-4ef0-8234-3a8da0d3a814?syn-25a6b1a6=1",
     "date": "Tue, 24 Nov 2026"
    },
    {
@@ -1293,30 +1317,6 @@
     "t": "SpaceX-Tesla: the directors negotiating the biggest merger ever",
     "why": "Five executives are charged with combining Elon Musk’s sprawling enterprises into a potential $3.5tn colossus",
     "url": "https://www.ft.com/content/2585e45e-9133-4215-a2d8-e1275e1033b9?syn-25a6b1a6=1",
-    "date": "Tue, 24 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "Compass reignites City exodus fears",
-    "why": "Catering company is latest heavyweight to plan New York shift as groups seek to boost liquidity and valuations",
-    "url": "https://www.ft.com/content/eb2618d4-46db-4d1b-bdc8-62c69c07cb16?syn-25a6b1a6=1",
-    "date": "Tue, 24 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "The political tide is turning on US audits",
-    "why": "More signs are emerging of the industry regulator’s new approach under chair Jim Logothetis",
-    "url": "https://www.ft.com/content/b7726a77-5f25-4c9c-8900-1609479b34b8?syn-25a6b1a6=1",
-    "date": "Tue, 24 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "We are the ‘Tesla’ of ratings, says tiny agency behind private credit boom",
-    "why": "Egan-Jones president argues the rating group can churn out thousands of scores due to its investment in technology",
-    "url": "https://www.ft.com/content/26739054-0455-449b-9566-97fb4986088d?syn-25a6b1a6=1",
     "date": "Tue, 24 Nov 2026"
    }
   ],
