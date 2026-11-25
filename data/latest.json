@@ -1,6 +1,6 @@
 {
- "id": "2026-11-25-0700",
- "ts": "2026-11-25T07:00+01:00",
+ "id": "2026-11-25-0818",
+ "ts": "2026-11-25T08:18+01:00",
  "edition": "Matin",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 07h00 (Genève)",
+   "asof": "Mise à jour auto 08h18 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 07h00 (Genève)",
+   "asof": "Mise à jour auto 08h18 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 07h00 (Genève)",
+   "asof": "Mise à jour auto 08h18 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -241,8 +241,8 @@
      "r": "r",
      "flag": "🇯🇵",
      "name": "Nikkei 225",
-     "last": 56923.57,
-     "d": -2.93,
+     "last": 57011.62,
+     "d": -2.78,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -254,8 +254,8 @@
      "r": "r",
      "flag": "🇰🇷",
      "name": "Kospi",
-     "last": 4679.78,
-     "d": -6.52,
+     "last": 4697.51,
+     "d": -6.16,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -267,8 +267,8 @@
      "r": "o",
      "flag": "🇭🇰",
      "name": "Hang Seng",
-     "last": 22148.18,
-     "d": -1.05,
+     "last": 22033.7,
+     "d": -1.56,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -280,8 +280,8 @@
      "r": "o",
      "flag": "🇨🇳",
      "name": "Shanghai Composite",
-     "last": 3492.3,
-     "d": -1.32,
+     "last": 3476.47,
+     "d": -1.77,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -290,11 +290,11 @@
     },
     {
      "id": "sensex",
-     "r": "o",
+     "r": "g",
      "flag": "🇮🇳",
      "name": "Sensex",
-     "last": 84388.57,
-     "d": 2.37,
+     "last": 84052.33,
+     "d": 1.96,
      "w": null,
      "ytd": null,
      "open": "04:45",
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 07h00 (Genève)",
+   "asof": "Mise à jour auto 08h18 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 07h00 (Genève)",
+   "asof": "Mise à jour auto 08h18 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -464,8 +464,8 @@
     "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "87,3 $",
-    "d": "−1,63 %",
+    "value": "87,5 $",
+    "d": "−1,48 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -491,10 +491,10 @@
      "r": "g",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 523 $ / once",
+     "value": "≈ 3 519 $ / once",
      "sub": "contrat à terme",
-     "d": "−1,10 %",
-     "last": 3523
+     "d": "−1,20 %",
+     "last": 3519
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 59 100 $",
+     "value": "≈ 59 163 $",
      "sub": "",
-     "d": "−2,39 % (24 h)",
-     "last": 59100
+     "d": "−2,03 % (24 h)",
+     "last": 59163
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,916 $",
+     "value": "≈ 0,920 $",
      "sub": "",
-     "d": "−4,20 % (24 h)",
-     "last": 0.916149
+     "d": "−2,70 % (24 h)",
+     "last": 0.919706
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,30 +531,30 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0922",
-     "sub": "1 franc = 1,0922 euro",
-     "d": "+0,12 %",
-     "last": 1.0922
+     "value": "1,0933",
+     "sub": "1 franc = 1,0933 euro",
+     "d": "+0,22 %",
+     "last": 1.0933
     },
     {
      "id": "chfusd",
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1957",
-     "sub": "1 franc = 1,1957 dollar",
-     "d": "−0,17 %",
-     "last": 1.1957
+     "value": "1,1968",
+     "sub": "1 franc = 1,1968 dollar",
+     "d": "−0,08 %",
+     "last": 1.1968
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0945",
-     "sub": "1 euro = 1,0945 dollar",
-     "d": "−0,20 %",
-     "last": 1.0945
+     "value": "1,0942",
+     "sub": "1 euro = 1,0942 dollar",
+     "d": "−0,23 %",
+     "last": 1.0942
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 07h00 (Genève)",
+    "asof": "Mise à jour auto 08h18 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 07h00 (Genève)",
+    "asof": "Mise à jour auto 08h18 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 07h00 (Genève)",
+    "asof": "Mise à jour auto 08h18 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 07h00 (Genève)",
+    "asof": "Mise à jour auto 08h18 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,8 +1237,32 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 07h00 (Genève)",
+  "asof": "Mise à jour auto 08h18 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Jamal Musiala et le Bayern ont-ils perdu leur magie?",
+    "why": "Joueur différent dans un club différent, l’attaquant allemand souffre depuis cet été de troubles neurologiques qui affectent ses performances. Et qui incitent les dirigeants du Bay",
+    "url": "https://www.letemps.ch/sport/football/jamal-musiala-et-le-bayern-ont-ils-perdu-leur-magie",
+    "date": "Wed, 25 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "«Etre malade à 30 ans, c’est romantique. Etre malade à 60 ans, c’est pathétique»",
+    "why": "CHRONIQUE. On n’a pas la même perception de la maladie selon l’âge auquel elle se manifeste, assure une amie de notre chroniqueuse qui a repéré une forme d’âgisme dans le domaineC’",
+    "url": "https://www.letemps.ch/opinions/chroniques/etre-malade-a-30-ans-c-est-romantique-etre-malade-a-60-ans-c-est-pathetique",
+    "date": "Wed, 25 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "«Les documents numériques survivent aux missiles»: comment l’Ukraine a bâti un Etat numérique en temps de guerre",
+    "why": "De passage à Genève, la ministre ukrainienne de la Transition numérique, Oksana Ferchuk, explique comment son portefeuille numérique permet d’assurer les services de l’Etat en temp",
+    "url": "https://www.letemps.ch/monde/europe/les-documents-numeriques-survivent-aux-missiles-comment-l-ukraine-a-bati-un-etat-numerique-en-temps-de-guerre",
+    "date": "Wed, 25 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1256,27 +1280,19 @@
     "date": "Wed, 25 Nov 2026"
    },
    {
-    "src": "Le Temps",
+    "src": "Financial Times",
     "r": "n",
-    "t": "Les Iles Salomon et l’Australie renforcent leur partenariat au détriment de Pékin",
-    "why": "Honaira et Canberra ont signé un traité couvrant de nombreux domaines, en priorité au niveau sécuritaire. Le fruit d’années de diplomatie australienne, qui vise à endiguer l’influe",
-    "url": "https://www.letemps.ch/monde/asie-oceanie/les-iles-salomon-et-l-australie-renforcent-leur-partenariat-au-detriment-de-pekin",
+    "t": "Asian markets lose ground as AI fears return",
+    "why": "Tech stocks in Tokyo and Seoul suffer after Wall Street’s Jensen Huang bounce fades",
+    "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a?syn-25a6b1a6=1",
     "date": "Wed, 25 Nov 2026"
    },
    {
-    "src": "Le Temps",
+    "src": "Financial Times",
     "r": "n",
-    "t": "Kilmar Abrego Garcia, l'immigré salvadorien devenu emblème de la politique migratoire trumpiste, quitte les Etats-Unis",
-    "why": "Kilmar Abrego Garcia est devenu un symbole en 2025 à la suite de sa déportation illégale vers le Salvador par l’administration Trump. Le sénateur démocrate Chris Van Hollen se réjo",
-    "url": "https://www.letemps.ch/monde/ameriques/kilmar-abrego-garcia-l-immigre-salvadorien-devenu-embleme-de-la-politique-migratoire-trumpiste-quitte-les-etats-unis",
-    "date": "Wed, 25 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "Rendons aux femmes victimes de violences conjugales le pouvoir des mots",
-    "why": "ÉDITORIAL. Avec la future surveillance active des auteurs de violences par bracelet électronique, ces femmes, jusqu’ici contraintes au silence, devraient petit à petit redevenir au",
-    "url": "https://www.letemps.ch/opinions/editoriaux/rendons-aux-femmes-victimes-de-violences-conjugales-le-pouvoir-des-mots",
+    "t": "Anthropic has pulled up the ladder",
+    "why": "By pushing its IPO to the limit, the Claude maker has made itself a hard act to follow",
+    "url": "https://www.ft.com/content/1c62dcfe-826f-4638-a9ee-c3b3009bc45d",
     "date": "Wed, 25 Nov 2026"
    },
    {
@@ -1301,22 +1317,6 @@
     "t": "UK pensions watchdog ‘worried’ over schemes’ exposure to AI sector",
     "why": "New chair Emma Douglas fears plans may not be aware of their exposure to fast-growing but volatile sector",
     "url": "https://www.ft.com/content/9910163e-c103-46b5-8bbe-5a12ab5453e6?syn-25a6b1a6=1",
-    "date": "Wed, 25 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "Asian markets lose ground as AI fears return",
-    "why": "Tech stocks in Tokyo and Seoul suffer after Wall Street’s Jensen Huang bounce fades",
-    "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a?syn-25a6b1a6=1",
-    "date": "Wed, 25 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "Shein to pay $100mn to resolve US allegations that it deceived customers",
-    "why": "Regulators claim cotton that the retailer’s suppliers said was US-grown was harvested in China",
-    "url": "https://www.ft.com/content/0128d44e-8ca1-49b8-868b-b8fe0e4824c6?syn-25a6b1a6=1",
     "date": "Wed, 25 Nov 2026"
    }
   ],
