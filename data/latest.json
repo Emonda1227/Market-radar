@@ -1,7 +1,7 @@
 {
- "id": "2026-11-25-1337",
- "ts": "2026-11-25T13:37+01:00",
- "edition": "Midi",
+ "id": "2026-11-25-1524",
+ "ts": "2026-11-25T15:24+01:00",
+ "edition": "Après-midi",
  "overall": "r",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
  "bref": [
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 13h37 (Genève)",
+   "asof": "Mise à jour auto 15h24 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -43,7 +43,7 @@
      "r": "g",
      "flag": "🇪🇺",
      "name": "Euro Stoxx 50",
-     "last": 5963.97,
+     "last": 5964.23,
      "d": -0.66,
      "w": null,
      "ytd": null,
@@ -56,8 +56,8 @@
      "r": "g",
      "flag": "🇪🇺",
      "name": "STOXX Europe 600",
-     "last": 631.16,
-     "d": -0.25,
+     "last": 631.49,
+     "d": -0.2,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -82,8 +82,8 @@
      "r": "g",
      "flag": "🇨🇭",
      "name": "SMI",
-     "last": 14770.26,
-     "d": 0.25,
+     "last": 14760.57,
+     "d": 0.18,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -95,8 +95,8 @@
      "r": "g",
      "flag": "🇩🇪",
      "name": "DAX",
-     "last": 24917.37,
-     "d": -0.4,
+     "last": 24902.68,
+     "d": -0.46,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -108,8 +108,8 @@
      "r": "g",
      "flag": "🇫🇷",
      "name": "CAC 40",
-     "last": 8076.3,
-     "d": 0.45,
+     "last": 8076.04,
+     "d": 0.44,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -121,8 +121,8 @@
      "r": "g",
      "flag": "🇬🇧",
      "name": "FTSE 100",
-     "last": 10459.16,
-     "d": -0.08,
+     "last": 10479.71,
+     "d": 0.12,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -134,8 +134,8 @@
      "r": "g",
      "flag": "🇮🇹",
      "name": "FTSE MIB",
-     "last": 47681.08,
-     "d": -0.91,
+     "last": 47768.56,
+     "d": -0.73,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -147,8 +147,8 @@
      "r": "g",
      "flag": "🇪🇸",
      "name": "IBEX 35",
-     "last": 18869.0,
-     "d": -0.77,
+     "last": 18879.9,
+     "d": -0.71,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 13h37 (Genève)",
+   "asof": "Mise à jour auto 15h24 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 13h37 (Genève)",
+   "asof": "Mise à jour auto 15h24 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 13h37 (Genève)",
+   "asof": "Mise à jour auto 15h24 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 13h37 (Genève)",
+   "asof": "Mise à jour auto 15h24 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -421,8 +421,8 @@
     "r": "r",
     "flag": "🇺🇸",
     "name": "VIX",
-    "last": 30.92,
-    "d": 17.3,
+    "last": 31.43,
+    "d": 19.23,
     "open": "15:30",
     "close": "22:00",
     "scope": "Nervosité attendue sur le S&P 500 (30 jours) · valeur du 18/11"
@@ -437,8 +437,8 @@
     "r": "g",
     "flag": "🇺🇸",
     "name": "Treasury US 10 ans",
-    "value": "4,90 %",
-    "d": "−1 pb",
+    "value": "4,84 %",
+    "d": "−7 pb",
     "scope": "Taux d'emprunt de l'État américain"
    },
    {
@@ -464,8 +464,8 @@
     "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "89,0 $",
-    "d": "+0,24 %",
+    "value": "89,4 $",
+    "d": "+0,68 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -488,13 +488,13 @@
    "rows": [
     {
      "id": "gold",
-     "r": "g",
+     "r": "o",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 553 $ / once",
+     "value": "≈ 3 511 $ / once",
      "sub": "contrat à terme",
-     "d": "−1,06 %",
-     "last": 3553
+     "d": "−2,23 %",
+     "last": 3511
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 58 626 $",
+     "value": "≈ 58 275 $",
      "sub": "",
-     "d": "−2,57 % (24 h)",
-     "last": 58626
+     "d": "−3,42 % (24 h)",
+     "last": 58275
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,910 $",
+     "value": "≈ 0,901 $",
      "sub": "",
-     "d": "−1,73 % (24 h)",
-     "last": 0.910225
+     "d": "−2,59 % (24 h)",
+     "last": 0.900939
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,30 +531,30 @@
      "r": "o",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0998",
-     "sub": "1 franc = 1,0998 euro",
-     "d": "+0,82 %",
-     "last": 1.0998
+     "value": "1,1002",
+     "sub": "1 franc = 1,1002 euro",
+     "d": "+0,85 %",
+     "last": 1.1002
     },
     {
      "id": "chfusd",
      "r": "o",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,2045",
-     "sub": "1 franc = 1,2045 dollar",
-     "d": "+0,57 %",
-     "last": 1.2045
+     "value": "1,2049",
+     "sub": "1 franc = 1,2049 dollar",
+     "d": "+0,60 %",
+     "last": 1.2049
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0949",
-     "sub": "1 euro = 1,0949 dollar",
-     "d": "−0,16 %",
-     "last": 1.0949
+     "value": "1,0951",
+     "sub": "1 euro = 1,0951 dollar",
+     "d": "−0,15 %",
+     "last": 1.0951
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 13h37 (Genève)",
+    "asof": "Mise à jour auto 15h24 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 13h37 (Genève)",
+    "asof": "Mise à jour auto 15h24 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 13h37 (Genève)",
+    "asof": "Mise à jour auto 15h24 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1064,14 +1064,14 @@
       "name": "Nestlé",
       "ticker": "NESN",
       "yahoo": "NESN.SW",
-      "last": 87.34,
+      "last": 87.48,
       "cur": "CHF",
-      "d": 1.23,
-      "fromHigh": -0.89,
+      "d": 1.39,
+      "fromHigh": -0.73,
       "scope": "Alimentation · Vevey",
-      "w": 1.52,
-      "y": 9.27,
-      "ytd": 14.26
+      "w": 1.69,
+      "y": 9.45,
+      "ytd": 14.44
      },
      {
       "id": "novn",
@@ -1080,14 +1080,14 @@
       "name": "Novartis",
       "ticker": "NOVN",
       "yahoo": "NOVN.SW",
-      "last": 128.64,
+      "last": 128.42,
       "cur": "CHF",
-      "d": 0.03,
-      "fromHigh": -5.24,
+      "d": -0.14,
+      "fromHigh": -5.41,
       "scope": "Pharma · Bâle · plus forte baisse du SMI",
-      "w": -2.16,
-      "y": 23.01,
-      "ytd": 18.56
+      "w": -2.33,
+      "y": 22.8,
+      "ytd": 18.36
      },
      {
       "id": "rog",
@@ -1096,14 +1096,14 @@
       "name": "Roche",
       "ticker": "ROG",
       "yahoo": "RO.SW",
-      "last": 414.2,
+      "last": 414.0,
       "cur": "CHF",
-      "d": 0.49,
-      "fromHigh": -0.38,
+      "d": 0.44,
+      "fromHigh": -0.43,
       "scope": "Pharma et diagnostic · Bâle",
-      "w": 1.62,
-      "y": 27.45,
-      "ytd": 24.31
+      "w": 1.57,
+      "y": 27.38,
+      "ytd": 24.25
      },
      {
       "id": "ubsg",
@@ -1112,14 +1112,14 @@
       "name": "UBS",
       "ticker": "UBSG",
       "yahoo": "UBSG.SW",
-      "last": 37.28,
+      "last": 37.15,
       "cur": "CHF",
-      "d": -0.11,
-      "fromHigh": -17.16,
+      "d": -0.46,
+      "fromHigh": -17.44,
       "scope": "Banque et gestion de fortune · Zurich",
-      "w": -3.32,
-      "y": 23.24,
-      "ytd": -2.33
+      "w": -3.66,
+      "y": 22.81,
+      "ytd": -2.67
      },
      {
       "id": "abbn",
@@ -1128,21 +1128,21 @@
       "name": "ABB",
       "ticker": "ABBN",
       "yahoo": "ABBN.SW",
-      "last": 64.64,
+      "last": 64.54,
       "cur": "CHF",
-      "d": -1.22,
-      "fromHigh": -27.01,
+      "d": -1.38,
+      "fromHigh": -27.12,
       "scope": "Électrification et automatisation · valeur vers 9h45",
-      "w": -4.91,
-      "y": 15.93,
-      "ytd": 5.55
+      "w": -5.06,
+      "y": 15.75,
+      "ytd": 5.39
      }
     ]
    },
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 13h37 (Genève)",
+    "asof": "Mise à jour auto 15h24 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1152,14 +1152,14 @@
       "name": "ASML",
       "ticker": "ASML",
       "yahoo": "ASML.AS",
-      "last": 1159.6,
+      "last": 1161.0,
       "cur": "€",
-      "d": -3.46,
-      "fromHigh": -32.64,
+      "d": -3.35,
+      "fromHigh": -32.55,
       "scope": "Machines pour fabriquer les puces · 1re capitalisation d'Europe",
-      "w": -8.03,
-      "y": 34.79,
-      "ytd": 17.57
+      "w": -7.92,
+      "y": 34.95,
+      "ytd": 17.71
      },
      {
       "id": "sap",
@@ -1168,14 +1168,14 @@
       "name": "SAP",
       "ticker": "SAP",
       "yahoo": "SAP.DE",
-      "last": 188.72,
+      "last": 189.1,
       "cur": "€",
-      "d": -0.72,
-      "fromHigh": -12.53,
+      "d": -0.52,
+      "fromHigh": -12.35,
       "scope": "Logiciels de gestion d'entreprise",
-      "w": -2.68,
-      "y": -7.87,
-      "ytd": -6.55
+      "w": -2.49,
+      "y": -7.69,
+      "ytd": -6.36
      },
      {
       "id": "mc",
@@ -1184,14 +1184,14 @@
       "name": "LVMH",
       "ticker": "MC",
       "yahoo": "MC.PA",
-      "last": 401.35,
+      "last": 399.55,
       "cur": "€",
-      "d": 1.68,
-      "fromHigh": -38.45,
+      "d": 1.23,
+      "fromHigh": -38.73,
       "scope": "Luxe (Louis Vuitton, Dior, Moët)",
-      "w": 3.41,
-      "y": -35.19,
-      "ytd": -37.46
+      "w": 2.95,
+      "y": -35.48,
+      "ytd": -37.75
      }
     ]
    }
@@ -1237,46 +1237,70 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 13h37 (Genève)",
+  "asof": "Mise à jour auto 15h24 (Genève)",
   "items": [
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "Ayelen Gabin, costumière: «Le vêtement est un langage qui fait partie du récit»",
-    "why": "Une costumière nous raconte son métier sur le tournage de séries. Alors que toute l’histoire est filmée dans le désordre et les tenues sans cesse modifiées, l’équipe des costumes v",
-    "url": "https://www.letemps.ch/heidi/ayelen-gabin-costumiere-le-vetement-est-un-langage-qui-fait-partie-du-recit",
+    "t": "La fatalité, un trompe-l’œil lorsque la catastrophe frappe",
+    "why": "CHRONIQUE. Des Gazaouis, engloutis sous des pluies diluviennes, aux prochaines victimes d’El Niño, la tentation existe, pour les spectateurs que nous sommes, d’envisager ces advers",
+    "url": "https://www.letemps.ch/opinions/chroniques/la-fatalite-un-trompe-l-oeil-lorsque-la-catastrophe-frappe",
     "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "La Suisse a-t-elle perdu sa partition?",
-    "why": "CHRONIQUE. Investir dans la santé, la protection sociale ou la culture est aussi un investissement dans la stabilité du pays, écrit la conseillère nationale Estelle Revaz (PS/GE) –",
-    "url": "https://www.letemps.ch/opinions/chroniques/la-suisse-a-t-elle-perdu-sa-partition",
+    "t": "APEC: la Chine met en scène son ordre régional",
+    "why": "OPINION. Place sur la photo de famille et protocoles sont autant d’outils que Pékin a mobilisés pour exposer la hiérarchie de ses priorités aux yeux du monde lors du récent Forum d",
+    "url": "https://www.letemps.ch/opinions/apec-la-chine-met-en-scene-son-ordre-regional",
     "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "Droits de douane: la Section 301, cette arme juridique que Donald Trump s’apprête à ressortir contre la Suisse",
-    "why": "Attendue dès ce mercredi, la nouvelle possible hausse des droits de douane par les Etats-Unis repose sur le paragraphe 301 de la loi américaine sur le commerce extérieur. Voici ce ",
-    "url": "https://www.letemps.ch/economie/droits-de-douane-la-section-301-cette-arme-juridique-que-donald-trump-s-apprete-a-ressortir-contre-la-suisse",
+    "t": "Reportages, enquêtes et analyses: «Le Temps» à -30% pour Noël",
+    "why": "Jusqu’au 31 décembre 2026, nos formules Digital, Digital &amp; Heidi.news et Digital &amp; Week-end sont à -30%. L’occasion de commencer l’année 2027 avec une information indépenda",
+    "url": "https://www.letemps.ch/suisse/reportages-enquetes-et-analyses-le-temps-a-30-pour-noel",
     "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "«Un tournant dans le paysage des cybermenaces»: pour la première fois, des agents IA ont attaqué des infrastructures critiques en Suisse",
-    "why": "L’Office fédéral de la cybersécurité vient d’émettre une alerte concernant un nouvel usage de l’intelligence artificielle dans les cyberattaques. Les hackers ont réussi à compromet",
-    "url": "https://www.letemps.ch/cyber/intelligence-artificielle/un-tournant-dans-le-paysage-des-cybermenaces-pour-la-premiere-fois-des-agents-ia-ont-attaque-des-infrastructures-critiques-en-suisse",
+    "t": "Guerre commerciale: Washington cible ses principaux partenaires, la Suisse serait aussi touchée",
+    "why": "Cette offensive tarifaire marque une nouvelle escalade protectionniste de la Maison-Blanche. Le représentant pour le Commerce Jamieson Greer vise les pratiques de subventionnement ",
+    "url": "https://www.letemps.ch/economie/washington-annonce-de-nouveaux-droits-de-douane-contre-ses-principaux-partenaires-commerciaux",
     "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "La Suisse termine sa présidence de l’OSCE sans avoir pu peser sur les pourparlers de paix ukrainiens",
-    "why": "CHRONIQUE. Si elle a pu pousser quelques dossiers, la Suisse n’a pas réussi à profiter de son année de présidence pour faire avancer les pourparlers de paix dans la guerre d’Ukrain",
-    "url": "https://www.letemps.ch/opinions/chroniques/un-bilan-de-la-presidence-suisse-de-l-osce",
+    "t": "Bill François, ou comment séduire les foules en dissertant sur les sardines",
+    "why": "Physicien et vulgarisateur de talent, le jeune trentenaire n’a pas son pareil pour éclairer avec humour les faces cachées de la natureSur la scène d’un théâtre, en plongée au milie",
+    "url": "https://www.letemps.ch/sciences/bill-francois-ou-comment-seduire-les-foules-en-dissertant-sur-les-sardines",
+    "date": "Wed, 25 Nov 2026"
+   },
+   {
+    "src": "Financial Times",
+    "r": "n",
+    "t": "US stocks sell-off accelerates as AI trade cracks",
+    "why": "Tech-heavy Nasdaq 100 is set to fall more than 3% as weeks-long slide continues",
+    "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a?syn-25a6b1a6=1",
+    "date": "Wed, 25 Nov 2026"
+   },
+   {
+    "src": "Financial Times",
+    "r": "n",
+    "t": "About that supposed $312mn Nvidia options insider trade…",
+    "why": "We’ve time-travelled from the past to warn you that a tweet may be misleading",
+    "url": "https://www.ft.com/content/1d5c7f01-c1e8-471c-8017-d0f064499456",
+    "date": "Wed, 25 Nov 2026"
+   },
+   {
+    "src": "Financial Times",
+    "r": "n",
+    "t": "NBA rallies private equity for €10bn European arena fund",
+    "why": "Basketball league wants to help teams finance new arenas as part of its effort to launch a European competition",
+    "url": "https://www.ft.com/content/e70a4095-2e8a-4211-aa38-1ad6a95169cb?syn-25a6b1a6=1",
     "date": "Wed, 25 Nov 2026"
    },
    {
@@ -1290,33 +1314,9 @@
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "US tech stocks set to slide further as concerns grow over durability of AI boom",
-    "why": "Futures tracking the Nasdaq 100 down 3 per cent as weeks-long sell-off continues",
-    "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a?syn-25a6b1a6=1",
-    "date": "Wed, 25 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
     "t": "Under the hood of Global Auto Holdings",
     "why": "A low-profile founder, a multi-continent collection of car dealerships, a slew of unexplained related-party transactions, and an IPO in the pipeline",
     "url": "https://www.ft.com/content/bdbeeeff-d7d9-4062-bf9f-b37f180485d5?syn-25a6b1a6=1",
-    "date": "Wed, 25 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "British household energy bills to soar 26% from January",
-    "why": "Energy regulator Ofgem says new three-month price cap reflects surge in wholesale cost of gas",
-    "url": "https://www.ft.com/content/e9dea6f2-dcf8-4ec5-96ec-0415694bf897?syn-25a6b1a6=1",
-    "date": "Wed, 25 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "India as AI play",
-    "why": "The downsides are overstated, the upside overlooked",
-    "url": "https://www.ft.com/content/f3e59769-6b74-4dfc-913a-985286847ff0?syn-25a6b1a6=1",
     "date": "Wed, 25 Nov 2026"
    }
   ],
@@ -1324,40 +1324,40 @@
  },
  "news": [
   {
-   "t": "Is This the Bottom? It May Not Matter. Here's Why!",
-   "link": "https://www.fool.com/investing/2026/11/25/is-this-the-bottom-it-may-not-matter-here-s-why/?.tsrc=rss",
+   "t": "PCE Inflation Overshoots As Fed Fears Worsen AI-Stock Volatility (Live Coverage)",
+   "link": "https://finance.yahoo.com/m/b30124ad-742e-3a7a-9720-272c18c9df53/pce-inflation-overshoots-as.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Wed, 25 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "Is AMD Stock Falling On Its Own?",
-   "link": "https://www.trefis.com/stock/amd/articles/628978/is-amd-stock-falling-on-its-own/2026-11-25?.tsrc=rss",
+   "t": "Is Expand Energy Stock A Real Bargain?",
+   "link": "https://www.trefis.com/stock/exe/articles/628777/is-expand-energy-stock-a-real-bargain-2/2026-11-25?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Wed, 25 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "Has Carvana Become A Different Bet For Holders?",
-   "link": "https://www.trefis.com/stock/cvna/articles/628921/has-carvana-become-a-different-bet-for-holders/2026-11-25?.tsrc=rss",
+   "t": "SharkNinja Set to Join the S&P 500 Index",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/sharkninja-set-join-p-500-133000127.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Wed, 25 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "How one Wall St strategist predicted the S&P 500’s wild 2-week swing",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/one-wall-st-strategist-predicted-120330633.html?.tsrc=rss",
+   "t": "Nasdaq Futures Tumble as AI Selloff Returns",
+   "link": "https://www.wsj.com/finance/stocks/nasdaq-futures-slide-as-ai-growth-fears-return-to-center-stage-ff9a6d6b?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Wed, 25 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "Liberation Day Round 2.0? The Next Wave of Trump Tariffs Is Reportedly Close",
-   "link": "https://247wallst.com/investing/2026/11/25/liberation-day-round-2-0-the-next-wave-of-trump-tariffs-is-reportedly-close/?.tsrc=rss",
+   "t": "Did Take-Two Stock Beat A Falling Market?",
+   "link": "https://www.trefis.com/stock/ttwo/articles/629004/did-take-two-stock-beat-a-falling-market/2026-11-25?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Wed, 25 Nov 2026",
    "r": "n",
