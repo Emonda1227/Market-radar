@@ -1,7 +1,7 @@
 {
- "id": "2026-11-24-2329",
- "ts": "2026-11-24T23:29+01:00",
- "edition": "Soir",
+ "id": "2026-11-25-0700",
+ "ts": "2026-11-25T07:00+01:00",
+ "edition": "Matin",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
  "bref": [
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 23h29 (Genève)",
+   "asof": "Mise à jour auto 07h00 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 23h29 (Genève)",
+   "asof": "Mise à jour auto 07h00 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,16 +233,16 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 23h29 (Genève)",
+   "asof": "Mise à jour auto 07h00 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
      "id": "nikkei",
-     "r": "o",
+     "r": "r",
      "flag": "🇯🇵",
      "name": "Nikkei 225",
-     "last": 58644.63,
-     "d": 3.91,
+     "last": 56923.57,
+     "d": -2.93,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -251,11 +251,11 @@
     },
     {
      "id": "kospi",
-     "r": "o",
+     "r": "r",
      "flag": "🇰🇷",
      "name": "Kospi",
-     "last": 5006.03,
-     "d": 6.32,
+     "last": 4679.78,
+     "d": -6.52,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -264,11 +264,11 @@
     },
     {
      "id": "hsi",
-     "r": "g",
+     "r": "o",
      "flag": "🇭🇰",
      "name": "Hang Seng",
-     "last": 22219.65,
-     "d": -0.85,
+     "last": 22148.18,
+     "d": -1.05,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -277,11 +277,11 @@
     },
     {
      "id": "shanghai",
-     "r": "g",
+     "r": "o",
      "flag": "🇨🇳",
      "name": "Shanghai Composite",
-     "last": 3548.37,
-     "d": 0.41,
+     "last": 3492.3,
+     "d": -1.32,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -293,8 +293,8 @@
      "r": "o",
      "flag": "🇮🇳",
      "name": "Sensex",
-     "last": 82435.99,
-     "d": -1.77,
+     "last": 84388.57,
+     "d": 2.37,
      "w": null,
      "ytd": null,
      "open": "04:45",
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 23h29 (Genève)",
+   "asof": "Mise à jour auto 07h00 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 23h29 (Genève)",
+   "asof": "Mise à jour auto 07h00 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -461,11 +461,11 @@
    },
    {
     "id": "brent",
-    "r": "o",
+    "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "88,5 $",
-    "d": "+2,10 %",
+    "value": "87,3 $",
+    "d": "−1,63 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -488,13 +488,13 @@
    "rows": [
     {
      "id": "gold",
-     "r": "o",
+     "r": "g",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 555 $ / once",
+     "value": "≈ 3 523 $ / once",
      "sub": "contrat à terme",
-     "d": "−2,64 %",
-     "last": 3555
+     "d": "−1,10 %",
+     "last": 3523
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 59 923 $",
+     "value": "≈ 59 100 $",
      "sub": "",
-     "d": "−2,09 % (24 h)",
-     "last": 59923
+     "d": "−2,39 % (24 h)",
+     "last": 59100
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,922 $",
+     "value": "≈ 0,916 $",
      "sub": "",
-     "d": "−1,84 % (24 h)",
-     "last": 0.92244
+     "d": "−4,20 % (24 h)",
+     "last": 0.916149
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,30 +531,30 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0908",
-     "sub": "1 franc = 1,0908 euro",
-     "d": "+0,18 %",
-     "last": 1.0908
+     "value": "1,0922",
+     "sub": "1 franc = 1,0922 euro",
+     "d": "+0,12 %",
+     "last": 1.0922
     },
     {
      "id": "chfusd",
-     "r": "o",
+     "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1976",
-     "sub": "1 franc = 1,1976 dollar",
-     "d": "+0,73 %",
-     "last": 1.1976
+     "value": "1,1957",
+     "sub": "1 franc = 1,1957 dollar",
+     "d": "−0,17 %",
+     "last": 1.1957
     },
     {
      "id": "eurusd",
-     "r": "o",
+     "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0969",
-     "sub": "1 euro = 1,0969 dollar",
-     "d": "+0,58 %",
-     "last": 1.0969
+     "value": "1,0945",
+     "sub": "1 euro = 1,0945 dollar",
+     "d": "−0,20 %",
+     "last": 1.0945
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 23h29 (Genève)",
+    "asof": "Mise à jour auto 07h00 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 23h29 (Genève)",
+    "asof": "Mise à jour auto 07h00 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 23h29 (Genève)",
+    "asof": "Mise à jour auto 07h00 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1098,10 +1098,10 @@
       "yahoo": "RO.SW",
       "last": 412.2,
       "cur": "CHF",
-      "d": 1.83,
+      "d": 2.38,
       "fromHigh": -0.87,
       "scope": "Pharma et diagnostic · Bâle",
-      "w": 0.29,
+      "w": -0.48,
       "y": 28.33,
       "ytd": 23.71
      },
@@ -1114,10 +1114,10 @@
       "yahoo": "UBSG.SW",
       "last": 37.32,
       "cur": "CHF",
-      "d": -1.61,
+      "d": 0.95,
       "fromHigh": -17.07,
       "scope": "Banque et gestion de fortune · Zurich",
-      "w": -4.45,
+      "w": -7.65,
       "y": 25.45,
       "ytd": -2.23
      },
@@ -1142,54 +1142,54 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 23h29 (Genève)",
+    "asof": "Mise à jour auto 07h00 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
       "id": "asml",
-      "r": "o",
+      "r": "g",
       "flag": "🇳🇱",
       "name": "ASML",
       "ticker": "ASML",
       "yahoo": "ASML.AS",
       "last": 1201.2,
       "cur": "€",
-      "d": -5.58,
+      "d": 2.84,
       "fromHigh": -30.22,
       "scope": "Machines pour fabriquer les puces · 1re capitalisation d'Europe",
-      "w": -2.88,
+      "w": -8.07,
       "y": 39.87,
       "ytd": 21.79
      },
      {
       "id": "sap",
-      "r": "g",
+      "r": "o",
       "flag": "🇩🇪",
       "name": "SAP",
       "ticker": "SAP",
       "yahoo": "SAP.DE",
       "last": 190.08,
       "cur": "€",
-      "d": 2.01,
+      "d": 3.48,
       "fromHigh": -11.9,
       "scope": "Logiciels de gestion d'entreprise",
-      "w": -5.67,
+      "w": -10.93,
       "y": -8.4,
       "ytd": -5.88
      },
      {
       "id": "mc",
-      "r": "g",
+      "r": "o",
       "flag": "🇫🇷",
       "name": "LVMH",
       "ticker": "MC",
       "yahoo": "MC.PA",
       "last": 394.7,
       "cur": "€",
-      "d": 1.52,
+      "d": 3.34,
       "fromHigh": -39.47,
       "scope": "Luxe (Louis Vuitton, Dior, Moët)",
-      "w": 0.43,
+      "w": -2.3,
       "y": -36.51,
       "ytd": -38.5
      }
@@ -1237,129 +1237,129 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 23h29 (Genève)",
+  "asof": "Mise à jour auto 07h00 (Genève)",
   "items": [
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "Après huit ans de procédure, Huawei est reconnu coupable de vol de secrets industriels par un tribunal fédéral à New York",
-    "why": "Le groupe chinois a également recouru à la fraude bancaire, a tranché le jury du tribunal. Le chef d’accusation d’association de malfaiteurs en vue de détournement de propriété int",
-    "url": "https://www.letemps.ch/economie/apres-huit-ans-de-procedure-huawei-est-reconnu-coupable-de-vol-de-secrets-industriels-par-un-tribunal-federal-a-new-york",
-    "date": "Tue, 24 Nov 2026"
+    "t": "Une vingtaine de personnes prises en otages dans un supermarché en Colombie, le président sur place",
+    "why": "Une prise d&#39;otages a commencé mardi matin, quand les assaillants se sont réfugiés dans le supermarché de Carthagène après une tentative ratée d&#39;attaque d&#39;un fourgon bli",
+    "url": "https://www.letemps.ch/monde/une-vingtaine-de-personnes-prises-en-otages-dans-un-supermarche-en-colombie-le-president-sur-place",
+    "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "Une fiction au cœur de la guerre en Ukraine: dans «Jupiter», le président français joue au poker face à la menace nucléaire russe",
-    "why": "Alexandre Smia ancre «Jupiter», son premier long métrage, dans le contexte de la guerre en Ukraine. Autoproclamé «film choc de l’année», porté par un casting royal, ce récit évoqua",
-    "url": "https://www.letemps.ch/culture/ecrans/une-fiction-au-coeur-de-la-guerre-en-ukraine-dans-jupiter-le-president-francais-joue-au-poker-face-a-la-menace-nucleaire-russe",
-    "date": "Tue, 24 Nov 2026"
+    "t": "L’industrie pétrolière du Venezuela renaît de ses cendres, au profit des Etats-Unis, de négociants suisses, et non sans polémique",
+    "why": "Ce pays, sous sanctions occidentales, exportait sa production symbolique en Chine jusqu’à la destitution de son président Nicolás Maduro en janvier. L’Etat sud-américain a depuis é",
+    "url": "https://www.letemps.ch/economie/l-industrie-petroliere-du-venezuela-renait-de-ses-cendres-au-profit-des-etats-unis-de-negociants-suisses-et-non-sans-polemique",
+    "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "A la COP31, un fantôme a plané: la science",
-    "why": "Le rôle du GIEC et la date de publication de ses rapports ont cristallisé les tensions à Antalya. Certains Etats utilisent désormais l’institution pour bloquer l’action climatique ",
-    "url": "https://www.letemps.ch/sciences/a-la-cop31-un-fantome-a-plane-la-science",
-    "date": "Tue, 24 Nov 2026"
+    "t": "Les Iles Salomon et l’Australie renforcent leur partenariat au détriment de Pékin",
+    "why": "Honaira et Canberra ont signé un traité couvrant de nombreux domaines, en priorité au niveau sécuritaire. Le fruit d’années de diplomatie australienne, qui vise à endiguer l’influe",
+    "url": "https://www.letemps.ch/monde/asie-oceanie/les-iles-salomon-et-l-australie-renforcent-leur-partenariat-au-detriment-de-pekin",
+    "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "Fronde républicaine contre la décision de Donald Trump de replacer Jensen Huang à la tête de Nvidia",
-    "why": "Après s’être retiré de la tête de Nvidia à la suite d’une affaire extraconjugale incluant une espionne chinoise, Jensen Huang a été rétabli à son poste par l’administration Trump. ",
-    "url": "https://www.letemps.ch/monde/fronde-republicaine-contre-la-decision-de-donald-trump-de-replacer-jensen-huang-a-la-tete-de-nvidia",
-    "date": "Tue, 24 Nov 2026"
+    "t": "Kilmar Abrego Garcia, l'immigré salvadorien devenu emblème de la politique migratoire trumpiste, quitte les Etats-Unis",
+    "why": "Kilmar Abrego Garcia est devenu un symbole en 2025 à la suite de sa déportation illégale vers le Salvador par l’administration Trump. Le sénateur démocrate Chris Van Hollen se réjo",
+    "url": "https://www.letemps.ch/monde/ameriques/kilmar-abrego-garcia-l-immigre-salvadorien-devenu-embleme-de-la-politique-migratoire-trumpiste-quitte-les-etats-unis",
+    "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "En ouverture du festival genevois Palestine Filmer C’est Exister, «Conversation With the Sea» raconte l’histoire d’un Arabe de Jérusalem-Est pris dans un engrenage kafkaïen",
-    "why": "Muayad Alayan raconte dans «Conversation With the Sea» l’histoire d’un Arabe condamné par Israël à payer les cotisations sociales de son fils, pourtant décédé. Le film fait l’ouver",
-    "url": "https://www.letemps.ch/culture/ecrans/en-ouverture-du-festival-genevois-palestine-filmer-c-est-exister-conversation-with-the-sea-raconte-l-histoire-d-un-arabe-de-jerusalem-est-pris-dans-un-engrenage-kafkaien",
-    "date": "Tue, 24 Nov 2026"
+    "t": "Rendons aux femmes victimes de violences conjugales le pouvoir des mots",
+    "why": "ÉDITORIAL. Avec la future surveillance active des auteurs de violences par bracelet électronique, ces femmes, jusqu’ici contraintes au silence, devraient petit à petit redevenir au",
+    "url": "https://www.letemps.ch/opinions/editoriaux/rendons-aux-femmes-victimes-de-violences-conjugales-le-pouvoir-des-mots",
+    "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "Anthropic closes below IPO price as tech rally fades",
-    "why": "Investor relief over reinstatement of Jensen Huang as Nvidia CEO subsides",
-    "url": "https://www.ft.com/content/c0cb932a-076e-4471-8009-91749fde5f47?syn-25a6b1a6=1",
-    "date": "Tue, 24 Nov 2026"
+    "t": "M&G boss calls for stamp duty cut to halt London companies’ flight to New York",
+    "why": "Chief executive Andrea Rossi vows to vote against catering giant Compass’s planned US move as UK battles exodus of listed groups",
+    "url": "https://www.ft.com/content/d6f458a2-41d2-4363-8561-c554c09a5745?syn-25a6b1a6=1",
+    "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "Is the Booma-Huang a bad day for capitalism?",
-    "why": "What does it mean when the US president reinstates your CEO?",
-    "url": "https://www.ft.com/content/32e2579e-fbb1-47d3-b2f8-e71484eb2d39?syn-25a6b1a6=1",
-    "date": "Tue, 24 Nov 2026"
+    "t": "London hedge fund Qube squares up to US rivals in expansion drive",
+    "why": "Quant fund launches push into vast options market with bid for broker-dealer licence",
+    "url": "https://www.ft.com/content/b519698f-6ace-47e9-9cd5-1e18f8fdd71b?syn-25a6b1a6=1",
+    "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "Ex-Petrofac executives accused of paying millions to win $3.4bn of contracts",
-    "why": "Marwan Chedid and George Salibi are on trial for involvement in alleged bribery for UAE oil and gas deals between 2012 and 2018",
-    "url": "https://www.ft.com/content/f6c2d0f7-b096-48fb-96af-931c33ec54ba?syn-25a6b1a6=1",
-    "date": "Tue, 24 Nov 2026"
+    "t": "UK pensions watchdog ‘worried’ over schemes’ exposure to AI sector",
+    "why": "New chair Emma Douglas fears plans may not be aware of their exposure to fast-growing but volatile sector",
+    "url": "https://www.ft.com/content/9910163e-c103-46b5-8bbe-5a12ab5453e6?syn-25a6b1a6=1",
+    "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "Banks regain some ground in the private credit tug of war",
-    "why": "For borrowers, the coexistence of bank and non-bank lenders is creating a window of opporunity",
-    "url": "https://www.ft.com/content/bf403337-6e87-4aba-a306-17d63fbf1a81?syn-25a6b1a6=1",
-    "date": "Tue, 24 Nov 2026"
+    "t": "Asian markets lose ground as AI fears return",
+    "why": "Tech stocks in Tokyo and Seoul suffer after Wall Street’s Jensen Huang bounce fades",
+    "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a?syn-25a6b1a6=1",
+    "date": "Wed, 25 Nov 2026"
    },
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "Is the SEC cutting red tape or torching safeguards?",
-    "why": "The slimmed-down proposal will please corporate executives, but what about shareholders?",
-    "url": "https://www.ft.com/content/3740b4ad-0ab2-47cb-8369-a0a3562e370a?syn-25a6b1a6=1",
-    "date": "Tue, 24 Nov 2026"
+    "t": "Shein to pay $100mn to resolve US allegations that it deceived customers",
+    "why": "Regulators claim cotton that the retailer’s suppliers said was US-grown was harvested in China",
+    "url": "https://www.ft.com/content/0128d44e-8ca1-49b8-868b-b8fe0e4824c6?syn-25a6b1a6=1",
+    "date": "Wed, 25 Nov 2026"
    }
   ],
   "note": "Le Temps donne l'angle suisse et romand (place financière, banques, Genève). Le Financial Times couvre les marchés mondiaux en profondeur. Les titres sont repris avec un lien vers l'article ; la lecture complète peut nécessiter un abonnement."
  },
  "news": [
   {
-   "t": "Morning Movers: Dick’s Sporting and Dollar Tree gain following quarterly reports",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/morning-movers-dick-sporting-dollar-220046732.html?.tsrc=rss",
+   "t": "Asian stocks slide as AI selloff deepens, U.S. tariff threats weigh on sentiment",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-slide-ai-selloff-040525614.html?.tsrc=rss",
    "src": "Yahoo Finance",
-   "date": "Tue, 24 Nov 2026",
+   "date": "Wed, 25 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "5 Dirt-Cheap Stocks Positioned to Soar in 2027",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/5-dirt-cheap-stocks-positioned-215028978.html?.tsrc=rss",
+   "t": "Another Wall Street analyst revamps stock market outlook as volatility surges",
+   "link": "https://www.thestreet.com/investing/another-wall-street-analyst-revamps-stock-market-outlook-as-volatility-surges?.tsrc=rss",
    "src": "Yahoo Finance",
-   "date": "Tue, 24 Nov 2026",
+   "date": "Wed, 25 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "India’s Largest Private Lender Is Lagging – HDFC (HDB) Made into Our 2027 Bargain List",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/india-largest-private-lender-lagging-213822712.html?.tsrc=rss",
+   "t": "S&P 500 Correction Is “Garden Variety,” Says Fidelity, Even as 12% Drop Rattles Investors",
+   "link": "https://beincrypto.com/sp500-correction-garden-variety-fidelity/?.tsrc=rss",
    "src": "Yahoo Finance",
-   "date": "Tue, 24 Nov 2026",
+   "date": "Wed, 25 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "How major US stock indexes fared Tuesday 11/24/2026",
-   "link": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-211948828.html?.tsrc=rss",
+   "t": "Wall St futures fall after S&P 500, Nasdaq end lower; inflation data eyed",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-fall-p-014227385.html?.tsrc=rss",
    "src": "Yahoo Finance",
-   "date": "Tue, 24 Nov 2026",
+   "date": "Wed, 25 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "She Retires at 65 With a $900,000 All-Stock 401(k) as the S&P 500 Swings From Its Worst Week to Its Best Day Since April 2025. The 8.6% Drop Erases $77,400, and the Rebound Still Leaves Her $38,409 Short",
-   "link": "https://247wallst.com/personal-finance/2026/11/24/she-retires-at-65-with-a-900000-all-stock-401k-right-after-the-sp-500s-worst-week-since-april-2025-the-8-6-drop-erases-77400-and-mondays-best-day-since-april-2025-still-leaves-her-38409/?.tsrc=rss",
+   "t": "S&P 500, Nasdaq End Lower As AI Jitters Resurface With Nvidia’s Governance Issues And Talks Of Fresh Import Tariffs  — NVDA, DELL, TSLA, TGTX In Focus",
+   "link": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-end-lower-as-ai-jitters-resurface-with-nvidia-s-governance-issues-and-talks-of-fresh-import-tariffs-nvda-dell-tsla-tgtx-in-focus/cNbuDhyR9lT?.tsrc=rss",
    "src": "Yahoo Finance",
-   "date": "Tue, 24 Nov 2026",
+   "date": "Wed, 25 Nov 2026",
    "r": "n",
    "why": ""
   }
