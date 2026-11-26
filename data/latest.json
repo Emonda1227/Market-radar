@@ -1,6 +1,6 @@
 {
- "id": "2026-11-26-1920",
- "ts": "2026-11-26T19:20+01:00",
+ "id": "2026-11-26-2038",
+ "ts": "2026-11-26T20:38+01:00",
  "edition": "Soir",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 19h20 (Genève)",
+   "asof": "Mise à jour auto 20h38 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 19h20 (Genève)",
+   "asof": "Mise à jour auto 20h38 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 19h20 (Genève)",
+   "asof": "Mise à jour auto 20h38 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 19h20 (Genève)",
+   "asof": "Mise à jour auto 20h38 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 19h20 (Genève)",
+   "asof": "Mise à jour auto 20h38 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -464,8 +464,8 @@
     "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "91,5 $",
-    "d": "+0,97 %",
+    "value": "91,7 $",
+    "d": "+1,11 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -491,10 +491,10 @@
      "r": "g",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 595 $ / once",
+     "value": "≈ 3 594 $ / once",
      "sub": "contrat à terme",
-     "d": "+0,85 %",
-     "last": 3595
+     "d": "+0,82 %",
+     "last": 3594
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 60 463 $",
+     "value": "≈ 60 569 $",
      "sub": "",
-     "d": "+0,98 % (24 h)",
-     "last": 60463
+     "d": "+0,84 % (24 h)",
+     "last": 60569
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,952 $",
+     "value": "≈ 0,954 $",
      "sub": "",
-     "d": "+2,47 % (24 h)",
-     "last": 0.951922
+     "d": "+1,09 % (24 h)",
+     "last": 0.953675
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -541,20 +541,20 @@
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1988",
-     "sub": "1 franc = 1,1988 dollar",
-     "d": "−0,46 %",
-     "last": 1.1988
+     "value": "1,1989",
+     "sub": "1 franc = 1,1989 dollar",
+     "d": "−0,45 %",
+     "last": 1.1989
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0972",
-     "sub": "1 euro = 1,0972 dollar",
-     "d": "−0,09 %",
-     "last": 1.0972
+     "value": "1,0973",
+     "sub": "1 euro = 1,0973 dollar",
+     "d": "−0,08 %",
+     "last": 1.0973
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 19h20 (Genève)",
+    "asof": "Mise à jour auto 20h38 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 19h20 (Genève)",
+    "asof": "Mise à jour auto 20h38 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 19h20 (Genève)",
+    "asof": "Mise à jour auto 20h38 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 19h20 (Genève)",
+    "asof": "Mise à jour auto 20h38 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,13 +1237,37 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 19h20 (Genève)",
+  "asof": "Mise à jour auto 20h38 (Genève)",
   "items": [
    {
     "src": "Le Temps",
     "r": "n",
-    "t": "Budget européen: les 27 à couteaux tirés, avec le spectre de Marine Le Pen qui plane sur les débats",
-    "why": "Réunis en sommet à Bruxelles, les dirigeants européens peinent à s&#39;accorder sur le budget 2028-2034 qui doit être adopté à l&#39;unanimité. Emmanuel Macron a averti que si aucu",
+    "t": "Au Japon, l’essor des cafés nocturnes pour parents au bord de la crise de nerfs",
+    "why": "Les «yonaki cafés», qui gagnent en popularité dans l’archipel, permettent aux couples débordés de se reposer et de discuter avec d’autres adultes, tout en recevant des conseils de ",
+    "url": "https://www.letemps.ch/societe/enfants-education/au-japon-l-essor-des-cafes-nocturnes-pour-parents-au-bord-de-la-crise-de-nerfs",
+    "date": "Thu, 26 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Les records de chaleur de 2023 et 2024 ont provoqué une chute brutale des réserves d’eau douce à la surface de la Terre",
+    "why": "Les mesures sur plus d’un million de cours d’eau, lacs et réservoirs de la planète montrent que l’eau douce a baissé de près de 10% en surface en 2023-2024. L’Amérique du Sud a été",
+    "url": "https://www.letemps.ch/sciences/les-records-de-chaleur-de-2023-et-2024-ont-provoque-une-chute-brutale-des-reserves-d-eau-douce-a-la-surface-de-la-terre",
+    "date": "Thu, 26 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "En vidéo – Datacenters et intelligence artificielle dans l’espace: qui domine vraiment la nouvelle économie spatiale?",
+    "why": "SpaceX obtient le feu vert pour déployer un million de ses datacenters Starmind dans l’espace. La guerre économique de l’espace s’accélère. Décryptage des rapports de force en orbi",
+    "url": "https://www.letemps.ch/cyber/en-video-datacenters-et-intelligence-artificielle-dans-l-espace-qui-domine-vraiment-la-nouvelle-economie-spatiale",
+    "date": "Thu, 26 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Budget européen: les Vingt-Sept à couteaux tirés, avec le spectre de Marine Le Pen qui plane sur les débats",
+    "why": "Réunis en sommet à Bruxelles, les dirigeants européens peinent à s’accorder sur le budget 2028-2034, qui doit être adopté à l’unanimité. Emmanuel Macron a averti que si aucune solu",
     "url": "https://www.letemps.ch/monde/budget-europeen-les-27-a-couteaux-tires-avec-le-spectre-de-marine-le-pen-qui-plane-sur-les-debats",
     "date": "Thu, 26 Nov 2026"
    },
@@ -1253,30 +1277,6 @@
     "t": "Face au ticket UDC, le parlement cherche toujours la parade",
     "why": "Le choix de deux candidats alémaniques et très à droite pour succéder à Guy Parmelin a provoqué une onde de choc sous la Coupole. Mais entre protestations, ambitions personnelles e",
     "url": "https://www.letemps.ch/suisse/face-au-ticket-udc-le-parlement-cherche-toujours-la-parade",
-    "date": "Thu, 26 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "L’artiste horloger Alain Silberstein a passé sa vie à créer des montres décalées, il a fait un dernier pas de côté",
-    "why": "Il était créateur indépendant à Besançon depuis 1987, ses montres sont reconnaissables entre toutes. Elles ont de l’humour et beaucoup de couleurs. Alain Silberstein a connu des ha",
-    "url": "https://www.letemps.ch/economie/horlogerie-joaillerie/l-artiste-horloger-alain-silberstein-a-passe-sa-vie-a-creer-des-montres-decalees-il-a-fait-un-dernier-pas-de-cote",
-    "date": "Thu, 26 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "L’Espagnol Pablo Hernandez de Cos succède à Christine Lagarde à la présidence de la BCE",
-    "why": "Le directeur de la Banque des règlements internationaux à Bâle prendra ses fonctions en février dans un contexte d’inflation à 4% et de tensions sur les marchés obligataires. Paris",
-    "url": "https://www.letemps.ch/economie/finance/l-espagnol-pablo-hernandez-de-cos-succede-a-christine-lagarde-a-la-presidence-de-la-bce",
-    "date": "Thu, 26 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "Catherine Vautrin, ministre française des Armées: «La France est une alliée fiable: l’environnement dans lequel nous évoluons impose de dépasser les échéances politiques immédiates»",
-    "why": "INTERVIEW. Dans un contexte de tensions avec la Russie, la ministre de la Défense française rencontre ce vendredi à Berne Martin Pfister, le conseiller fédéral chargé de cette thém",
-    "url": "https://www.letemps.ch/monde/france/catherine-vautrin-ministre-francaise-des-armees-la-france-est-une-alliee-fiable-l-environnement-strategique-dans-lequel-nous-evoluons-nous-impose-de-depasser-les-echeances-politiques-immediates",
     "date": "Thu, 26 Nov 2026"
    },
    {
@@ -1324,6 +1324,14 @@
  },
  "news": [
   {
+   "t": "2 Growth Stocks That Lagged the S&P 500 in 2026 and Could Lead in 2027",
+   "link": "https://www.fool.com/investing/2026/11/26/2-growth-stocks-that-lagged-the-sp-500-in-2026-and-could-lead-in-2027/?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Thu, 26 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
    "t": "Here's What Would Prove Me Wrong About Netflix Stock",
    "link": "https://www.fool.com/investing/2026/11/26/here-s-what-would-prove-me-wrong-about-netflix-stock/?.tsrc=rss",
    "src": "Yahoo Finance",
@@ -1340,24 +1348,16 @@
    "why": ""
   },
   {
+   "t": "Chevron Stocks Rise 1.06% as Brent Jumps 3.5% on Saudi Refinery Attack Claim",
+   "link": "https://finance.yahoo.com/energy/articles/chevron-stocks-rise-1-06-184046291.html?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Thu, 26 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
    "t": "Dow Jones Futures Rise With U.S. Markets Shut; Look For This Bullish Signal",
    "link": "https://finance.yahoo.com/m/158e82fc-b889-34b6-8704-99a49e9a83ae/dow-jones-futures-rise-with.html?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Thu, 26 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "HSBC Spots 3 Big Reasons Stocks Could Soar in 2027",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/hsbc-spots-3-big-reasons-173902874.html?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Thu, 26 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "Nu Holdings (NU): Why Investors Gave the Stock a Mixed Reception Despite Strong Results?",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/nu-holdings-nu-why-investors-170952971.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Thu, 26 Nov 2026",
    "r": "n",
