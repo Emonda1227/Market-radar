@@ -1,6 +1,6 @@
 {
- "id": "2026-11-26-2155",
- "ts": "2026-11-26T21:55+01:00",
+ "id": "2026-11-26-2255",
+ "ts": "2026-11-26T22:55+01:00",
  "edition": "Soir",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 21h55 (Genève)",
+   "asof": "Mise à jour auto 22h55 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 21h55 (Genève)",
+   "asof": "Mise à jour auto 22h55 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 21h55 (Genève)",
+   "asof": "Mise à jour auto 22h55 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 21h55 (Genève)",
+   "asof": "Mise à jour auto 22h55 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 21h55 (Genève)",
+   "asof": "Mise à jour auto 22h55 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 60 706 $",
+     "value": "≈ 60 818 $",
      "sub": "",
-     "d": "+0,94 % (24 h)",
-     "last": 60706
+     "d": "+0,99 % (24 h)",
+     "last": 60818
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,952 $",
+     "value": "≈ 0,953 $",
      "sub": "",
-     "d": "+1,56 % (24 h)",
-     "last": 0.952251
+     "d": "+1,31 % (24 h)",
+     "last": 0.953093
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,30 +531,30 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0921",
-     "sub": "1 franc = 1,0921 euro",
-     "d": "−0,34 %",
-     "last": 1.0921
+     "value": "1,0920",
+     "sub": "1 franc = 1,0920 euro",
+     "d": "−0,35 %",
+     "last": 1.092
     },
     {
      "id": "chfusd",
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1986",
-     "sub": "1 franc = 1,1986 dollar",
-     "d": "−0,47 %",
-     "last": 1.1986
+     "value": "1,1985",
+     "sub": "1 franc = 1,1985 dollar",
+     "d": "−0,48 %",
+     "last": 1.1985
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0973",
-     "sub": "1 euro = 1,0973 dollar",
-     "d": "−0,08 %",
-     "last": 1.0973
+     "value": "1,0972",
+     "sub": "1 euro = 1,0972 dollar",
+     "d": "−0,09 %",
+     "last": 1.0972
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 21h55 (Genève)",
+    "asof": "Mise à jour auto 22h55 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 21h55 (Genève)",
+    "asof": "Mise à jour auto 22h55 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 21h55 (Genève)",
+    "asof": "Mise à jour auto 22h55 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 21h55 (Genève)",
+    "asof": "Mise à jour auto 22h55 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,8 +1237,16 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 21h55 (Genève)",
+  "asof": "Mise à jour auto 22h55 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Le parlement genevois adopte largement l’initiative «1% pour la culture»",
+    "why": "Lancé par le PS, le texte prévoyant qu’un pour cent du budget du canton soit alloué à la culture a été accepté la quasi-unanimité au parlement. La droite a néanmoins émis des réser",
+    "url": "https://www.letemps.ch/suisse/geneve/le-parlement-genevois-adopte-largement-l-initiative-1-pour-la-culture",
+    "date": "Thu, 26 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1269,14 +1277,6 @@
     "t": "Au Japon, l’essor des cafés nocturnes pour parents au bord de la crise de nerfs",
     "why": "Les «yonaki cafés», qui gagnent en popularité dans l’archipel, permettent aux couples débordés de se reposer et de discuter avec d’autres adultes, tout en recevant des conseils de ",
     "url": "https://www.letemps.ch/societe/enfants-education/au-japon-l-essor-des-cafes-nocturnes-pour-parents-au-bord-de-la-crise-de-nerfs",
-    "date": "Thu, 26 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "Les records de chaleur de 2023 et 2024 ont provoqué une chute brutale des réserves d’eau douce à la surface de la Terre",
-    "why": "Les mesures sur plus d’un million de cours d’eau, lacs et réservoirs de la planète montrent que l’eau douce a baissé de près de 10% en surface en 2023-2024. L’Amérique du Sud a été",
-    "url": "https://www.letemps.ch/sciences/les-records-de-chaleur-de-2023-et-2024-ont-provoque-une-chute-brutale-des-reserves-d-eau-douce-a-la-surface-de-la-terre",
     "date": "Thu, 26 Nov 2026"
    },
    {
@@ -1324,6 +1324,14 @@
  },
  "news": [
   {
+   "t": "Jim Cramer sends strong words to stock market investors",
+   "link": "https://www.thestreet.com/investing/stocks/jim-cramer-sends-strong-words-to-stock-market-investors?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Thu, 26 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
    "t": "HP Stock Just Had Its Best Day Since May and Blew Past Wall Street’s Price Target",
    "link": "https://247wallst.com/investing/2026/11/26/hp-stock-just-had-its-best-day-since-may-and-blew-past-wall-streets-price-target/?.tsrc=rss",
    "src": "Yahoo Finance",
@@ -1350,14 +1358,6 @@
   {
    "t": "Here's What Would Prove Me Wrong About Netflix Stock",
    "link": "https://www.fool.com/investing/2026/11/26/here-s-what-would-prove-me-wrong-about-netflix-stock/?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Thu, 26 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "Wall Street Sees Upside in AstraZeneca PLC (AZN) as Shares Retreat",
-   "link": "https://finance.yahoo.com/healthcare/articles/wall-street-sees-upside-astrazeneca-203743976.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Thu, 26 Nov 2026",
    "r": "n",
