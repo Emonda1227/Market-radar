@@ -1,6 +1,6 @@
 {
- "id": "2026-11-26-0700",
- "ts": "2026-11-26T07:00+01:00",
+ "id": "2026-11-26-0816",
+ "ts": "2026-11-26T08:16+01:00",
  "edition": "Matin",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 07h00 (Genève)",
+   "asof": "Mise à jour auto 08h16 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 07h00 (Genève)",
+   "asof": "Mise à jour auto 08h16 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 07h00 (Genève)",
+   "asof": "Mise à jour auto 08h16 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -241,8 +241,8 @@
      "r": "g",
      "flag": "🇯🇵",
      "name": "Nikkei 225",
-     "last": 57930.9,
-     "d": 1.61,
+     "last": 57499.16,
+     "d": 0.86,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -254,8 +254,8 @@
      "r": "g",
      "flag": "🇰🇷",
      "name": "Kospi",
-     "last": 4770.72,
-     "d": 1.56,
+     "last": 4711.21,
+     "d": 0.29,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -267,8 +267,8 @@
      "r": "g",
      "flag": "🇭🇰",
      "name": "Hang Seng",
-     "last": 22344.97,
-     "d": 0.56,
+     "last": 22329.56,
+     "d": 0.49,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -280,8 +280,8 @@
      "r": "r",
      "flag": "🇨🇳",
      "name": "Shanghai Composite",
-     "last": 3476.43,
-     "d": -2.03,
+     "last": 3476.88,
+     "d": -2.01,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -293,8 +293,8 @@
      "r": "g",
      "flag": "🇮🇳",
      "name": "Sensex",
-     "last": 84492.06,
-     "d": 0.66,
+     "last": 84355.37,
+     "d": 0.5,
      "w": null,
      "ytd": null,
      "open": "04:45",
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 07h00 (Genève)",
+   "asof": "Mise à jour auto 08h16 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 07h00 (Genève)",
+   "asof": "Mise à jour auto 08h16 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -464,8 +464,8 @@
     "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "91,4 $",
-    "d": "+0,87 %",
+    "value": "90,7 $",
+    "d": "+0,01 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -491,10 +491,10 @@
      "r": "g",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 607 $ / once",
+     "value": "≈ 3 599 $ / once",
      "sub": "contrat à terme",
-     "d": "+1,19 %",
-     "last": 3607
+     "d": "+0,96 %",
+     "last": 3599
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 60 749 $",
+     "value": "≈ 60 400 $",
      "sub": "",
-     "d": "+2,79 % (24 h)",
-     "last": 60749
+     "d": "+2,06 % (24 h)",
+     "last": 60400
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,959 $",
+     "value": "≈ 0,950 $",
      "sub": "",
-     "d": "+4,66 % (24 h)",
-     "last": 0.958925
+     "d": "+3,32 % (24 h)",
+     "last": 0.950008
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,30 +531,30 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0960",
-     "sub": "1 franc = 1,0960 euro",
-     "d": "+0,02 %",
-     "last": 1.096
+     "value": "1,0959",
+     "sub": "1 franc = 1,0959 euro",
+     "d": "+0,01 %",
+     "last": 1.0959
     },
     {
      "id": "chfusd",
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,2020",
-     "sub": "1 franc = 1,2020 dollar",
-     "d": "−0,19 %",
-     "last": 1.202
+     "value": "1,2022",
+     "sub": "1 franc = 1,2022 dollar",
+     "d": "−0,17 %",
+     "last": 1.2022
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0964",
-     "sub": "1 euro = 1,0964 dollar",
-     "d": "−0,16 %",
-     "last": 1.0964
+     "value": "1,0970",
+     "sub": "1 euro = 1,0970 dollar",
+     "d": "−0,11 %",
+     "last": 1.097
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 07h00 (Genève)",
+    "asof": "Mise à jour auto 08h16 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 07h00 (Genève)",
+    "asof": "Mise à jour auto 08h16 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 07h00 (Genève)",
+    "asof": "Mise à jour auto 08h16 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 07h00 (Genève)",
+    "asof": "Mise à jour auto 08h16 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,8 +1237,32 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 07h00 (Genève)",
+  "asof": "Mise à jour auto 08h16 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Genève: jusqu’à 497 jours pour un permis de construire, les professionnels de l’immobilier exaspérés",
+    "why": "La multiplication des réglementations et des cellules spécialisées complique le traitement des dossiers. Le Département du territoire reconnaît le problème et explore des pistes, t",
+    "url": "https://www.letemps.ch/suisse/geneve/geneve-jusqu-a-497-jours-pour-un-permis-de-construire-les-professionnels-de-l-immobilier-exasperes",
+    "date": "Thu, 26 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Au-delà de la cession: transformer la vente de son entreprise en nouveau départ",
+    "why": "Vendre son entreprise ne se résume pas à négocier un prix. Cette décision engage aussi l’avenir du dirigeant, de sa famille et du patrimoine qu’il a constitué. Entre choix stratégi",
+    "url": "https://www.letemps.ch/contenus-partenaires/au-dela-de-la-cession-transformer-la-vente-de-son-entreprise-en-nouveau-depart",
+    "date": "Thu, 26 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Comment Sacha Wenk est devenu le Shaolin Kid",
+    "why": "Avant de devenir l&#39;un des plus fameux influenceurs du kung-fu, Sacha Wenk a enchaîné les échecs scolaires. A 17 ans, il part seul en Chine, où il se coltine les dortoirs, les l",
+    "url": "https://www.letemps.ch/heidi/comment-sacha-wenk-est-devenu-le-shaolin-kid",
+    "date": "Thu, 26 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1256,68 +1280,44 @@
     "date": "Thu, 26 Nov 2026"
    },
    {
-    "src": "Le Temps",
+    "src": "Financial Times",
     "r": "n",
-    "t": "Genève, Vaud, Valais, Fribourg: partout en Suisse romande, des initiatives voient le jour pour tendre vers la souveraineté numérique",
-    "why": "Stratégies cantonales, chatbots souverains, critères dans les appels d’offres: les initiatives se multiplient pour gagner en autonomie numérique. Mais le chemin est semé d’embûches",
-    "url": "https://www.letemps.ch/cyber/geneve-vaud-valais-fribourg-partout-en-suisse-romande-des-initiatives-voient-le-jour-pour-tendre-vers-la-souverainete-numerique",
-    "date": "Thu, 26 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "Santé numérique: innover sans perdre la confiance médicale",
-    "why": "La consultation à distance transforme progressivement l’accès aux soins. Toutefois, cette évolution ne doit pas se faire au détriment de la déontologie médicale. Voici ce qu’il fau",
-    "url": "https://www.letemps.ch/suisse/sante-numerique-innover-sans-perdre-la-confiance-medicale",
-    "date": "Thu, 26 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "A Zurich, la cacophonie monstre entourant la votation sur le logement pour les seniors",
-    "why": "Zurich se prononce dimanche sur une initiative de l’UDC prévoyant de réserver 20% des logements de la municipalité aux plus de 60 ans. Le législatif lui a opposé un contre-projet q",
-    "url": "https://www.letemps.ch/suisse/suisse-alemanique/a-zurich-la-cacophonie-monstre-entourant-la-votation-sur-le-logement-pour-les-seniors",
+    "t": "The debtlike deals beating buyouts",
+    "why": "Hybrid capital has become one of private equity’s most talked-about asset classes",
+    "url": "https://www.ft.com/content/0d0a770d-39d6-45cd-89e4-7877d2448cf1?syn-25a6b1a6=1",
     "date": "Thu, 26 Nov 2026"
    },
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "Stocks advance in Asia after volatile US trading over AI risks",
-    "why": "Tech shares hit this month by fears over whether an AI boom can be sustained",
-    "url": "https://www.ft.com/content/6e217409-9fbb-456c-b405-2eb15bb69679",
+    "t": "Software stocks spared in tech rout as AI narrative shifts",
+    "why": "Semiconductor and software shares now neck-and-neck in 2026 as investors think again about the technology’s winners and losers",
+    "url": "https://www.ft.com/content/90b82a64-4f58-45d7-8a6a-4c2730545b65?syn-25a6b1a6=1",
     "date": "Thu, 26 Nov 2026"
    },
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "Financier Todd Boehly strikes deal for Lukoil assets",
-    "why": "Shares in the Russian oil company have been frozen since Moscow’s full-scale invasion of Ukraine in 2022",
-    "url": "https://www.ft.com/content/643dc287-d112-4715-bdf1-aa49b98a4af7?syn-25a6b1a6=1",
-    "date": "Wed, 25 Nov 2026"
+    "t": "UK plans strict rules for crypto DeFi sector",
+    "why": "FCA points to Binance heist and ‘lack of consumer protections’ as reasons for tighter regulation of decentralised finance than in US and EU",
+    "url": "https://www.ft.com/content/ec820cb6-4983-4ece-8e7b-de116b57525d?syn-25a6b1a6=1",
+    "date": "Thu, 26 Nov 2026"
    },
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "US Treasury financial crime watchdog hit by suspected cyber attack",
-    "why": "FinCen takes systems offline after detecting unauthorised access amid growing fears over vulnerability of technology systems",
-    "url": "https://www.ft.com/content/43aa7321-2a95-463c-8cb9-77fcc7e39291?syn-25a6b1a6=1",
-    "date": "Wed, 25 Nov 2026"
+    "t": "The Beauty Tech Group is a reminder of London’s natural assets",
+    "why": "The City cannot compete with New York’s market size and wealth, but it can serve as a staging post for upwardly mobile companies",
+    "url": "https://www.ft.com/content/abca3bf7-8245-4490-840f-8c0548042f9a?syn-25a6b1a6=1",
+    "date": "Thu, 26 Nov 2026"
    },
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "US stocks close lower in volatile session as AI trade remains under pressure",
-    "why": "Chip group Nvidia among losers but AI start-up Anthropic a bright spot as shares finish higher",
-    "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a?syn-25a6b1a6=1",
-    "date": "Wed, 25 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "The fund manager’s dilemma over AI",
-    "why": "Assessing concentration risks may be more complicated than it seems",
-    "url": "https://www.ft.com/content/c62ca4c2-dfc4-4943-86a4-fee8fd5a1f4a?syn-25a6b1a6=1",
-    "date": "Wed, 25 Nov 2026"
+    "t": "Saudi Arabia prepares to delay flagship mining conference as attacks continue",
+    "why": "Future Minerals Forum likely to be pushed back from January due to regional conflict",
+    "url": "https://www.ft.com/content/325b93d6-bc2e-4dd3-9941-cf4688aca11d?syn-25a6b1a6=1",
+    "date": "Thu, 26 Nov 2026"
    }
   ],
   "note": "Le Temps donne l'angle suisse et romand (place financière, banques, Genève). Le Financial Times couvre les marchés mondiaux en profondeur. Les titres sont repris avec un lien vers l'article ; la lecture complète peut nécessiter un abonnement."
