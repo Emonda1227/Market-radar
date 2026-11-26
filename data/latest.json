@@ -1,6 +1,6 @@
 {
- "id": "2026-11-26-2038",
- "ts": "2026-11-26T20:38+01:00",
+ "id": "2026-11-26-2155",
+ "ts": "2026-11-26T21:55+01:00",
  "edition": "Soir",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 20h38 (Genève)",
+   "asof": "Mise à jour auto 21h55 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 20h38 (Genève)",
+   "asof": "Mise à jour auto 21h55 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 20h38 (Genève)",
+   "asof": "Mise à jour auto 21h55 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 20h38 (Genève)",
+   "asof": "Mise à jour auto 21h55 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 20h38 (Genève)",
+   "asof": "Mise à jour auto 21h55 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -465,7 +465,7 @@
     "flag": "🛢️",
     "name": "Brent",
     "value": "91,7 $",
-    "d": "+1,11 %",
+    "d": "+1,20 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -491,10 +491,10 @@
      "r": "g",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 594 $ / once",
+     "value": "≈ 3 593 $ / once",
      "sub": "contrat à terme",
-     "d": "+0,82 %",
-     "last": 3594
+     "d": "+0,81 %",
+     "last": 3593
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 60 569 $",
+     "value": "≈ 60 706 $",
      "sub": "",
-     "d": "+0,84 % (24 h)",
-     "last": 60569
+     "d": "+0,94 % (24 h)",
+     "last": 60706
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,954 $",
+     "value": "≈ 0,952 $",
      "sub": "",
-     "d": "+1,09 % (24 h)",
-     "last": 0.953675
+     "d": "+1,56 % (24 h)",
+     "last": 0.952251
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,20 +531,20 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0923",
-     "sub": "1 franc = 1,0923 euro",
-     "d": "−0,32 %",
-     "last": 1.0923
+     "value": "1,0921",
+     "sub": "1 franc = 1,0921 euro",
+     "d": "−0,34 %",
+     "last": 1.0921
     },
     {
      "id": "chfusd",
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1989",
-     "sub": "1 franc = 1,1989 dollar",
-     "d": "−0,45 %",
-     "last": 1.1989
+     "value": "1,1986",
+     "sub": "1 franc = 1,1986 dollar",
+     "d": "−0,47 %",
+     "last": 1.1986
     },
     {
      "id": "eurusd",
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 20h38 (Genève)",
+    "asof": "Mise à jour auto 21h55 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 20h38 (Genève)",
+    "asof": "Mise à jour auto 21h55 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 20h38 (Genève)",
+    "asof": "Mise à jour auto 21h55 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 20h38 (Genève)",
+    "asof": "Mise à jour auto 21h55 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,8 +1237,32 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 20h38 (Genève)",
+  "asof": "Mise à jour auto 21h55 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Orteils coupés, cochons verts et exécution sommaire: à l’Alchimic, Dylan Ferreux ose le policier trash et glauque",
+    "why": "Ames sensibles, s’abstenir. Dans «L’Homme oreiller», pièce de Martin McDonagh, il est beaucoup question d’enfants maltraités et tués. La charge est lourde. Un peu trop, peut-être, ",
+    "url": "https://www.letemps.ch/culture/orteils-coupes-cochons-verts-et-execution-sommaire-a-l-alchimic-dylan-ferreux-ose-le-policier-trash-et-glauque",
+    "date": "Thu, 26 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Podcast – «Puis vient ce moment surréaliste où on doit choisir le jour de son départ»: Aider sa conjointe à mourir, l’ultime preuve d’amour",
+    "why": "Quand Mélanie, quadragénaire vaudoise, annonce à son conjoint Raphaël qu’elle est atteinte de la maladie de Charcot, leur monde s’effondre. Et puis elle décide de contacter l&#39;a",
+    "url": "https://www.letemps.ch/podcasts/brise-glace/podcast-puis-vient-ce-moment-surrealiste-ou-on-doit-choisir-le-jour-de-son-depart-aider-sa-conjointe-a-mourir-l-ultime-preuve-d-amour",
+    "date": "Thu, 26 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Genève: plus de 2000 fonctionnaires manifestent contre un budget jugé «austère»",
+    "why": "Le Cartel intersyndical appelle à deux nouvelles demi-journées de grève les 8 et 17 décembre, avant le vote du Grand Conseil. La commission des finances a pourtant revu certaines c",
+    "url": "https://www.letemps.ch/suisse/geneve/geneve-plus-de-2000-fonctionnaires-manifestent-contre-un-budget-juge-austere-malgre-la-baisse-du-deficit",
+    "date": "Thu, 26 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1253,30 +1277,6 @@
     "t": "Les records de chaleur de 2023 et 2024 ont provoqué une chute brutale des réserves d’eau douce à la surface de la Terre",
     "why": "Les mesures sur plus d’un million de cours d’eau, lacs et réservoirs de la planète montrent que l’eau douce a baissé de près de 10% en surface en 2023-2024. L’Amérique du Sud a été",
     "url": "https://www.letemps.ch/sciences/les-records-de-chaleur-de-2023-et-2024-ont-provoque-une-chute-brutale-des-reserves-d-eau-douce-a-la-surface-de-la-terre",
-    "date": "Thu, 26 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "En vidéo – Datacenters et intelligence artificielle dans l’espace: qui domine vraiment la nouvelle économie spatiale?",
-    "why": "SpaceX obtient le feu vert pour déployer un million de ses datacenters Starmind dans l’espace. La guerre économique de l’espace s’accélère. Décryptage des rapports de force en orbi",
-    "url": "https://www.letemps.ch/cyber/en-video-datacenters-et-intelligence-artificielle-dans-l-espace-qui-domine-vraiment-la-nouvelle-economie-spatiale",
-    "date": "Thu, 26 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "Budget européen: les Vingt-Sept à couteaux tirés, avec le spectre de Marine Le Pen qui plane sur les débats",
-    "why": "Réunis en sommet à Bruxelles, les dirigeants européens peinent à s’accorder sur le budget 2028-2034, qui doit être adopté à l’unanimité. Emmanuel Macron a averti que si aucune solu",
-    "url": "https://www.letemps.ch/monde/budget-europeen-les-27-a-couteaux-tires-avec-le-spectre-de-marine-le-pen-qui-plane-sur-les-debats",
-    "date": "Thu, 26 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "Face au ticket UDC, le parlement cherche toujours la parade",
-    "why": "Le choix de deux candidats alémaniques et très à droite pour succéder à Guy Parmelin a provoqué une onde de choc sous la Coupole. Mais entre protestations, ambitions personnelles e",
-    "url": "https://www.letemps.ch/suisse/face-au-ticket-udc-le-parlement-cherche-toujours-la-parade",
     "date": "Thu, 26 Nov 2026"
    },
    {
@@ -1324,6 +1324,22 @@
  },
  "news": [
   {
+   "t": "HP Stock Just Had Its Best Day Since May and Blew Past Wall Street’s Price Target",
+   "link": "https://247wallst.com/investing/2026/11/26/hp-stock-just-had-its-best-day-since-may-and-blew-past-wall-streets-price-target/?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Thu, 26 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
+   "t": "Warren Buffett’s Thanksgiving Message Names a Teacher Most Investors Have Never Heard Of. At 63 He Bought 300 Berkshire Shares That Would Be Worth $260 Million Today",
+   "link": "https://247wallst.com/investing/2026/11/26/warren-buffetts-thanksgiving-message-names-a-teacher-most-investors-have-never-heard-of-at-63-he-bought-300-berkshire-shares-that-would-be-worth-260-million-today/?.tsrc=rss",
+   "src": "Yahoo Finance",
+   "date": "Thu, 26 Nov 2026",
+   "r": "n",
+   "why": ""
+  },
+  {
    "t": "2 Growth Stocks That Lagged the S&P 500 in 2026 and Could Lead in 2027",
    "link": "https://www.fool.com/investing/2026/11/26/2-growth-stocks-that-lagged-the-sp-500-in-2026-and-could-lead-in-2027/?.tsrc=rss",
    "src": "Yahoo Finance",
@@ -1340,24 +1356,8 @@
    "why": ""
   },
   {
-   "t": "ICFI Stock Rises 21% in 6 Months: Here's What Investors Need to Know",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/icfi-stock-rises-21-6-160700145.html?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Thu, 26 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "Chevron Stocks Rise 1.06% as Brent Jumps 3.5% on Saudi Refinery Attack Claim",
-   "link": "https://finance.yahoo.com/energy/articles/chevron-stocks-rise-1-06-184046291.html?.tsrc=rss",
-   "src": "Yahoo Finance",
-   "date": "Thu, 26 Nov 2026",
-   "r": "n",
-   "why": ""
-  },
-  {
-   "t": "Dow Jones Futures Rise With U.S. Markets Shut; Look For This Bullish Signal",
-   "link": "https://finance.yahoo.com/m/158e82fc-b889-34b6-8704-99a49e9a83ae/dow-jones-futures-rise-with.html?.tsrc=rss",
+   "t": "Wall Street Sees Upside in AstraZeneca PLC (AZN) as Shares Retreat",
+   "link": "https://finance.yahoo.com/healthcare/articles/wall-street-sees-upside-astrazeneca-203743976.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Thu, 26 Nov 2026",
    "r": "n",
