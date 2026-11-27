@@ -1,6 +1,6 @@
 {
- "id": "2026-11-27-2033",
- "ts": "2026-11-27T20:33+01:00",
+ "id": "2026-11-27-2128",
+ "ts": "2026-11-27T21:28+01:00",
  "edition": "Soir",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 20h33 (Genève)",
+   "asof": "Mise à jour auto 21h28 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 20h33 (Genève)",
+   "asof": "Mise à jour auto 21h28 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 20h33 (Genève)",
+   "asof": "Mise à jour auto 21h28 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 20h33 (Genève)",
+   "asof": "Mise à jour auto 21h28 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 20h33 (Genève)",
+   "asof": "Mise à jour auto 21h28 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -464,8 +464,8 @@
     "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "90,6 $",
-    "d": "−0,07 %",
+    "value": "90,8 $",
+    "d": "+0,22 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 59 914 $",
+     "value": "≈ 59 719 $",
      "sub": "",
-     "d": "−1,06 % (24 h)",
-     "last": 59914
+     "d": "−1,49 % (24 h)",
+     "last": 59719
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,952 $",
+     "value": "≈ 0,947 $",
      "sub": "",
-     "d": "−0,22 % (24 h)",
-     "last": 0.951532
+     "d": "−0,43 % (24 h)",
+     "last": 0.94721
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -541,20 +541,20 @@
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1957",
-     "sub": "1 franc = 1,1957 dollar",
-     "d": "−0,33 %",
-     "last": 1.1957
+     "value": "1,1960",
+     "sub": "1 franc = 1,1960 dollar",
+     "d": "−0,30 %",
+     "last": 1.196
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0936",
-     "sub": "1 euro = 1,0936 dollar",
-     "d": "−0,36 %",
-     "last": 1.0936
+     "value": "1,0939",
+     "sub": "1 euro = 1,0939 dollar",
+     "d": "−0,33 %",
+     "last": 1.0939
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 20h33 (Genève)",
+    "asof": "Mise à jour auto 21h28 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 20h33 (Genève)",
+    "asof": "Mise à jour auto 21h28 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1053,7 +1053,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 20h33 (Genève)",
+    "asof": "Mise à jour auto 21h28 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1141,7 +1141,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 20h33 (Genève)",
+    "asof": "Mise à jour auto 21h28 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1236,8 +1236,16 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 20h33 (Genève)",
+  "asof": "Mise à jour auto 21h28 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Les médicaments anti-obésité pourraient-ils aussi servir à soigner les addictions?",
+    "why": "De nouvelles études suggèrent que les célèbres agonistes du GLP-1 diminuent l’appétence pour l’alcool et d’autres substances chez les personnes dépendantes. La liste des potentiels",
+    "url": "https://www.letemps.ch/sciences/sante/les-medicaments-anti-obesite-pourraient-ils-aussi-servir-a-soigner-les-addictions",
+    "date": "Fri, 27 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1271,11 +1279,11 @@
     "date": "Fri, 27 Nov 2026"
    },
    {
-    "src": "Le Temps",
+    "src": "Financial Times",
     "r": "n",
-    "t": "Fabrice Arfi, journaliste, coresponsable du service enquête de «Mediapart»: «L’indépendance de la presse, c’est comme l’amour: seules comptent les preuves»",
-    "why": "Il jouait de la guitare et a fait de la critique musicale avant de se passionner pour la chronique judiciaire. Coresponsable du service enquêtes de «Mediapart», le journaliste a tr",
-    "url": "https://www.letemps.ch/monde/france/fabrice-arfi-journaliste-coresponsable-du-service-enquete-de-mediapart-l-independance-de-la-presse-c-est-comme-l-amour-seules-comptent-les-preuves",
+    "t": "US tech stocks rise in latest market swing",
+    "why": "All-powerful AI trade has been eclipsed by wild moves in a market struggling to price future earnings",
+    "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
     "date": "Fri, 27 Nov 2026"
    },
    {
@@ -1305,14 +1313,6 @@
    {
     "src": "Financial Times",
     "r": "n",
-    "t": "US tech stocks rise in latest market swing",
-    "why": "All-powerful AI trade has been eclipsed by wild moves in a market struggling to price future earnings",
-    "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
-    "date": "Fri, 27 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
     "t": "EU weighs tighter export controls to prevent battery waste going to China",
     "why": "‘Black mass’ containing key minerals is often processed abroad and the extracted metals re-exported to Europe",
     "url": "https://www.ft.com/content/a8ecccda-f986-4ae9-9f45-9470d2be8c65?syn-25a6b1a6=1",
@@ -1323,16 +1323,16 @@
  },
  "news": [
   {
-   "t": "Update: Equities Climb as Dow Posts Biggest Weekly Jump Since October 2022",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/equities-climb-dow-posts-biggest-192733253.html?.tsrc=rss",
+   "t": "Dow Jones Futures: Stock Market Makes Bullish Move, Tesla Leads 7 New Buys; Nvidia's Jensen Huang Heads To Capitol Hill",
+   "link": "https://finance.yahoo.com/m/5b917298-e5b5-3d87-b1fa-f7cad345af64/dow-jones-futures%3A-stock.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Fri, 27 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "Dow Jones Futures: Stock Market Makes Bullish Move, Tesla Leads 7 New Buys; Nvidia's Jensen Huang Heads To Capitol Hill",
-   "link": "https://finance.yahoo.com/m/5b917298-e5b5-3d87-b1fa-f7cad345af64/dow-jones-futures%3A-stock.html?.tsrc=rss",
+   "t": "Update: Equities Climb as Dow Posts Biggest Weekly Jump Since October 2022",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/equities-climb-dow-posts-biggest-192733253.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Fri, 27 Nov 2026",
    "r": "n",
@@ -1347,16 +1347,16 @@
    "why": ""
   },
   {
-   "t": "S&P 500 Posts Year's Largest Weekly Gain Led by Materials, Technology",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-apos-largest-183955223.html?.tsrc=rss",
+   "t": "Trump’s AI Gambit Fuels Wild Thanksgiving Week on Wall Street",
+   "link": "https://finance.yahoo.com/technology/ai/articles/trump-ai-gambit-fuels-wild-184336528.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Fri, 27 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "US Equity Indexes Rise as Jensen Huang's Return to Nvidia Guardrails AI Trade While Investors Slice Growth Exposure This Week",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rise-jensen-183902792.html?.tsrc=rss",
+   "t": "S&P 500 Posts Year's Largest Weekly Gain Led by Materials, Technology",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-apos-largest-183955223.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Fri, 27 Nov 2026",
    "r": "n",
