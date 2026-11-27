@@ -1,6 +1,6 @@
 {
- "id": "2026-11-27-1555",
- "ts": "2026-11-27T15:55+01:00",
+ "id": "2026-11-27-1659",
+ "ts": "2026-11-27T16:59+01:00",
  "edition": "Après-midi",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 15h55 (Genève)",
+   "asof": "Mise à jour auto 16h59 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -43,8 +43,8 @@
      "r": "g",
      "flag": "🇪🇺",
      "name": "Euro Stoxx 50",
-     "last": 6061.23,
-     "d": 0.77,
+     "last": 6090.48,
+     "d": 1.26,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -56,8 +56,8 @@
      "r": "g",
      "flag": "🇪🇺",
      "name": "STOXX Europe 600",
-     "last": 641.78,
-     "d": 0.75,
+     "last": 643.98,
+     "d": 1.1,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -69,8 +69,8 @@
      "r": "g",
      "flag": "🇪🇺",
      "name": "MSCI Europe",
-     "last": 72.73,
-     "d": 0.89,
+     "last": 72.79,
+     "d": 0.97,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -82,8 +82,8 @@
      "r": "g",
      "flag": "🇨🇭",
      "name": "SMI",
-     "last": 14862.77,
-     "d": 0.3,
+     "last": 14904.43,
+     "d": 0.59,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -95,8 +95,8 @@
      "r": "g",
      "flag": "🇩🇪",
      "name": "DAX",
-     "last": 25300.62,
-     "d": 0.34,
+     "last": 25433.68,
+     "d": 0.87,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -108,8 +108,8 @@
      "r": "g",
      "flag": "🇫🇷",
      "name": "CAC 40",
-     "last": 8125.9,
-     "d": 0.21,
+     "last": 8163.26,
+     "d": 0.67,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -121,8 +121,8 @@
      "r": "g",
      "flag": "🇬🇧",
      "name": "FTSE 100",
-     "last": 10678.63,
-     "d": 0.65,
+     "last": 10701.99,
+     "d": 0.87,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -134,8 +134,8 @@
      "r": "g",
      "flag": "🇮🇹",
      "name": "FTSE MIB",
-     "last": 49052.84,
-     "d": 1.43,
+     "last": 49282.26,
+     "d": 1.9,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -147,8 +147,8 @@
      "r": "g",
      "flag": "🇪🇸",
      "name": "IBEX 35",
-     "last": 19316.4,
-     "d": 1.36,
+     "last": 19397.5,
+     "d": 1.78,
      "w": null,
      "ytd": null,
      "open": "09:00",
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 15h55 (Genève)",
+   "asof": "Mise à jour auto 16h59 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -168,8 +168,8 @@
      "r": "g",
      "flag": "🇺🇸",
      "name": "S&P 500",
-     "last": 7233.15,
-     "d": 0.7,
+     "last": 7267.89,
+     "d": 1.18,
      "w": null,
      "ytd": null,
      "open": "15:30",
@@ -181,8 +181,8 @@
      "r": "g",
      "flag": "🇺🇸",
      "name": "Dow Jones",
-     "last": 50501.62,
-     "d": 0.64,
+     "last": 50679.56,
+     "d": 0.99,
      "w": null,
      "ytd": null,
      "open": "15:30",
@@ -194,8 +194,8 @@
      "r": "g",
      "flag": "🇺🇸",
      "name": "Nasdaq Composite",
-     "last": 23788.56,
-     "d": 0.86,
+     "last": 23968.1,
+     "d": 1.62,
      "w": null,
      "ytd": null,
      "open": "15:30",
@@ -207,8 +207,8 @@
      "r": "g",
      "flag": "🇺🇸",
      "name": "MSCI USA",
-     "last": 113.94,
-     "d": 0.92,
+     "last": 114.03,
+     "d": 1.01,
      "w": null,
      "ytd": null,
      "open": "15:30",
@@ -220,8 +220,8 @@
      "r": "g",
      "flag": "🇺🇸",
      "name": "Russell 2000",
-     "last": 2731.41,
-     "d": 1.01,
+     "last": 2738.19,
+     "d": 1.26,
      "w": null,
      "ytd": null,
      "open": "15:30",
@@ -233,7 +233,7 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 15h55 (Genève)",
+   "asof": "Mise à jour auto 16h59 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 15h55 (Genève)",
+   "asof": "Mise à jour auto 16h59 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -314,8 +314,8 @@
      "r": "g",
      "flag": "🌍",
      "name": "MSCI World",
-     "last": 195.9,
-     "d": 0.79,
+     "last": 196.75,
+     "d": 1.13,
      "w": null,
      "ytd": null,
      "open": null,
@@ -327,8 +327,8 @@
      "r": "g",
      "flag": "🌐",
      "name": "MSCI ACWI",
-     "last": 149.42,
-     "d": 0.96,
+     "last": 149.93,
+     "d": 1.3,
      "w": null,
      "ytd": null,
      "open": null,
@@ -353,8 +353,8 @@
      "r": "o",
      "flag": "🌏",
      "name": "MSCI Emerging Markets",
-     "last": 57.69,
-     "d": 2.29,
+     "last": 57.84,
+     "d": 2.54,
      "w": null,
      "ytd": null,
      "open": null,
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 15h55 (Genève)",
+   "asof": "Mise à jour auto 16h59 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -421,8 +421,8 @@
     "r": "o",
     "flag": "🇺🇸",
     "name": "VIX",
-    "last": 27.06,
-    "d": 0.97,
+    "last": 25.47,
+    "d": -4.96,
     "open": "15:30",
     "close": "22:00",
     "scope": "Nervosité attendue sur le S&P 500 (30 jours) · valeur du 18/11"
@@ -437,8 +437,8 @@
     "r": "g",
     "flag": "🇺🇸",
     "name": "Treasury US 10 ans",
-    "value": "4,88 %",
-    "d": "−2 pb",
+    "value": "4,91 %",
+    "d": "+6 pb",
     "scope": "Taux d'emprunt de l'État américain"
    },
    {
@@ -464,8 +464,8 @@
     "r": "g",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "91,2 $",
-    "d": "+0,65 %",
+    "value": "90,9 $",
+    "d": "+0,30 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -491,10 +491,10 @@
      "r": "o",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 662 $ / once",
+     "value": "≈ 3 657 $ / once",
      "sub": "contrat à terme",
-     "d": "+2,74 %",
-     "last": 3662
+     "d": "+2,58 %",
+     "last": 3657
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 59 251 $",
+     "value": "≈ 60 045 $",
      "sub": "",
-     "d": "−2,43 % (24 h)",
-     "last": 59251
+     "d": "−0,84 % (24 h)",
+     "last": 60045
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,938 $",
+     "value": "≈ 0,952 $",
      "sub": "",
-     "d": "−1,11 % (24 h)",
-     "last": 0.93841
+     "d": "+0,49 % (24 h)",
+     "last": 0.951962
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,30 +531,30 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0927",
-     "sub": "1 franc = 1,0927 euro",
-     "d": "+0,05 %",
-     "last": 1.0927
+     "value": "1,0925",
+     "sub": "1 franc = 1,0925 euro",
+     "d": "+0,04 %",
+     "last": 1.0925
     },
     {
      "id": "chfusd",
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1973",
-     "sub": "1 franc = 1,1973 dollar",
-     "d": "−0,19 %",
-     "last": 1.1973
+     "value": "1,1958",
+     "sub": "1 franc = 1,1958 dollar",
+     "d": "−0,32 %",
+     "last": 1.1958
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0957",
-     "sub": "1 euro = 1,0957 dollar",
-     "d": "−0,16 %",
-     "last": 1.0957
+     "value": "1,0943",
+     "sub": "1 euro = 1,0943 dollar",
+     "d": "−0,29 %",
+     "last": 1.0943
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 15h55 (Genève)",
+    "asof": "Mise à jour auto 16h59 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -867,14 +867,14 @@
       "name": "Apple",
       "ticker": "AAPL",
       "yahoo": "AAPL",
-      "last": 356.24,
+      "last": 359.13,
       "cur": "$",
-      "d": 0.19,
-      "fromHigh": -0.01,
+      "d": 1.0,
+      "fromHigh": -0.0,
       "scope": "iPhone, Mac, services · résiste le mieux",
-      "w": 2.01,
-      "y": 27.75,
-      "ytd": 31.45,
+      "w": 2.84,
+      "y": 28.79,
+      "ytd": 32.52,
       "outlook": {
        "tone": "Neutre",
        "text": "Valeur refuge de la tech, tout près de son record et meilleure performance des « 7 » en 2026. Revers de la médaille : elle est chère (environ 39 fois ses bénéfices), donc sensible à une rotation."
@@ -887,14 +887,14 @@
       "name": "Microsoft",
       "ticker": "MSFT",
       "yahoo": "MSFT",
-      "last": 491.5,
+      "last": 491.38,
       "cur": "$",
-      "d": 0.32,
-      "fromHigh": -11.57,
+      "d": 0.3,
+      "fromHigh": -11.59,
       "scope": "Logiciels et cloud Azure · partenaire d'Anthropic",
-      "w": -1.36,
-      "y": -0.1,
-      "ytd": 3.92,
+      "w": -1.39,
+      "y": -0.13,
+      "ytd": 3.9,
       "outlook": {
        "tone": "Neutre",
        "text": "Partenaire et client d'Anthropic, porté par le cloud Azure. Le titre a reculé d'environ 4 % en un mois avec la défiance envers les dépenses dans l'IA."
@@ -907,14 +907,14 @@
       "name": "Nvidia",
       "ticker": "NVDA",
       "yahoo": "NVDA",
-      "last": 146.86,
+      "last": 147.5,
       "cur": "$",
-      "d": -1.64,
-      "fromHigh": -38.62,
+      "d": -1.21,
+      "fromHigh": -38.35,
       "scope": "Puces pour l'IA · secoué par une affaire visant son patron",
-      "w": 0.6,
-      "y": -17.03,
-      "ytd": -22.24,
+      "w": 1.04,
+      "y": -16.67,
+      "ytd": -21.9,
       "outlook": {
        "tone": "Prudent",
        "text": "Ventes trimestrielles en hausse de 103 %, mais l'action a perdu environ 30 % en un mois après le départ forcé de son patron. Volatilité forte à court terme ; valorisation désormais plus basse (≈ 19 fois les bénéfices)."
@@ -927,14 +927,14 @@
       "name": "Alphabet (Google)",
       "ticker": "GOOGL",
       "yahoo": "GOOGL",
-      "last": 272.98,
+      "last": 272.78,
       "cur": "$",
-      "d": -0.04,
-      "fromHigh": -32.2,
+      "d": -0.12,
+      "fromHigh": -32.25,
       "scope": "Recherche, YouTube, cloud · investisseur dans Anthropic",
-      "w": 0.12,
-      "y": -14.74,
-      "ytd": -13.38,
+      "w": 0.04,
+      "y": -14.8,
+      "ytd": -13.44,
       "outlook": {
        "tone": "Neutre",
        "text": "Investisseur dans Anthropic, l'action a bondi à l'ouverture puis s'est repliée. Valorisation la plus basse des « 7 » (≈ 15 fois les bénéfices), mais doutes sur la recherche Google face à l'IA."
@@ -942,19 +942,19 @@
      },
      {
       "id": "amzn",
-      "r": "g",
+      "r": "o",
       "flag": "🇺🇸",
       "name": "Amazon",
       "ticker": "AMZN",
       "yahoo": "AMZN",
-      "last": 249.69,
+      "last": 253.86,
       "cur": "$",
-      "d": 2.15,
-      "fromHigh": -12.09,
+      "d": 3.86,
+      "fromHigh": -10.62,
       "scope": "Commerce en ligne, cloud AWS · investisseur dans Anthropic",
-      "w": -2.99,
-      "y": 7.06,
-      "ytd": 10.24,
+      "w": -1.36,
+      "y": 8.85,
+      "ytd": 12.08,
       "outlook": {
        "tone": "Neutre",
        "text": "Autre grand investisseur dans Anthropic et premier fournisseur de cloud (AWS). Bonne année (+20 %), mais l'action a rendu ses gains du matin."
@@ -962,19 +962,19 @@
      },
      {
       "id": "meta",
-      "r": "g",
+      "r": "o",
       "flag": "🇺🇸",
       "name": "Meta",
       "ticker": "META",
       "yahoo": "META",
-      "last": 624.5,
+      "last": 634.41,
       "cur": "$",
-      "d": 2.39,
-      "fromHigh": -19.69,
+      "d": 4.02,
+      "fromHigh": -18.41,
       "scope": "Facebook, Instagram, WhatsApp",
-      "w": 4.74,
-      "y": -3.62,
-      "ytd": -3.98,
+      "w": 6.41,
+      "y": -2.09,
+      "ytd": -2.46,
       "outlook": {
        "tone": "Prudent",
        "text": "Environ 22 % sous son record d'août : les investisseurs s'inquiètent du coût de ses investissements dans l'IA. Valorisation modérée (≈ 21 fois les bénéfices)."
@@ -987,14 +987,14 @@
       "name": "Tesla",
       "ticker": "TSLA",
       "yahoo": "TSLA",
-      "last": 393.35,
+      "last": 398.23,
       "cur": "$",
-      "d": 3.47,
-      "fromHigh": -19.71,
+      "d": 4.76,
+      "fromHigh": -18.71,
       "scope": "Voitures électriques, robotique",
-      "w": 5.06,
-      "y": -8.56,
-      "ytd": -10.21,
+      "w": 6.36,
+      "y": -7.42,
+      "ytd": -9.09,
       "outlook": {
        "tone": "Prudent",
        "text": "En baisse depuis janvier (≈ −15 %) et très chère (plus de 400 fois ses bénéfices) : l'action dépend surtout des promesses sur la robotique et la conduite autonome."
@@ -1002,19 +1002,19 @@
      },
      {
       "id": "avgo",
-      "r": "g",
+      "r": "o",
       "flag": "🇺🇸",
       "name": "Broadcom",
       "ticker": "AVGO",
       "yahoo": "AVGO",
-      "last": 308.23,
+      "last": 310.65,
       "cur": "$",
-      "d": 2.45,
-      "fromHigh": -35.99,
+      "d": 3.26,
+      "fromHigh": -35.49,
       "scope": "Puces et réseaux pour l'IA · partenaire d'Anthropic",
-      "w": -11.08,
-      "y": -23.51,
-      "ytd": -11.33,
+      "w": -10.38,
+      "y": -22.91,
+      "ytd": -10.63,
       "outlook": {
        "tone": "Positif",
        "text": "51 analystes la recommandent en moyenne à l'achat (« Strong Buy »), avec un objectif moyen d'environ 529 $ à 12 mois. Partenaire d'Anthropic pour les puces."
@@ -1025,22 +1025,22 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 15h55 (Genève)",
+    "asof": "Mise à jour auto 16h59 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
       "id": "ant",
-      "r": "o",
+      "r": "r",
       "flag": "🇺🇸",
       "name": "Anthropic",
       "ticker": "ANT",
       "yahoo": "ANT",
-      "last": 86.38,
+      "last": 89.83,
       "cur": "$",
-      "d": 4.34,
-      "fromHigh": -11.1,
+      "d": 8.5,
+      "fromHigh": -7.56,
       "scope": "Créateur de l'assistant IA Claude",
-      "w": -11.1,
+      "w": -7.56,
       "y": null,
       "ytd": null,
       "outlook": {
@@ -1053,7 +1053,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 15h55 (Genève)",
+    "asof": "Mise à jour auto 16h59 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1063,14 +1063,14 @@
       "name": "Nestlé",
       "ticker": "NESN",
       "yahoo": "NESN.SW",
-      "last": 87.55,
+      "last": 87.63,
       "cur": "CHF",
-      "d": -0.11,
-      "fromHigh": -0.65,
+      "d": -0.02,
+      "fromHigh": -0.56,
       "scope": "Alimentation · Vevey",
-      "w": 2.34,
-      "y": 9.55,
-      "ytd": 14.53
+      "w": 2.43,
+      "y": 9.65,
+      "ytd": 14.64
      },
      {
       "id": "novn",
@@ -1079,14 +1079,14 @@
       "name": "Novartis",
       "ticker": "NOVN",
       "yahoo": "NOVN.SW",
-      "last": 128.58,
+      "last": 128.84,
       "cur": "CHF",
-      "d": 0.27,
-      "fromHigh": -5.29,
+      "d": 0.47,
+      "fromHigh": -5.1,
       "scope": "Pharma · Bâle · plus forte baisse du SMI",
-      "w": 0.64,
-      "y": 22.88,
-      "ytd": 18.51
+      "w": 0.85,
+      "y": 23.13,
+      "ytd": 18.75
      },
      {
       "id": "rog",
@@ -1095,14 +1095,14 @@
       "name": "Roche",
       "ticker": "ROG",
       "yahoo": "RO.SW",
-      "last": 414.4,
+      "last": 413.8,
       "cur": "CHF",
-      "d": 0.34,
-      "fromHigh": -0.34,
+      "d": 0.19,
+      "fromHigh": -0.48,
       "scope": "Pharma et diagnostic · Bâle",
-      "w": 2.93,
-      "y": 29.34,
-      "ytd": 24.37
+      "w": 2.78,
+      "y": 29.15,
+      "ytd": 24.19
      },
      {
       "id": "ubsg",
@@ -1111,14 +1111,14 @@
       "name": "UBS",
       "ticker": "UBSG",
       "yahoo": "UBSG.SW",
-      "last": 38.07,
+      "last": 38.25,
       "cur": "CHF",
-      "d": 1.44,
-      "fromHigh": -15.4,
+      "d": 1.92,
+      "fromHigh": -15.0,
       "scope": "Banque et gestion de fortune · Zurich",
-      "w": 2.98,
-      "y": 23.16,
-      "ytd": -0.26
+      "w": 3.46,
+      "y": 23.75,
+      "ytd": 0.21
      },
      {
       "id": "abbn",
@@ -1127,21 +1127,21 @@
       "name": "ABB",
       "ticker": "ABBN",
       "yahoo": "ABBN.SW",
-      "last": 65.56,
+      "last": 65.82,
       "cur": "CHF",
-      "d": 0.49,
-      "fromHigh": -25.97,
+      "d": 0.89,
+      "fromHigh": -25.68,
       "scope": "Électrification et automatisation · valeur vers 9h45",
-      "w": 0.34,
-      "y": 14.78,
-      "ytd": 7.05
+      "w": 0.73,
+      "y": 15.23,
+      "ytd": 7.48
      }
     ]
    },
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 15h55 (Genève)",
+    "asof": "Mise à jour auto 16h59 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1151,14 +1151,14 @@
       "name": "ASML",
       "ticker": "ASML",
       "yahoo": "ASML.AS",
-      "last": 1187.0,
+      "last": 1196.0,
       "cur": "€",
-      "d": 1.61,
-      "fromHigh": -31.04,
+      "d": 2.38,
+      "fromHigh": -30.52,
       "scope": "Machines pour fabriquer les puces · 1re capitalisation d'Europe",
-      "w": 1.63,
-      "y": 32.3,
-      "ytd": 20.35
+      "w": 2.4,
+      "y": 33.3,
+      "ytd": 21.26
      },
      {
       "id": "sap",
@@ -1167,14 +1167,14 @@
       "name": "SAP",
       "ticker": "SAP",
       "yahoo": "SAP.DE",
-      "last": 193.36,
+      "last": 195.42,
       "cur": "€",
-      "d": -0.4,
-      "fromHigh": -10.38,
+      "d": 0.66,
+      "fromHigh": -9.42,
       "scope": "Logiciels de gestion d'entreprise",
-      "w": 5.27,
-      "y": -6.59,
-      "ytd": -4.25
+      "w": 6.39,
+      "y": -5.59,
+      "ytd": -3.23
      },
      {
       "id": "mc",
@@ -1183,14 +1183,14 @@
       "name": "LVMH",
       "ticker": "MC",
       "yahoo": "MC.PA",
-      "last": 399.4,
+      "last": 403.45,
       "cur": "€",
-      "d": -0.41,
-      "fromHigh": -38.75,
+      "d": 0.6,
+      "fromHigh": -38.13,
       "scope": "Luxe (Louis Vuitton, Dior, Moët)",
-      "w": 4.57,
-      "y": -36.34,
-      "ytd": -37.77
+      "w": 5.63,
+      "y": -35.69,
+      "ytd": -37.14
      }
     ]
    }
@@ -1236,8 +1236,24 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 15h55 (Genève)",
+  "asof": "Mise à jour auto 16h59 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "«Je n’ai jamais trahi, ceci est mon testament moral»: Après son suicide, Gianni De Gennaro, ancien chef de la police, laisse l’Italie en proie aux fantômes de la Mafia",
+    "why": "Soupçonné d’avoir détourné l’enquête sur l’attentat de 1992 visant le juge Paolo Borsellino, l’ancien numéro un de la police et des renseignements italiens a été retrouvé mort neuf",
+    "url": "https://www.letemps.ch/monde/europe/je-n-ai-jamais-trahi-ceci-est-mon-testament-moral-apres-son-suicide-gianni-de-gennaro-ancien-chef-de-la-police-laisse-l-italie-en-proie-aux-fantomes-de-la-mafia",
+    "date": "Fri, 27 Nov 2026"
+   },
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Nouvelle enquête sur le traitement médical d’enfants chez Terre des hommes: «Le rôle de l’Etat doit être examiné»",
+    "why": "Alors qu’une enquête historique est en cours sur les accusations d’expérimentations médicales sur des enfants dans les années 1960 et 1970, le canton de Vaud lui aussi s’empare du ",
+    "url": "https://www.letemps.ch/suisse/vaud/nouvelle-enquete-sur-le-traitement-medical-d-enfants-chez-terre-des-hommes-le-role-de-l-etat-doit-etre-examine",
+    "date": "Fri, 27 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1260,22 +1276,6 @@
     "t": "Par «peur d’une blessure grave», le champion du monde de MotoGP Marc Márquez va mettre un terme à sa carrière",
     "why": "La fantastique remontée au classement de l’Espagnol de 33 ans restera son dernier fait d’armes: il a surpris tout le monde en annonçant sa retraite vendredi, pendant les préparatif",
     "url": "https://www.letemps.ch/sport/par-peur-d-une-blessure-grave-le-champion-du-monde-de-motogp-marc-marquez-va-mettre-un-terme-a-sa-carriere",
-    "date": "Fri, 27 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "Genève ne veut pas d’un péage urbain «pour le moment»",
-    "why": "Le Grand Conseil s’est contenté de «prendre acte» d’une étude évaluant l’impact d’une telle infrastructure sur le trafic au centre-ville. Il a toutefois refusé d’inscrire son inter",
-    "url": "https://www.letemps.ch/suisse/geneve/geneve-ne-veut-pas-d-un-peage-urbain-pour-le-moment",
-    "date": "Fri, 27 Nov 2026"
-   },
-   {
-    "src": "Le Temps",
-    "r": "n",
-    "t": "Antoine Viquerat, le nageur français devenu suisse par amour de l’horlogerie",
-    "why": "Après deux participations aux Jeux olympiques sous les couleurs de son pays natal, le nageur de 28 ans espère représenter celui dont il est originaire à Los Angeles 2028, avant de ",
-    "url": "https://www.letemps.ch/sport/natation/antoine-viquerat-le-nageur-francais-devenu-suisse-par-amour-de-l-horlogerie",
     "date": "Fri, 27 Nov 2026"
    },
    {
@@ -1323,40 +1323,40 @@
  },
  "news": [
   {
-   "t": "10 Best Strong Buy Stocks to Buy and Hold For the Next 5 Years",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/10-best-strong-buy-stocks-142359236.html?.tsrc=rss",
+   "t": "Ingles Markets (IMKTA) Stock Is Down 5.2% Today Without Company News",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/ingles-markets-imkta-stock-down-154517883.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Fri, 27 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "5 Strong Buy Stocks to Buy and Hold For the Next 5 Years",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/5-strong-buy-stocks-buy-142357618.html?.tsrc=rss",
+   "t": "PicS (PICS) Stock Is Up 12.0% Today Without Company News",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/pics-pics-stock-12-0-154516654.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Fri, 27 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "PagSeguro (PAGS) Stock Jumps 12.4% Premarket Without Company News",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/pagseguro-pags-stock-jumps-12-140018611.html?.tsrc=rss",
+   "t": "Alamo Group (ALG) Stock Is Up 5.0% Today Without Company News",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/alamo-group-alg-stock-5-154515486.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Fri, 27 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "Vera Therapeutics (VERA) Stock Jumps 16.4% Premarket: No Company News",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/vera-therapeutics-vera-stock-jumps-133018816.html?.tsrc=rss",
+   "t": "Titan Machinery (TITN) Stock Is Up 7.0% Today Without Company News",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/titan-machinery-titn-stock-7-154514293.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Fri, 27 Nov 2026",
    "r": "n",
    "why": ""
   },
   {
-   "t": "Inter (INTR) Stock Jumps 14.5% Premarket: Latin American Stocks Rally",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/inter-intr-stock-jumps-14-131533340.html?.tsrc=rss",
+   "t": "International Paper (IP) Stock Is Up 6.6% Today in Broad Market Rally",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/international-paper-ip-stock-6-154507433.html?.tsrc=rss",
    "src": "Yahoo Finance",
    "date": "Fri, 27 Nov 2026",
    "r": "n",
