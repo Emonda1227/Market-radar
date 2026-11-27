@@ -1,6 +1,6 @@
 {
- "id": "2026-11-27-0703",
- "ts": "2026-11-27T07:03+01:00",
+ "id": "2026-11-27-0820",
+ "ts": "2026-11-27T08:20+01:00",
  "edition": "Matin",
  "overall": "o",
  "headline": "Anthropic s'envole pour ses débuts en bourse (ouverture à 111,50 $, +34 %), mais Wall Street se retourne : le Dow perd environ 1,7 %, le S&P 500 et le Nasdaq environ 1,4 %. L'Europe a fini quasi stable.",
@@ -35,7 +35,7 @@
   {
    "id": "europe",
    "title": "Europe",
-   "asof": "Mise à jour auto 07h03 (Genève)",
+   "asof": "Mise à jour auto 08h20 (Genève)",
    "note": "L'Europe a perdu son élan du matin et finit quasi stable. La tech a profité d'Anthropic, mais la santé et les services publics ont pesé. Milan surperforme ; la Suisse recule, freinée par Novartis. Pas de signal de stress en Europe.",
    "rows": [
     {
@@ -160,7 +160,7 @@
   {
    "id": "usa",
    "title": "États-Unis",
-   "asof": "Mise à jour auto 07h03 (Genève)",
+   "asof": "Mise à jour auto 08h20 (Genève)",
    "note": "Retournement brutal : après une ouverture en hausse de plus de 1 %, les indices ont plongé dès la première cotation d'Anthropic. Le Dow est le plus touché (valeurs cycliques, santé, Walmart). Les trois grands indices américains perdent désormais plus de 3 % sur le mois.",
    "rows": [
     {
@@ -233,16 +233,16 @@
   {
    "id": "asie",
    "title": "Asie",
-   "asof": "Mise à jour auto 07h03 (Genève)",
+   "asof": "Mise à jour auto 08h20 (Genève)",
    "note": "L'Asie a fini en baisse : Hong Kong recule d'environ 1,5 % (tensions technologiques avec les États-Unis), Tokyo est quasi stable. La hausse des futures américains n'a pas suffi à faire rebondir la région.",
    "rows": [
     {
      "id": "nikkei",
-     "r": "g",
+     "r": "o",
      "flag": "🇯🇵",
      "name": "Nikkei 225",
-     "last": 58636.14,
-     "d": 1.98,
+     "last": 58711.11,
+     "d": 2.11,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -254,8 +254,8 @@
      "r": "o",
      "flag": "🇰🇷",
      "name": "Kospi",
-     "last": 4921.31,
-     "d": 4.46,
+     "last": 4915.68,
+     "d": 4.34,
      "w": null,
      "ytd": null,
      "open": "01:00",
@@ -267,8 +267,8 @@
      "r": "o",
      "flag": "🇭🇰",
      "name": "Hang Seng",
-     "last": 22753.93,
-     "d": 3.59,
+     "last": 22682.72,
+     "d": 3.26,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -280,8 +280,8 @@
      "r": "o",
      "flag": "🇨🇳",
      "name": "Shanghai Composite",
-     "last": 3602.73,
-     "d": 3.63,
+     "last": 3606.49,
+     "d": 3.74,
      "w": null,
      "ytd": null,
      "open": "02:30",
@@ -293,8 +293,8 @@
      "r": "g",
      "flag": "🇮🇳",
      "name": "Sensex",
-     "last": 83715.92,
-     "d": -0.73,
+     "last": 83744.1,
+     "d": -0.69,
      "w": null,
      "ytd": null,
      "open": "04:45",
@@ -306,7 +306,7 @@
   {
    "id": "monde",
    "title": "Indices mondiaux",
-   "asof": "Mise à jour auto 07h03 (Genève)",
+   "asof": "Mise à jour auto 08h20 (Genève)",
    "note": "Valeurs non publiées en accès libre. L'indice mondial MSCI ACWI a baissé six jours d'affilée et se dirigeait vers son plus bas depuis avril : la baisse est mondiale, pas seulement européenne.",
    "rows": [
     {
@@ -366,7 +366,7 @@
   {
    "id": "autres",
    "title": "Au-delà des actions",
-   "asof": "Mise à jour auto 07h03 (Genève)",
+   "asof": "Mise à jour auto 08h20 (Genève)",
    "note": "Pas de valeur publique ce matin. Indications indirectes : le taux US à 10 ans a légèrement reculé (les obligations ont un peu monté) et le pétrole baisse, ce qui pèse sur les matières premières.",
    "rows": [
     {
@@ -464,8 +464,8 @@
     "r": "o",
     "flag": "🛢️",
     "name": "Brent",
-    "value": "92,8 $",
-    "d": "+2,39 %",
+    "value": "92,7 $",
+    "d": "+2,28 %",
     "scope": "Prix du baril de pétrole de référence"
    }
   ],
@@ -488,13 +488,13 @@
    "rows": [
     {
      "id": "gold",
-     "r": "o",
+     "r": "r",
      "flag": "🥇",
      "name": "Or",
-     "value": "≈ 3 671 $ / once",
+     "value": "≈ 3 686 $ / once",
      "sub": "contrat à terme",
-     "d": "+2,97 %",
-     "last": 3671
+     "d": "+3,40 %",
+     "last": 3686
     }
    ],
    "note": "L'or se stabilise après sa chute d'hier (environ −3 %). Il a touché environ 3 693 $ ce matin, son plus bas depuis 14 mois, avant de remonter légèrement. Le répit reste fragile tant que le dollar et les taux montent."
@@ -506,20 +506,20 @@
      "r": "g",
      "flag": "₿",
      "name": "Bitcoin",
-     "value": "≈ 61 715 $",
+     "value": "≈ 61 772 $",
      "sub": "",
-     "d": "+1,87 % (24 h)",
-     "last": 61715
+     "d": "+2,27 % (24 h)",
+     "last": 61772
     },
     {
      "id": "xrp",
      "r": "g",
      "flag": "✕",
      "name": "XRP",
-     "value": "≈ 0,970 $",
+     "value": "≈ 0,977 $",
      "sub": "",
-     "d": "+1,58 % (24 h)",
-     "last": 0.969795
+     "d": "+2,85 % (24 h)",
+     "last": 0.977039
     }
    ],
    "note": "Le Bitcoin reste sous 63 500 $, au plus bas depuis environ trois mois, freiné par la Fed et par les retraits des fonds Bitcoin américains. Mouvement du jour dans les seuils verts."
@@ -531,30 +531,30 @@
      "r": "g",
      "flag": "🇨🇭🇪🇺",
      "name": "CHF/EUR",
-     "value": "1,0916",
-     "sub": "1 franc = 1,0916 euro",
-     "d": "−0,05 %",
-     "last": 1.0916
+     "value": "1,0923",
+     "sub": "1 franc = 1,0923 euro",
+     "d": "+0,02 %",
+     "last": 1.0923
     },
     {
      "id": "chfusd",
      "r": "g",
      "flag": "🇨🇭🇺🇸",
      "name": "CHF/USD",
-     "value": "1,1991",
-     "sub": "1 franc = 1,1991 dollar",
-     "d": "−0,04 %",
-     "last": 1.1991
+     "value": "1,1997",
+     "sub": "1 franc = 1,1997 dollar",
+     "d": "+0,01 %",
+     "last": 1.1997
     },
     {
      "id": "eurusd",
      "r": "g",
      "flag": "🇪🇺🇺🇸",
      "name": "EUR/USD",
-     "value": "1,0982",
-     "sub": "1 euro = 1,0982 dollar",
-     "d": "+0,06 %",
-     "last": 1.0982
+     "value": "1,0981",
+     "sub": "1 euro = 1,0981 dollar",
+     "d": "+0,05 %",
+     "last": 1.0981
     }
    ],
    "note": "Valeurs du franc d'hier matin (pas de cours récent fiable trouvé). Le dollar est au plus haut depuis 19 mois après le compte rendu de la Fed."
@@ -856,7 +856,7 @@
    {
     "id": "us_tech",
     "title": "Géants de la tech américaine",
-    "asof": "Mise à jour auto 07h03 (Genève)",
+    "asof": "Mise à jour auto 08h20 (Genève)",
     "full": true,
     "note": "Le cours est la dernière clôture connue ; la variation du jour est celle de la séance du 19/11 quand elle était disponible (vers 17h). Sur une semaine, Nvidia chute de 13 % alors qu'Apple et Amazon restent stables ; sur un an, Apple (+32 %) et Amazon (+20 %) dominent, Nvidia et Tesla reculent. La ligne « Perspective » résume la tendance à court terme d'après l'actualité, ce n'est pas une recommandation.",
     "rows": [
@@ -1025,7 +1025,7 @@
    {
     "id": "ia_new",
     "title": "Nouvelles cotations IA",
-    "asof": "Mise à jour auto 07h03 (Genève)",
+    "asof": "Mise à jour auto 08h20 (Genève)",
     "note": "Pas encore d'historique sur 1 semaine ni 1 an : l'action cote depuis aujourd'hui. Elle a ouvert à 111,50 $ puis s'est stabilisée vers 96 $, encore environ 16 % au-dessus du prix d'introduction.",
     "rows": [
      {
@@ -1054,7 +1054,7 @@
    {
     "id": "suisse",
     "title": "Géants suisses",
-    "asof": "Mise à jour auto 07h03 (Genève)",
+    "asof": "Mise à jour auto 08h20 (Genève)",
     "note": "La Bourse suisse recule légèrement (SMI ≈ −0,4 %), freinée par la pharma : Novartis perd environ 2,6 % malgré la confirmation de ses objectifs de croissance, Nestlé environ 1,4 %. ABB monte. Ces valeurs défensives avaient porté le SMI à un record au-dessus de 15 000 points la semaine dernière. Évolutions sur 1 semaine et 1 an pas encore disponibles pour les valeurs suisses ; la version GitHub les calculera automatiquement.",
     "rows": [
      {
@@ -1142,7 +1142,7 @@
    {
     "id": "europe",
     "title": "Géants européens",
-    "asof": "Mise à jour auto 07h03 (Genève)",
+    "asof": "Mise à jour auto 08h20 (Genève)",
     "note": "Pas de cours fiable trouvé aujourd'hui pour ces valeurs. ASML, la plus grosse capitalisation d'Europe, est en correction (plus de 10 % sous son récent plus haut) avec les doutes sur l'IA. La version GitHub du Radar remplira ces lignes automatiquement.",
     "rows": [
      {
@@ -1237,8 +1237,16 @@
   ]
  },
  "press": {
-  "asof": "Mise à jour auto 07h03 (Genève)",
+  "asof": "Mise à jour auto 08h20 (Genève)",
   "items": [
+   {
+    "src": "Le Temps",
+    "r": "n",
+    "t": "Un million de satellites lancés par Elon Musk dans l’espace? Pourquoi ce projet en apparence délirant n’est pas totalement irréaliste",
+    "why": "Le projet Starmind vise à exploiter l’énergie solaire en orbite, avec jusqu’à un million de satellites, pour alimenter l’intelligence artificielle. Mais les coûts de lancement, les",
+    "url": "https://www.letemps.ch/cyber/intelligence-artificielle/un-million-de-satellites-lances-par-elon-musk-dans-l-espace-pourquoi-ce-projet-en-apparence-delirant-n-est-pas-totalement-irrealiste",
+    "date": "Fri, 27 Nov 2026"
+   },
    {
     "src": "Le Temps",
     "r": "n",
@@ -1272,11 +1280,27 @@
     "date": "Fri, 27 Nov 2026"
    },
    {
-    "src": "Le Temps",
+    "src": "Financial Times",
     "r": "n",
-    "t": "Une «règle d’or» budgétaire en France?",
-    "why": "CHRONIQUE. Pour faire redescendre la dette, un gouvernement doit s’engager sur une trajectoire avec un point d’arrivée impératif, et disposer de data fiables – le frein à l’endette",
-    "url": "https://www.letemps.ch/opinions/chroniques/une-regle-d-or-budgetaire-en-france",
+    "t": "‘It’s not nation versus nation. It’s hyperscaler versus hyperscaler’",
+    "why": "Mining billionaire Robert Friedland on copper and war",
+    "url": "https://www.ft.com/content/698d29bd-490b-41ef-a3e3-20edc2b591f7?syn-25a6b1a6=1",
+    "date": "Fri, 27 Nov 2026"
+   },
+   {
+    "src": "Financial Times",
+    "r": "n",
+    "t": "Chinese shares soar after Beijing signals more support",
+    "why": "CSI 300 index jumps more than 4 per cent in afternoon trading",
+    "url": "https://www.ft.com/content/fedc6392-ad25-43e4-9d9f-20216cbf331e?syn-25a6b1a6=1",
+    "date": "Fri, 27 Nov 2026"
+   },
+   {
+    "src": "Financial Times",
+    "r": "n",
+    "t": "Private credit’s ‘alpha’ problem",
+    "why": "Can direct lending really be replicated in public markets? Yes",
+    "url": "https://www.ft.com/content/364fece7-4303-4ed9-afc9-47e953bd4e9f",
     "date": "Fri, 27 Nov 2026"
    },
    {
@@ -1293,30 +1317,6 @@
     "t": "Kirkland & Ellis under fire from private equity backers over sell-to-yourself deals",
     "why": "Lawyers say contracts for so-called continuation vehicles remove investors’ right to sue in event of dispute",
     "url": "https://www.ft.com/content/5cc534e6-d461-4fc7-a744-b938e54eee1d?syn-25a6b1a6=1",
-    "date": "Fri, 27 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "Tech stocks set for worst month in four years as volatility surges",
-    "why": "All-powerful AI trade has been eclipsed by wild swings in a market struggling to price future earnings",
-    "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
-    "date": "Fri, 27 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "Kalshi’s next big bet: ‘microinsurance’ for small businesses",
-    "why": "Platform hopes growth in more conventional financial services will help offset loss of business in sports wagers, which face mounting legal threats",
-    "url": "https://www.ft.com/content/587198a8-ac15-46b2-83f2-f6e181ccd7cd?syn-25a6b1a6=1",
-    "date": "Fri, 27 Nov 2026"
-   },
-   {
-    "src": "Financial Times",
-    "r": "n",
-    "t": "Roughnecks lose out to AI as automation in the oil industry gathers pace",
-    "why": "Artificial intelligence is helping to drill wells faster and replacing workers in some of the most dangerous jobs",
-    "url": "https://www.ft.com/content/da45883c-6612-4071-b363-a826c6edb085?syn-25a6b1a6=1",
     "date": "Fri, 27 Nov 2026"
    }
   ],
